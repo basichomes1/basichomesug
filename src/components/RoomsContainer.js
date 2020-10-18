@@ -11,8 +11,8 @@ function RoomsContainer({ context }) {
   }
   return (
     <>
-      {/* <RoomsFilter rooms={rooms} /> */}
       <RoomsList rooms={sortedRooms} />
+      <RoomsFilter rooms={rooms} />
     </>
   );
 }
