@@ -1,0 +1,27 @@
+import React from "react";
+import Hero from "../components/Hero";
+import Banner from "../components/Banner";
+import { Link } from "react-router-dom";
+import Services from "../components/Services";
+import Footer from "../components/Footer";
+import FeaturedRooms from "../components/FeaturedRooms";
+
+export default function Home() {
+  return (
+    <>
+      <Hero>
+        <Banner
+          title="BASIC HOMES UG"
+          subtitle="FILTER YOUR SEARCH TO ONE PLACE"
+        >
+          <Link to="/rooms" className="btn-primary">
+            OUR ROOMS
+          </Link>
+        </Banner>
+      </Hero>
+      <Services />
+      <FeaturedRooms />
+      <Footer />
+    </>
+  );
+}
