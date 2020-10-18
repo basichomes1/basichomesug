@@ -9,9 +9,7 @@ function Room({ room }) {
   return (
     <article className="room">
       <div className="img-container">
-        <Link to={`/rooms/${slug}`} className="btn-primary room-link">
-          <img src={images[0] || defaultImg} alt="SINGLE ROOM" />
-        </Link>
+        <img src={images[0] || defaultImg} alt="SINGLE ROOM" />
 
         <div className="price-top">
           <h6>{price}-(UGX)</h6>

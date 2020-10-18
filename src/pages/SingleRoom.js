@@ -40,12 +40,12 @@ export default class SingleRoom extends Component {
       pets,
       images,
     } = room;
-    const [...defaultImages] = images;
+    const [mainImg, ...defaultImages] = images;
     console.log(defaultImages);
 
     return (
       <>
-        <StyledHero img={images[0] || this.state.defaultBcg}>
+        <StyledHero img={mainImg || this.state.defaultBcg}>
           <Banner title={`${name} room`}>
             <Link to="/rooms" className="btn-primary">
               back to rooms

@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import RoomsContainer from "../components/RoomsContainer";
 
 export default function Rooms() {
   return (
@@ -14,6 +15,7 @@ export default function Rooms() {
           </Link>
         </Banner>
       </Hero>
+      <RoomsContainer />
       <Footer />
     </>
   );
