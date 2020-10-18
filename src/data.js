@@ -152,7 +152,7 @@ export default [
       id: "3",
     },
     fields: {
-      name: "single standard",
+      name: "SELF-CONTAINED ROOM",
       slug: "single-standard",
       type: "single",
       price: 250,
@@ -209,7 +209,7 @@ export default [
       id: "4",
     },
     fields: {
-      name: "single deluxe",
+      name: "SELF-CONTAINED ROOM",
       slug: "single-deluxe",
       type: "single",
       price: 1 + "M",
@@ -218,17 +218,8 @@ export default [
       pets: true,
 
       featured: true,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
+      description: "KAMPALA UGANDA ACCOMODATION",
+      extras: ["Adequate safety/security", "Internet", "Comfortable beds"],
       images: [
         {
           fields: {
@@ -380,7 +371,7 @@ export default [
       id: "7",
     },
     fields: {
-      name: "double standard",
+      name: "DOUBLE ROOM STANDARD",
       slug: "double-standard",
       type: "double",
       price: 300,
@@ -437,7 +428,7 @@ export default [
       id: "8",
     },
     fields: {
-      name: "double deluxe",
+      name: "DOUBLE ROOM STANDARD",
       slug: "double-deluxe",
       type: "double",
       price: 1.5 + "M",
@@ -446,17 +437,8 @@ export default [
       pets: true,
 
       featured: true,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
-      ],
+      description: "KAMPALA UGANDA ACCOMODATION",
+      extras: ["Adequate safety/security", "Internet", "Comfortable beds"],
       images: [
         {
           fields: {
@@ -665,22 +647,18 @@ export default [
       id: "12",
     },
     fields: {
-      name: "family deluxe",
+      name: "SELF CONTAINED LARGE",
       slug: "family-deluxe",
       type: "family",
       price: 1.8 + "M",
       size: 700,
-      capacity: 6,
+      capacity: 2,
       pets: true,
 
       featured: true,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      description: "KAMPALA UGANDA ACCOMODATION",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
         "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
         "Adequate safety/security",
         "Internet",
         "Comfortable beds",
@@ -722,22 +700,18 @@ export default [
       id: "13",
     },
     fields: {
-      name: "presidential",
+      name: "LUXURIOUS ",
       slug: "presidential-room",
       type: "presidential",
       price: 2.5 + "M",
       size: 1000,
-      capacity: 10,
+      capacity: 3,
       pets: true,
 
       featured: true,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      description: "KAMPALA UGANDA ACCOMODATION",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
         "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
         "Adequate safety/security",
         "Internet",
         "Comfortable beds",
