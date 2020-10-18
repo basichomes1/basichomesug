@@ -212,7 +212,7 @@ export default [
       name: "SELF-CONTAINED ROOM",
       slug: "single-deluxe",
       type: "single",
-      price: 1 + "M",
+      price: 1 + " M",
       size: 400,
       capacity: 1,
       pets: true,
