@@ -6,6 +6,8 @@
 :root {
   --primaryColor: #af9a7d;
   --mainWhite: #fff;
+  --purple: #662d91;
+  --orange: #f15a24;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
   --mainGrey: #ececec;
@@ -222,21 +224,28 @@ h6 {
 }
 /* End of Banner */
 /* Title */
-.section-title {
+.section-title,
+.feature {
   text-align: center;
   margin-bottom: 4rem;
 }
-.section-title h4 {
+.section-title h4,
+.feature h4 {
   font-size: 2rem;
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
   margin-bottom: 1rem;
 }
-.section-title div {
-  width: 5rem;
+.section-title div,
+.feature div {
+  width: 10rem;
   height: 5px;
   margin: 0 auto;
   background: #f15a24;
+}
+
+.feature div {
+  background: #662d91;
 }
 /* end of Title */
 
@@ -295,6 +304,7 @@ h6 {
 
 .featured-rooms {
   padding: 5rem 0;
+  background: #f15a24;
 }
 .featured-rooms-center {
   width: 80vw;
@@ -490,16 +500,21 @@ h6 {
 /* end of roomlist */
 /*  rooms fitler*/
 .filter-container {
-  padding: 5rem 0;
+  padding: 4rem 0;
   background: #f15a24;
 }
 .filter-form {
+  padding: 20px;
   width: 60vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
   grid-row-gap: 2rem;
   grid-column-gap: 40px;
+  background-color: var(--purple);
+  color: var(--orange);
+  font-size: 20px;
+  border-radius: 20px;
 }
 .form-group {
   text-transform: capitalize;
@@ -508,6 +523,7 @@ h6 {
   display: block;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 0.5rem;
+  color: white;
 }
 .form-control {
   width: 100%;

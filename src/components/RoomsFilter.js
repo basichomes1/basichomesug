@@ -38,7 +38,7 @@ const RoomsFilter = ({ rooms }) => {
   ));
   return (
     <section className="filter-container">
-      <Title title="SEARCH ROOMS" />
+      <Title title="SEARCH ROOMS" span="feature" />
       <form className="filter-form">
         {/* select type */}
         <div className="form-group">
