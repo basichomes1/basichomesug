@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import MenuIcon from "@material-ui/icons/Menu";
-import logo from "../images/logo.svg";
+import logo from "../images/logo2.svg";
 import { Link } from "react-router-dom";
 
 // NAVBAR COMPONENT AND A STATE FUNCTION FOR HANDLING TOGGLE
