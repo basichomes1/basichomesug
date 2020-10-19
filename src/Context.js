@@ -15,9 +15,9 @@ export default class RoomProvider extends Component {
     price: 0,
     minPrice: 0,
     maxPrice: 0,
-    minSize: 0,
-    maxSize: 0,
     pets: false,
+    accomodation: "all",
+    location: "kampala",
   };
   // GETDATA
   getData = async () => {
@@ -30,7 +30,7 @@ export default class RoomProvider extends Component {
       let featuredRooms = rooms.filter((room) => room.featured === true);
 
       let maxPrice = Math.max(...rooms.map((item) => item.price));
-      let maxSize = Math.max(...rooms.map((item) => item.size));
+
       this.setState({
         rooms,
         featuredRooms,
@@ -38,7 +38,6 @@ export default class RoomProvider extends Component {
         loading: false,
         price: maxPrice,
         maxPrice,
-        maxSize,
       });
     } catch (error) {
       console.log(error);
@@ -77,12 +76,24 @@ export default class RoomProvider extends Component {
     );
   };
   filterRooms = () => {
-    let { rooms, type, capacity, price, minSize, maxSize } = this.state;
+    let { rooms, type, capacity, price, accomodation, location } = this.state;
     let tempRooms = [...rooms];
     // transform values
     // get capacity
     capacity = parseInt(capacity);
     price = parseInt(price);
+
+    if (accomodation !== "all") {
+      tempRooms = tempRooms.filter(
+        (room) => room.accomodation === accomodation
+      );
+    }
+
+    // filter by location
+    if (location !== "kampala") {
+      tempRooms = tempRooms.filter((room) => room.location === location);
+    }
+
     // filter by type
     if (type !== "all") {
       tempRooms = tempRooms.filter((room) => room.type === type);
@@ -95,11 +106,6 @@ export default class RoomProvider extends Component {
     //FILTER BY PRICE
 
     tempRooms = tempRooms.filter((room) => room.price <= price);
-
-    //filter by size
-    tempRooms = tempRooms.filter(
-      (room) => room.size >= minSize && room.size <= maxSize
-    );
 
     this.setState({
       sortedRooms: tempRooms,

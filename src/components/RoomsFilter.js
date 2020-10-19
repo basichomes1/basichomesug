@@ -15,16 +15,34 @@ const RoomsFilter = ({ rooms }) => {
     price,
     minPrice,
     maxPrice,
-    minSize,
-    maxSize,
+    accomodation,
+    location,
   } = context;
 
   // get unique types
   let types = getUnique(rooms, "type");
+  let accomodations = getUnique(rooms, "accomodation");
+  let locations = getUnique(rooms, "location");
   // add all
+
   types = ["all", ...types];
+
   // map to jsx
   types = types.map((item, index) => (
+    <option key={index} value={item}>
+      {item}
+    </option>
+  ));
+
+  accomodations = ["all", ...accomodations];
+  accomodations = accomodations.map((item, index) => (
+    <option key={index} value={item}>
+      {item}
+    </option>
+  ));
+
+  locations = ["kampala", ...locations];
+  locations = locations.map((item, index) => (
     <option key={index} value={item}>
       {item}
     </option>
@@ -41,6 +59,34 @@ const RoomsFilter = ({ rooms }) => {
       <Title title="SEARCH ROOMS" span="feature" />
       <form className="filter-form">
         {/* select type */}
+        <div className="form-group">
+          <label htmlFor="location">LOCATION</label>
+          <select
+            name="location"
+            id="location"
+            onChange={handleChange}
+            className="form-control"
+            value={location}
+          >
+            {locations}
+          </select>
+        </div>
+
+        {/* select type */}
+        <div className="form-group">
+          <label htmlFor="accomodation">ACCOMODATION TYPE</label>
+          <select
+            name="accomodation"
+            id="accomodation"
+            onChange={handleChange}
+            className="form-control"
+            value={accomodation}
+          >
+            {accomodations}
+          </select>
+        </div>
+
+        {/* ROOM TYPE */}
         <div className="form-group">
           <label htmlFor="type">ROOM TYPE</label>
           <select
@@ -80,27 +126,6 @@ const RoomsFilter = ({ rooms }) => {
             value={price}
             onChange={handleChange}
             className="form-control"
-          />
-        </div>
-
-        {/* ROOM SIZE */}
-        <div className="form-group">
-          <label htmlFor="size">ROOM SIZE</label>
-          <input
-            type="number"
-            name="minSize"
-            id="size"
-            value={minSize}
-            onChange={handleChange}
-            className="size-input"
-          />
-          <input
-            type="number"
-            name="maxSize"
-            id="size"
-            value={maxSize}
-            onChange={handleChange}
-            className="size-input"
           />
         </div>
       </form>

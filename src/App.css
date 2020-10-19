@@ -96,7 +96,7 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.75rem 2rem;
+  padding: 0.2rem 1rem;
   background: #662d91;
   z-index: 1;
 }
@@ -113,7 +113,7 @@ h6 {
 
 .logobh {
   width: 3.5rem;
-  height: 4rem;
+  height: 3rem;
   object-fit: contain;
 }
 .nav-icon {
