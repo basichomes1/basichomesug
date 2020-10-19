@@ -527,17 +527,18 @@ h6 {
 }
 .form-control {
   width: 100%;
-  background: transparent;
+  background: white;
   font-size: 1rem;
 }
 .size-inputs {
   display: flex;
 }
-.size-input {
-  width: 40%;
+.range {
+  width: 80%;
   padding: 0.2rem;
-  border: 1px solid var(--mainBlack);
-  border-radius: 0.3rem;
+  border: 1px solid crimson;
+  background: crimson;
+  border-radius: 1.3rem;
   margin-right: 0.3rem;
 }
 .single-extra label {

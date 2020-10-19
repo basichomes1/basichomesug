@@ -41,7 +41,7 @@ const RoomsFilter = ({ rooms }) => {
     </option>
   ));
 
-  locations = ["kampala", ...locations];
+  locations = ["all", ...locations];
   locations = locations.map((item, index) => (
     <option key={index} value={item}>
       {item}
@@ -125,7 +125,7 @@ const RoomsFilter = ({ rooms }) => {
             id="price"
             value={price}
             onChange={handleChange}
-            className="form-control"
+            className="form-control range"
           />
         </div>
       </form>

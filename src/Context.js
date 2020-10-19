@@ -17,7 +17,7 @@ export default class RoomProvider extends Component {
     maxPrice: 0,
     pets: false,
     accomodation: "all",
-    location: "kampala",
+    location: "all",
   };
   // GETDATA
   getData = async () => {
@@ -90,7 +90,7 @@ export default class RoomProvider extends Component {
     }
 
     // filter by location
-    if (location !== "kampala") {
+    if (location !== "all") {
       tempRooms = tempRooms.filter((room) => room.location === location);
     }
 
