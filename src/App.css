@@ -102,7 +102,7 @@ h6 {
 }
 .nav-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .nav-btn {
   background: transparent;
@@ -112,8 +112,8 @@ h6 {
 }
 
 .logobh {
-  width: 6.5rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 4rem;
   object-fit: contain;
 }
 .nav-icon {
