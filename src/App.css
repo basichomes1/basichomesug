@@ -491,6 +491,7 @@ h6 {
 /*  rooms fitler*/
 .filter-container {
   padding: 5rem 0;
+  background: #f15a24;
 }
 .filter-form {
   width: 60vw;
