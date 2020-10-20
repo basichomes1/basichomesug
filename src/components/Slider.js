@@ -85,7 +85,7 @@ export default class SimpleSlider extends Component {
       slidesToScroll: 1,
       className: "slides",
       initialSlide: 0,
-      adaptiveHeight: true,
+
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
       appendDots: (dots) => (
