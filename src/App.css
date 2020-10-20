@@ -283,8 +283,8 @@ h6 {
   background: #662d91;
   width: 90vw;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(10px, auto));
   grid-row-gap: 1rem;
   grid-column-gap: 40px;
   color: white;
@@ -293,6 +293,7 @@ h6 {
 .services-article {
   background: #f15a24;
   padding: 50px;
+  width: 100%;
   border: 1px solid black;
   box-shadow: 2px 2px 10px grey;
 }
@@ -551,9 +552,9 @@ h6 {
 }
 .form-control {
   width: 100%;
-  background: var(--orange);
+  background: white;
   font-size: 1rem;
-  color: white;
+  color: black;
 }
 .size-inputs {
   display: flex;
@@ -659,3 +660,10 @@ input[type="range"]:focus::-ms-fill-upper {
   }
 }
 /* end of rooms fitler*/
+
+.slides {
+  background: #8d533e;
+
+  padding: 20px;
+  margin: 20px;
+}
