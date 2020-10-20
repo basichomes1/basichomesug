@@ -34,11 +34,14 @@ export default class SingleRoom extends Component {
       name,
       description,
       capacity,
+      type,
       size,
       price,
       extras,
       pets,
       images,
+      accomodation,
+      location,
     } = room;
     const [mainImg, ...defaultImages] = images;
     console.log(defaultImages);
@@ -60,26 +63,43 @@ export default class SingleRoom extends Component {
           </div>
           <div className="single-room-info">
             <article className="desc">
-              <h3>details</h3>
+              <h3>DETAILS</h3>
               <p>{description}</p>
             </article>
+
             <article className="info">
-              <h3>info</h3>
+              <h3>INFO</h3>
               <h6>price : {price}UGX</h6>
               <h6>size : {size} SQFT</h6>
               <h6>
                 max capacity :
-                {capacity > 1 ? `${capacity} people` : `${capacity} person`}
+                {capacity > 1 ? ` ${capacity} people` : ` ${capacity} person`}
               </h6>
               <h6>{pets ? "pets allowed" : "no pets allowed"}</h6>
             </article>
+
+            <article className="info">
+              <h3>LOCATION</h3>
+              <h5>{location.toUpperCase()}</h5>
+            </article>
+
+            <article className="info">
+              <h3>ACCOMODATION TYPE</h3>
+              <p>{accomodation.toUpperCase()}</p>
+            </article>
+
+            <article className="info">
+              <h3>ROOM TYPE</h3>
+              <p>{type.toUpperCase()}</p>
+            </article>
           </div>
         </section>
+
         <section className="room-extras">
-          <h6>extras </h6>
+          <h6>FEATURES </h6>
           <ul className="extras">
             {extras.map((item, index) => (
-              <li key={index}>- {item}</li>
+              <li key={index}>- {item.toUpperCase()}</li>
             ))}
           </ul>
         </section>
