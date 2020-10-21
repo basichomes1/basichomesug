@@ -131,7 +131,7 @@ export default class SimpleSlider extends Component {
 
     return (
       <div className="services">
-        <Title title="SERVICES" />
+        <Title title="SERVICES" span="serviceColor" />
         <Slider {...settings}>
           <div>
             {this.state.services1.map((item, index) => {
