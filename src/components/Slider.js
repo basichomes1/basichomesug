@@ -114,7 +114,7 @@ export default class SimpleSlider extends Component {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 3,
             slidesToScroll: 2,
             initialSlide: 1,
           },
@@ -124,6 +124,10 @@ export default class SimpleSlider extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 2900,
+            cssEase: "linear",
           },
         },
       ],
