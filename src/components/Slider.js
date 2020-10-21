@@ -62,7 +62,7 @@ export default class SimpleSlider extends Component {
       {
         icon: <FaTruckPickup />,
         title: "TRANSPORTATION",
-        info: "CAN'T MOVE YOUR THINGS?? WE GOT YOU COVERED",
+        info: "MOVING YOUR THINGS?? WE GOT YOU COVERED",
       },
     ],
     services4: [
