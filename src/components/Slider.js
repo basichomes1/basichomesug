@@ -18,7 +18,7 @@ function SampleNextArrow(props) {
         display: "block",
         background: "purple",
         borderRadius: "20px",
-        boxShadow: "2px 5px 2px 20px #8d533e",
+        boxShadow: "2px 5px 2px 20px #f15a24",
       }}
       onClick={onClick}
     />
@@ -35,7 +35,7 @@ function SamplePrevArrow(props) {
         display: "block",
         background: "purple",
         borderRadius: "20px",
-        boxShadow: "2px 5px 2px 20px #8d533e",
+        boxShadow: "2px 5px 2px 20px #f15a24",
       }}
       onClick={onClick}
     />
@@ -91,7 +91,7 @@ export default class SimpleSlider extends Component {
       appendDots: (dots) => (
         <div
           style={{
-            backgroundColor: "#8d533e",
+            backgroundColor: "#f15a24",
             borderRadius: "1px",
             padding: "1px",
             marginTop: "2px",
