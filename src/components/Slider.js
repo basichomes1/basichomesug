@@ -112,11 +112,39 @@ export default class SimpleSlider extends Component {
           },
         },
         {
-          breakpoint: 600,
+          breakpoint: 648,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 2,
+            infinite: true,
             initialSlide: 1,
+            autoplay: true,
+            autoplaySpeed: 2900,
+            cssEase: "linear",
+          },
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            initialSlide: 1,
+            autoplay: true,
+            autoplaySpeed: 2900,
+            cssEase: "linear",
+          },
+        },
+        {
+          breakpoint: 832,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            initialSlide: 1,
+            autoplay: true,
+            autoplaySpeed: 2900,
+            cssEase: "linear",
           },
         },
         {
