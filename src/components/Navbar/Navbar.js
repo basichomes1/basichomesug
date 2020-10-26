@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "../Button/Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-
+import { MdHome } from "react-icons/md";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 
@@ -36,6 +36,7 @@ function Navbar() {
               className="navbar-logo navbr-brand"
               onClick={closeMobileMenu}
             >
+              <MdHome className="navbar-icon" />
               BASIC HOMES
             </Link>
             <div className="menu-icon" onClick={handleClick}>
