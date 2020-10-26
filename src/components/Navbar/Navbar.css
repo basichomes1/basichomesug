@@ -170,8 +170,8 @@
 
 .navbr-brand {
   cursor: pointer;
+  margin: 0.2%;
 
-  margin-left: -20px;
   z-index: 2;
   background-image: linear-gradient(
     60deg,
