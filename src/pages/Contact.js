@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <>
       <Hero>
-        <Banner title="CONTACT US" subtitle="+256755510968">
+        <Banner title="CONTACT US" subtitle="">
           <Link to="/rooms" className="btn-primary">
             OUR ROOMS
           </Link>

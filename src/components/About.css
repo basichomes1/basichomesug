@@ -1,0 +1,22 @@
+.about {
+  background: purple;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abouty {
+  display: flex;
+  flex: 0.5;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  color: #f15a24;
+}
+
+.abouti {
+  display: flex;
+  flex: 0.5;
+  justify-content: center;
+}

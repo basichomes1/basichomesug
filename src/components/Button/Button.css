@@ -1,5 +1,5 @@
 :root {
-  --primary: #fff;
+  --primary: rgb(172, 216, 27);
 }
 
 .btn {
@@ -12,16 +12,16 @@
 }
 
 .btn--primary {
-  background-color: var(--primary);
-  color: #242424;
+  background-color: #242424;
+  color: #fff;
   border: 1px solid var(--primary);
 }
 
 .btn--outline {
-  background-color: transparent;
+  background-color: orange;
   color: #fff;
   padding: 8px 20px;
-  border: 1px solid var(--primary);
+  border: 1px solid orange;
   transition: all 0.3s ease-out;
 }
 
@@ -41,7 +41,7 @@
   width: 80%;
   text-decoration: none;
   font-size: 1.5rem;
-  background-color: transparent;
+  background-color: #242424;
   color: #fff;
   padding: 14px 20px;
   border: 1px solid #fff;

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "../Button/Button";
 import { Link } from "react-router-dom";
+
 import "./Navbar.css";
 import { MdHome } from "react-icons/md";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -42,7 +43,7 @@ function Navbar() {
             <div className="menu-icon" onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </div>
-            <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <ul className={click ? "nav-menu active " : "nav-menu"}>
               <li className="nav-item">
                 <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                   HOME
@@ -68,11 +69,11 @@ function Navbar() {
               </li>
               <li className="nav-btn">
                 {button ? (
-                  <Link to="/sign-up" className="btn-link">
+                  <Link to="/signup" className="btn-link">
                     <Button buttonStyle="btn--outline">LOGIN</Button>
                   </Link>
                 ) : (
-                  <Link to="/sign-up" className="btn-link">
+                  <Link to="/signup" className="btn-link">
                     <Button
                       buttonStyle="btn--outline"
                       buttonSize="btn--mobile"
@@ -83,13 +84,14 @@ function Navbar() {
                   </Link>
                 )}
               </li>
+
               <li className="nav-btn">
                 {button ? (
-                  <Link to="/sign-up" className="btn-link">
+                  <Link to="/signup" className="btn-link">
                     <Button buttonStyle="btn--outline">SIGN UP</Button>
                   </Link>
                 ) : (
-                  <Link to="/sign-up" className="btn-link">
+                  <Link to="/signup" className="btn-link">
                     <Button
                       buttonStyle="btn--outline"
                       buttonSize="btn--mobile"
