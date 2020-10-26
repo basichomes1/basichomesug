@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
-// import Services from "../components/Services";
+
 import Footer from "../components/Footer";
 import FeaturedRooms from "../components/FeaturedRooms";
 import SimpleSlider from "../components/Slider";
