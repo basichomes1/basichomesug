@@ -36,7 +36,6 @@ function Navbar() {
               className="navbar-logo navbr-brand"
               onClick={closeMobileMenu}
             >
-              {/* <MdHome className="navbar-icon" /> */}
               BASIC HOMES
             </Link>
             <div className="menu-icon" onClick={handleClick}>
