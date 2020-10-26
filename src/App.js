@@ -6,7 +6,7 @@ import Rooms from "./pages/Rooms";
 import SingleRoom from "./pages/SingleRoom";
 import Error from "./pages/Error";
 import Jobs from "./pages/Jobs";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Contact from "./pages/Contact";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
