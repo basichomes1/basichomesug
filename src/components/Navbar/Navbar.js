@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "../Button/Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { MdHome } from "react-icons/md";
+
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 
