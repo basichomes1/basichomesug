@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  padding: 0px;
+  margin: 0;
+}
 :root {
   --primaryColor: #af9a7d;
   --mainWhite: #fff;
@@ -42,7 +46,7 @@ input[type="range"]::-ms-track {
   color: transparent;
 }
 body {
-  padding-top: 66px;
+  padding-top: 0;
   color: var(--mainBlack);
   background: var(--mainWhite);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -114,85 +118,11 @@ h6 {
 }
 /* end of globals */
 /* Navbar */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.2rem 1rem;
-  background: #662d91;
-  z-index: 1;
-}
-.nav-header {
-  display: flex;
-  justify-content: space-between;
-}
-.nav-btn {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
 
-.logobh {
-  width: 3.5rem;
-  height: 3rem;
-  object-fit: contain;
-}
-.nav-icon {
-  font-size: 1.5rem;
-  color: #f15a24;
-}
-.nav-links {
-  height: 0;
-  overflow: hidden;
-  transition: var(--mainTransition);
-  list-style-type: none;
-}
-.nav-links a {
-  display: block;
-  text-decoration: none;
-  padding: 0.7rem 0;
-  color: #f15a24;
-  transition: var(--mainTransition);
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 900;
-  letter-spacing: var(--mainSpacing);
-}
-.nav-links a:hover {
-  color: var(--primaryColor);
-}
-
-.show-nav {
-  height: 200px;
-}
-@media screen and (min-width: 768px) {
-  .nav-btn {
-    display: none;
-  }
-  .nav-center {
-    max-width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .nav-links {
-    height: auto;
-    display: flex;
-
-    align-items: center;
-  }
-  .nav-links a {
-    margin: 0 5rem;
-    padding: 0.5rem 0;
-  }
-}
-/* end of navbar */
 /* Hero */
 .defaultHero,
 .roomsHero {
-  min-height: calc(100vh - 66px);
+  min-height: 30vh;
   background: url("./images/bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -367,6 +297,23 @@ h6 {
   .featured-rooms-center {
     width: 95vw;
     max-width: 1170px;
+  }
+  .navbar-logo {
+    color: #fff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 40px;
+    margin-left: -1800px;
+  }
+
+  .navbar img {
+    width: 100px;
+    height: 60px;
   }
 }
 /* end pf featured rooms */
