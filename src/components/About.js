@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../images/logo.svg";
-import "./About.css";
+import logo from "../images/svg/logo.svg";
+import "../css/About.css";
 import Loading from "./Loading";
 
 function About() {

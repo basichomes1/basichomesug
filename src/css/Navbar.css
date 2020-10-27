@@ -13,7 +13,7 @@
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-.navbar {
+.navbars {
   background: var(--purple);
   height: 80px;
   display: flex;
@@ -25,13 +25,13 @@
   z-index: 999;
 }
 
-.navbar-container {
+.navbars-container {
   display: flex;
   justify-content: space-between;
   height: 80px;
 }
 
-.container {
+.containers {
   z-index: 1;
   width: 100%;
   max-width: 1300px;
@@ -41,7 +41,7 @@
   padding-left: 50px;
 }
 
-.navbar-logo {
+.navbars-logo {
   color: var(--orange);
   justify-self: start;
   cursor: pointer;
@@ -52,11 +52,11 @@
   align-items: center;
 }
 
-.navbar-icon {
+.navbars-icon {
   margin-right: 0.5rem;
 }
 
-.nav-menu {
+.navs-menu {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,16 +65,16 @@
   justify-content: flex-end;
 }
 
-.nav-item {
+.navs-item {
   height: 80px;
   border-bottom: 2px solid transparent;
 }
 
-.nav-item:hover {
+.navs-item:hover {
   border-bottom: 2px solid #f00946;
 }
 
-.nav-links {
+.navs-links {
   color: var(--orange);
   display: flex;
   align-items: center;
@@ -92,14 +92,14 @@
 }
 
 @media screen and (max-width: 960px) {
-  .NavbarItems {
+  .navbarsItems {
     position: relative;
   }
 
-  .nav-menu {
+  .navs-menu {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 85%;
     height: 80vh;
     position: absolute;
     top: 50px;
@@ -108,7 +108,7 @@
     transition: all 0.5s ease;
   }
 
-  .nav-menu.active {
+  .navs-menu.active {
     background: #662d91;
     left: 0;
     opacity: 1;
@@ -116,28 +116,28 @@
     z-index: 1;
   }
 
-  .nav-links {
+  .navs-links {
     text-align: center;
     padding: 2rem;
     width: 100%;
     display: table;
   }
 
-  .nav-links:hover {
+  .navs-links:hover {
     color: #f00946;
     transform: scale(1.2);
     transition: all 0.3s ease;
   }
 
-  .nav-item:hover {
+  .navs-item:hover {
     border: none;
   }
 
-  .nav-item {
+  .navs-item {
     width: 100%;
   }
 
-  .navbar-logo {
+  .navbars-logo {
     position: absolute;
     top: 0;
     left: 0;
@@ -159,7 +159,7 @@
     font-size: 2rem;
   }
 
-  .nav-btn {
+  .navs-btn {
     display: flex;
     justify-content: center;
     align-items: center;

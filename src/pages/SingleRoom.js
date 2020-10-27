@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import defaultBcg from "../images/bg.jpg";
+import defaultBcg from "../images/bg/bg.jpg";
 
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";

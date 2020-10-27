@@ -1,0 +1,36 @@
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+  --shadowDark: #d9dde6;
+  --background: #e4e9f2;
+  --shadowLight: #eff5fe;
+}
+
+.hero {
+  background: url("../images/bg/basic.png");
+  background-attachment: fixed;
+  background-size: 100%;
+  display: flex;
+}
+
+.hero-body {
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  border-radius: 25px;
+  padding: 1.5rem;
+  box-shadow: 8px 8px 15px var(--shadowDark), -8px -8px 15px var(--shadowLight);
+  background-color: #662d91;
+}
+
+input {
+  background: var(--shadowDark) !important;
+}
+
+a {
+  font-weight: 600;
+}

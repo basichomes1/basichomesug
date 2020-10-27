@@ -46,7 +46,6 @@ input[type="range"]::-ms-track {
   color: transparent;
 }
 body {
-  padding-top: 0;
   color: var(--mainBlack);
   background: var(--mainWhite);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -123,13 +122,13 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: 30vh;
-  background: url("./images/bg.jpg") center/cover no-repeat;
+  background: url("../images/bg/bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/room-9.jpeg");
+  background-image: url("../images/bg/basic.png");
   object-fit: contain;
   background-size: 100%;
   min-height: 60vh;
@@ -614,4 +613,45 @@ input[type="range"]:focus::-ms-fill-upper {
 
   padding: 20px;
   margin: 20px;
+}
+
+/* SIGIN  */
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+  --shadowDark: #d9dde6;
+  --background: #e4e9f2;
+  --shadowLight: #eff5fe;
+}
+
+.hero-body {
+  justify-content: center;
+}
+
+.login {
+  border-radius: 25px;
+  padding: 1.5rem;
+  box-shadow: 8px 8px 15px var(--shadowDark), -8px -8px 15px var(--shadowLight);
+}
+
+input {
+  background: var(--shadowDark) !important;
+}
+
+a {
+  font-weight: 600;
+}
+
+.centers {
+  background: #662d91;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 200px;
+  color: #f15a24;
+  font-size: 20px;
 }

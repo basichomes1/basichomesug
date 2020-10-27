@@ -1,12 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import Title from "./Title";
-import {
-  FaBlackTie,
-  FaTruckPickup,
-  FaUserTie,
-  FaWarehouse,
-} from "react-icons/fa";
+import { FaBlackTie, FaUserTie, FaWarehouse } from "react-icons/fa";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -58,14 +53,8 @@ export default class SimpleSlider extends Component {
         info: "REGISTER YOUR JOB SKILLS",
       },
     ],
+
     services3: [
-      {
-        icon: <FaTruckPickup />,
-        title: "TRANSPORTATION",
-        info: "MOVING YOUR THINGS?? WE GOT YOU COVERED",
-      },
-    ],
-    services4: [
       {
         icon: <FaUserTie />,
         title: "ACCOUNT CREATION",
@@ -192,17 +181,6 @@ export default class SimpleSlider extends Component {
           </div>
           <div>
             {this.state.services3.map((item, index) => {
-              return (
-                <article key={index} className="services-article">
-                  <span>{item.icon}</span>
-                  <h5>{item.title}</h5>
-                  <p>{item.info}</p>
-                </article>
-              );
-            })}
-          </div>
-          <div>
-            {this.state.services4.map((item, index) => {
               return (
                 <article key={index} className="services-article">
                   <span>{item.icon}</span>

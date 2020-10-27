@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Title from "./Title";
-import { FaHiking, FaShuttleVan } from "react-icons/fa";
+import { FaHiking } from "react-icons/fa";
 
 export default class componentName extends Component {
   state = {
@@ -14,11 +14,6 @@ export default class componentName extends Component {
         icon: <FaHiking />,
         title: "JOB CREATION",
         info: "REGISTER YOUR JOB SKILLS",
-      },
-      {
-        icon: <FaShuttleVan />,
-        title: "TRANSPORTATION",
-        info: "CAN'T MOVE YOUR THINGS?? WE GOT YOU COVERED",
       },
 
       {
