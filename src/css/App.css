@@ -503,6 +503,17 @@ h6 {
   font-size: 1rem;
   color: black;
 }
+
+input[type="reset"] {
+  background-color: red;
+  color: red;
+  height: 60px;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+}
+input[type="reset"]:hover {
+  background-color: #202020;
+}
 .size-inputs {
   display: flex;
 }
