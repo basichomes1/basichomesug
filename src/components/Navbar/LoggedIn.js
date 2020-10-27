@@ -52,46 +52,38 @@ const LoggedIn = (props) => {
           </li>
           <li className="navs-item">
             <Link to="/jobs" className="navs-links" onClick={closeMobileMenu}>
-              JOB CENTER
+              SERVICE CENTER
             </Link>
           </li>
           <li>
-            <NavLink to="/" className=" btn-floating pink lighten-1">
-              {profile.initials}
+            <NavLink to="/" className=" btn-floating ">
+              <p>{profile.initials}</p>
             </NavLink>
           </li>
 
           <li className="navs-btn">
             {button ? (
-              <li>
-                <Link to="/signup" className="btn-link" onClick={props.signOut}>
-                  <Button
-                    buttonStyle="btn--outline "
-                    buttonSize="btn--large"
-                    buttonColor="red"
-                    onClick={closeMobileMenu}
-                  >
-                    <p className="move">LOGOUT</p>
-                  </Button>
-                </Link>
-              </li>
-            ) : (
-              <li>
-                <Link
-                  to="/signup"
-                  className="btns-link"
-                  onClick={props.signOut}
+              <Link to="/signup" className="btn-link" onClick={props.signOut}>
+                <Button
+                  buttonStyle="btn--outline "
+                  buttonSize="btn--large"
+                  buttonColor="red"
+                  onClick={closeMobileMenu}
                 >
-                  <Button
-                    buttonStyle="btn--outline "
-                    buttonSize="btn--large"
-                    buttonColor="red"
-                    onClick={closeMobileMenu}
-                  >
-                    <p className="move">LOGOUT</p>
-                  </Button>
-                </Link>
-              </li>
+                  <p className="move">LOGOUT</p>
+                </Button>
+              </Link>
+            ) : (
+              <Link to="/signup" className="btns-link" onClick={props.signOut}>
+                <Button
+                  buttonStyle="btn--outline "
+                  buttonSize="btn--large"
+                  buttonColor="red"
+                  onClick={closeMobileMenu}
+                >
+                  <p className="move">LOGOUT</p>
+                </Button>
+              </Link>
             )}
           </li>
         </ul>

@@ -34,7 +34,7 @@
 .btn--large {
   padding: 12px 24px;
   margin-left: 10px;
-  font-size: 10px;
+  font-size: 200px;
 }
 
 .btn--mobile {
@@ -114,5 +114,6 @@
 }
 
 .move {
-  margin-top: -12px;
+  margin-top: -5px;
+  font-size: 15px;
 }

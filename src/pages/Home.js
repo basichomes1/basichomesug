@@ -12,10 +12,7 @@ export default function Home() {
   return (
     <>
       <Hero>
-        <Banner
-          title="BASIC HOMES UG"
-          subtitle="FILTER YOUR SEARCH TO ONE PLACE"
-        >
+        <Banner title="BASIC HOMES UG" subtitle="WAITING FOR YOU">
           <Link to="/rooms" className="btn-primary">
             OUR ROOMS
           </Link>

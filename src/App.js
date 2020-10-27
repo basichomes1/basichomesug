@@ -22,24 +22,22 @@ import CreateProject from "./components/projects/CreateProject";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <Navbar />
+      <Navbar />
 
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/project/:id" component={ProjectDetails} />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/project/:id" component={ProjectDetails} />
 
-          <Route exact path="/create" component={CreateProject} />
-          <Route exact path="/rooms/" component={Rooms} />
-          <Route exact path="/rooms/:slug" component={SingleRoom} />
-          <Route exact path="/jobs/" component={Jobs} />
-          <Route exact path="/contact/" component={Contact} />
-          <Route exact path="/signin" component={SignIn} />
-          <Route exact path="/signup" component={SignUp} />
-          <Route exact path="/create" component={CreateProject} />
-          <Route component={Error} />
-        </Switch>
-      </div>
+        <Route exact path="/create" component={CreateProject} />
+        <Route exact path="/rooms/" component={Rooms} />
+        <Route exact path="/rooms/:slug" component={SingleRoom} />
+        <Route exact path="/jobs/" component={Jobs} />
+        <Route exact path="/contact/" component={Contact} />
+        <Route exact path="/signin" component={SignIn} />
+        <Route exact path="/signup" component={SignUp} />
+        <Route exact path="/create" component={CreateProject} />
+        <Route component={Error} />
+      </Switch>
     </BrowserRouter>
   );
 }

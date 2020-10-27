@@ -46,59 +46,55 @@ export default function Logout() {
           </li>
           <li className="navs-item">
             <Link to="/jobs" className="navs-links" onClick={closeMobileMenu}>
-              JOB CENTER
+              SERVICE CENTER
             </Link>
           </li>
           <li className="navs-btn">
             {button ? (
               <>
-                <li>
-                  <Link to="/signin" className="btn-link">
-                    <Button
-                      buttonStyle="btn--outline "
-                      buttonSize="btn--large"
-                      buttonColor="red"
-                      onClick={closeMobileMenu}
-                    >
-                      <p className="move">LOGIN</p>
-                    </Button>
-                  </Link>
-                  <Link to="/signup" className="btn-link">
-                    <Button
-                      buttonStyle="btn--outline "
-                      buttonSize="btn--large"
-                      buttonColor="red"
-                      onClick={closeMobileMenu}
-                    >
-                      <p className="move">SIGNUP</p>
-                    </Button>
-                  </Link>
-                </li>
+                <Link to="/signin" className="btn-link">
+                  <Button
+                    buttonStyle="btn--outline "
+                    buttonSize="btn--large"
+                    buttonColor="red"
+                    onClick={closeMobileMenu}
+                  >
+                    <p className="move">LOGIN</p>
+                  </Button>
+                </Link>
+                <Link to="/signup" className="btn-link">
+                  <Button
+                    buttonStyle="btn--outline "
+                    buttonSize="btn--large"
+                    buttonColor="red"
+                    onClick={closeMobileMenu}
+                  >
+                    <p className="move">SIGN UP</p>
+                  </Button>
+                </Link>
               </>
             ) : (
               <>
-                <li>
-                  <Link to="/signin" className="btn-link">
-                    <Button
-                      buttonStyle="btn--outline "
-                      buttonSize="btn--large"
-                      buttonColor="red"
-                      onClick={closeMobileMenu}
-                    >
-                      <p className="move">LOGIN</p>
-                    </Button>
-                  </Link>
-                  <Link to="/signup" className="btn-link">
-                    <Button
-                      buttonStyle="btn--outline "
-                      buttonSize="btn--large"
-                      buttonColor="red"
-                      onClick={closeMobileMenu}
-                    >
-                      <p className="move">SIGNUP</p>
-                    </Button>
-                  </Link>
-                </li>
+                <Link to="/signin" className="btn-link">
+                  <Button
+                    buttonStyle="btn--outline "
+                    buttonSize="btn--large"
+                    buttonColor="red"
+                    onClick={closeMobileMenu}
+                  >
+                    <p className="move">LOGIN</p>
+                  </Button>
+                </Link>
+                <Link to="/signup" className="btn-link">
+                  <Button
+                    buttonStyle="btn--outline "
+                    buttonSize="btn--large"
+                    buttonColor="red"
+                    onClick={closeMobileMenu}
+                  >
+                    <p className="move">SIGNUP</p>
+                  </Button>
+                </Link>
               </>
             )}
           </li>

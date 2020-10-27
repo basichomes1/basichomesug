@@ -27,32 +27,32 @@ class SignUp extends Component {
     const { auth, authError } = this.props;
     if (auth.uid) return <Redirect to="/" />;
     return (
-      <section class="hero is-fullheight">
-        <div class="hero-body has-text-centered">
-          <div class="login">
+      <section className="hero is-fullheight">
+        <div className="hero-body has-text-centered">
+          <div className="login">
             <img src={logo} width="325px" alt="logo" />
 
             <form onSubmit={this.handleSubmit}>
-              <div class="field">
-                <div class="control">
+              <div className="field">
+                <div className="control">
                   <label htmlFor="email">EMAIL</label>
                   <input
-                    class="input is-medium is-rounded"
+                    className="input is-medium is-rounded"
                     type="email"
                     id="email"
                     onChange={this.handleChange}
                     placeholder="Basic@example.com"
-                    autocomplete="username"
+                    autoComplete="username"
                     required
                   />
                 </div>
               </div>
 
-              <div class="field">
-                <div class="control">
+              <div className="field">
+                <div className="control">
                   <label htmlFor="firstname">FIRSTNAME</label>
                   <input
-                    class="input is-medium is-rounded"
+                    className="input is-medium is-rounded"
                     type="text"
                     id="firstname"
                     onChange={this.handleChange}
@@ -62,11 +62,11 @@ class SignUp extends Component {
                 </div>
               </div>
 
-              <div class="field">
-                <div class="control">
+              <div className="field">
+                <div className="control">
                   <label htmlFor="lastname">LASTNAME</label>
                   <input
-                    class="input is-medium is-rounded"
+                    className="input is-medium is-rounded"
                     type="text"
                     id="lastname"
                     onChange={this.handleChange}
@@ -76,8 +76,8 @@ class SignUp extends Component {
                 </div>
               </div>
 
-              <div class="field">
-                <div class="control">
+              <div className="field">
+                <div className="control">
                   <label htmlFor="password">PASSWORD</label>
                   <input
                     className="input is-medium is-rounded"
@@ -85,7 +85,7 @@ class SignUp extends Component {
                     id="password"
                     onChange={this.handleChange}
                     placeholder="**********"
-                    autocomplete="current-password"
+                    autoComplete="current-password"
                     required
                   />
                 </div>
@@ -98,15 +98,15 @@ class SignUp extends Component {
               </div>
 
               <button
-                class="button is-block is-fullwidth is-primary is-medium is-rounded"
+                className="button is-block is-fullwidth is-primary is-medium is-rounded"
                 type="submit"
               >
                 SIGNUP
               </button>
             </form>
             <br />
-            <nav class="level">
-              <div class="level-item has-text-centered">
+            <nav className="level">
+              <div className="level-item has-text-centered">
                 <div>
                   <a href="/signin">ALREADY HAVE AN ACCOUNT?</a>
                 </div>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import createClient from "./Contentful";
+import Client from "./Contentful";
 
 const RoomContext = React.createContext();
 
@@ -22,11 +22,12 @@ export default class RoomProvider extends Component {
   // GETDATA
   getData = async () => {
     try {
-      let response = await createClient.getEntries({
+      let response = await Client.getEntries({
         content_type: "basichomesug",
         order: "fields.price",
       });
       let rooms = this.formatData(response.items);
+
       let featuredRooms = rooms.filter((room) => room.featured === true);
 
       let maxPrice = Math.max(...rooms.map((item) => item.price));
@@ -67,7 +68,7 @@ export default class RoomProvider extends Component {
     const target = event.target;
     const value = target.type === "checkbox" ? target.checked : target.value;
     const name = target.name;
-    console.log(name, value);
+
     this.setState(
       {
         [name]: value,
@@ -127,6 +128,8 @@ export default class RoomProvider extends Component {
 }
 const RoomConsumer = RoomContext.Consumer;
 
+export { RoomProvider, RoomConsumer, RoomContext };
+
 export function withRoomConsumer(Component) {
   return function ConsumerWrapper(props) {
     return (
@@ -136,5 +139,3 @@ export function withRoomConsumer(Component) {
     );
   };
 }
-
-export { RoomProvider, RoomConsumer, RoomContext };

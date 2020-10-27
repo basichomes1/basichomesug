@@ -655,3 +655,36 @@ a {
   color: #f15a24;
   font-size: 20px;
 }
+
+.btn-floating {
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  line-height: 40px;
+  padding: 0;
+  background-color: #31a626;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-floating p {
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 25px;
+}
+.btn-floating:hover {
+  background-color: #26a69a;
+}
+
+.btn-floating:before {
+  border-radius: 0;
+}
