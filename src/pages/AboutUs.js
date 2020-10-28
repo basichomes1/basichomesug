@@ -1,11 +1,9 @@
 import React from "react";
 import about from "../images/bg/bg.jpg";
-import { Link } from "react-router-dom";
 
 import Footer from "../components/Footer";
 
 import Title from "../components/Title";
-import { Button } from "../components/Button/Button";
 
 function AboutUs() {
   return (
