@@ -7,6 +7,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "../../css/Navbar.css";
 import { connect } from "react-redux";
 
+import { animateScroll as scroll } from "react-scroll";
+
 const LoggedIn = (props) => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -29,6 +31,10 @@ const LoggedIn = (props) => {
 
   const { profile } = props;
 
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <div className="navbars">
       <div>
@@ -38,7 +44,11 @@ const LoggedIn = (props) => {
       </div>
 
       <div className="navbars-container containers">
-        <Link to="/" className="navbars-logo " onClick={closeMobileMenu}>
+        <Link
+          to="/"
+          className="navbars-logo "
+          onClick={(closeMobileMenu, toggleHome)}
+        >
           <MdHome className="navbars-icon" />
           BASIC HOMES
         </Link>
@@ -57,17 +67,29 @@ const LoggedIn = (props) => {
 
         <ul className={click ? "navs-menu active " : "navs-menu"}>
           <li className="navs-item">
-            <Link to="/" className="navs-links" onClick={closeMobileMenu}>
+            <Link
+              to="/"
+              className="navs-links"
+              onClick={(closeMobileMenu, toggleHome)}
+            >
               HOME
             </Link>
           </li>
           <li className="navs-item">
-            <Link to="/rooms" className="navs-links" onClick={closeMobileMenu}>
+            <Link
+              to="/rooms"
+              className="navs-links"
+              onClick={(closeMobileMenu, toggleHome)}
+            >
               ROOMS
             </Link>
           </li>
           <li className="navs-item">
-            <Link to="/jobs" className="navs-links" onClick={closeMobileMenu}>
+            <Link
+              to="/jobs"
+              className="navs-links"
+              onClick={(closeMobileMenu, toggleHome)}
+            >
               SERVICE CENTER
             </Link>
           </li>
@@ -76,7 +98,7 @@ const LoggedIn = (props) => {
             <Link
               to="/contact"
               className="navs-links"
-              onClick={closeMobileMenu}
+              onClick={(closeMobileMenu, toggleHome)}
             >
               CONTACT
             </Link>
@@ -86,7 +108,7 @@ const LoggedIn = (props) => {
             <Link
               to="/aboutus"
               className="navs-links"
-              onClick={closeMobileMenu}
+              onClick={(closeMobileMenu, toggleHome)}
             >
               ABOUT US
             </Link>
