@@ -19,6 +19,7 @@ import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
 import CreateProject from "./components/projects/CreateProject";
 import Profile from "./pages/Profile";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -33,9 +34,9 @@ function App() {
         <Route exact path="/rooms/:slug" component={SingleRoom} />
         <Route exact path="/jobs/" component={Jobs} />
         <Route exact path="/contact/" component={Contact} />
+        <Route exact path="/aboutus/" component={AboutUs} />
         <Route exact path="/signin" component={SignIn} />
         <Route exact path="/signup" component={SignUp} />
-
         <Route component={Error} />
       </Switch>
     </BrowserRouter>

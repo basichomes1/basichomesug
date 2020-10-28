@@ -72,6 +72,26 @@ const LoggedIn = (props) => {
             </Link>
           </li>
 
+          <li className="navs-item">
+            <Link
+              to="/contact"
+              className="navs-links"
+              onClick={closeMobileMenu}
+            >
+              CONTACT
+            </Link>
+          </li>
+
+          <li className="navs-item">
+            <Link
+              to="/aboutus"
+              className="navs-links"
+              onClick={closeMobileMenu}
+            >
+              ABOUT US
+            </Link>
+          </li>
+
           <li className="navs-btn">
             {button ? (
               <Link to="/signup" className="btn-link" onClick={props.signOut}>

@@ -44,9 +44,24 @@ export default function Logout() {
               ROOMS
             </Link>
           </li>
+
           <li className="navs-item">
-            <Link to="/jobs" className="navs-links" onClick={closeMobileMenu}>
-              SERVICE CENTER
+            <Link
+              to="/contact"
+              className="navs-links"
+              onClick={closeMobileMenu}
+            >
+              CONTACT
+            </Link>
+          </li>
+
+          <li className="navs-item">
+            <Link
+              to="/aboutus"
+              className="navs-links"
+              onClick={closeMobileMenu}
+            >
+              ABOUT US
             </Link>
           </li>
           <li className="navs-btn">

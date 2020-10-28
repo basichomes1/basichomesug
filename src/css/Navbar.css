@@ -95,13 +95,11 @@
 }
 
 @media screen and (max-width: 960px) {
-  .navbarsItems {
-    position: relative;
-  }
-
   .navs-menu {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 85%;
     height: 80vh;
     position: absolute;
@@ -119,15 +117,21 @@
     z-index: 1;
   }
 
+  .navs-menu.active li {
+    padding-top: 40px;
+  }
+
   .navs-links {
     text-align: center;
-    padding: 2rem;
+    padding: 10px;
+    margin-top: 1px;
+    line-height: 1px;
     width: 100%;
     display: table;
   }
 
   .navs-links:hover {
-    color: #f00946;
+    color: #e4d7db;
     transform: scale(1.2);
     transition: all 0.3s ease;
   }
@@ -138,6 +142,8 @@
 
   .navs-item {
     width: 100%;
+    padding-top: -15px;
+    margin-top: 1px;
   }
 
   .navbars-logo {
