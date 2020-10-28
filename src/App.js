@@ -18,6 +18,7 @@ import "slick-carousel/slick/slick-theme.css";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
 import CreateProject from "./components/projects/CreateProject";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/project/:id" component={ProjectDetails} />
 
         <Route exact path="/create" component={CreateProject} />
+        <Route exact path="/profile" component={Profile} />
         <Route exact path="/rooms/" component={Rooms} />
         <Route exact path="/rooms/:slug" component={SingleRoom} />
         <Route exact path="/jobs/" component={Jobs} />

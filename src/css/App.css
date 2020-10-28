@@ -121,7 +121,7 @@ h6 {
 /* Hero */
 .defaultHero,
 .roomsHero {
-  min-height: 30vh;
+  min-height: 80vh;
   background: url("../images/bg/bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -669,7 +669,8 @@ a {
 
 .btn-floating {
   display: inline-block;
-  color: #fff;
+
+  color: #efebf1;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -677,7 +678,7 @@ a {
   height: 60px;
   line-height: 40px;
   padding: 0;
-  background-color: #31a626;
+  background-color: #f15a24;
   border-radius: 50%;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
@@ -695,7 +696,7 @@ a {
     margin-top: -14px;
     margin-left: 10px;
     display: inline-block;
-    color: #fff;
+
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -703,7 +704,8 @@ a {
     height: 60px;
     line-height: 40px;
     padding: 0;
-    background-color: #31a626;
+    background-color: #f15a24;
+    color: #efebf1;
     border-radius: 50%;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
@@ -717,7 +719,8 @@ a {
 
 .btn-floating p {
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 12px;
+  margin-left: 14px;
   font-size: 25px;
 }
 .btn-floating:hover {
