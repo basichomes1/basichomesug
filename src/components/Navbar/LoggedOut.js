@@ -4,7 +4,6 @@ import { MdHome } from "react-icons/md";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Button } from "../Button/Button";
 import { animateScroll as scroll } from "react-scroll";
-
 export default function Logout() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -28,13 +27,17 @@ export default function Logout() {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+
   return (
     <div className="navbars">
       <div className="navbars-container containers">
         <Link
           to="/"
           className="navbars-logo "
-          onClick={(closeMobileMenu, toggleHome)}
+          onClick={() => {
+            closeMobileMenu();
+            toggleHome();
+          }}
         >
           <MdHome className="navbars-icon" />
           BASIC HOMES
@@ -47,7 +50,10 @@ export default function Logout() {
             <Link
               to="/"
               className="navs-links"
-              onClick={(closeMobileMenu, toggleHome)}
+              onClick={() => {
+                closeMobileMenu();
+                toggleHome();
+              }}
             >
               HOME
             </Link>
@@ -56,7 +62,10 @@ export default function Logout() {
             <Link
               to="/rooms"
               className="navs-links"
-              onClick={(closeMobileMenu, toggleHome)}
+              onClick={() => {
+                closeMobileMenu();
+                toggleHome();
+              }}
             >
               ROOMS
             </Link>
@@ -66,7 +75,10 @@ export default function Logout() {
             <Link
               to="/contact"
               className="navs-links"
-              onClick={(closeMobileMenu, toggleHome)}
+              onClick={() => {
+                closeMobileMenu();
+                toggleHome();
+              }}
             >
               CONTACT
             </Link>
@@ -76,7 +88,10 @@ export default function Logout() {
             <Link
               to="/aboutus"
               className="navs-links"
-              onClick={(closeMobileMenu, toggleHome)}
+              onClick={() => {
+                closeMobileMenu();
+                toggleHome();
+              }}
             >
               ABOUT US
             </Link>
@@ -89,7 +104,7 @@ export default function Logout() {
                     buttonStyle="btn--outline "
                     buttonSize="btn--large"
                     buttonColor="red"
-                    onClick={(closeMobileMenu, toggleHome)}
+                    onClick={closeMobileMenu}
                   >
                     <p className="move">LOGIN</p>
                   </Button>
@@ -99,7 +114,7 @@ export default function Logout() {
                     buttonStyle="btn--outline "
                     buttonSize="btn--large"
                     buttonColor="red"
-                    onClick={(closeMobileMenu, toggleHome)}
+                    onClick={closeMobileMenu}
                   >
                     <p className="move">SIGN UP</p>
                   </Button>
@@ -112,7 +127,7 @@ export default function Logout() {
                     buttonStyle="btn--outline "
                     buttonSize="btn--large"
                     buttonColor="red"
-                    onClick={(closeMobileMenu, toggleHome)}
+                    onClick={closeMobileMenu}
                   >
                     <p className="move">LOGIN</p>
                   </Button>
@@ -122,7 +137,7 @@ export default function Logout() {
                     buttonStyle="btn--outline "
                     buttonSize="btn--large"
                     buttonColor="red"
-                    onClick={(closeMobileMenu, toggleHome)}
+                    onClick={closeMobileMenu}
                   >
                     <p className="move">SIGNUP</p>
                   </Button>

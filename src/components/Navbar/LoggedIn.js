@@ -44,11 +44,7 @@ const LoggedIn = (props) => {
       </div>
 
       <div className="navbars-container containers">
-        <Link
-          to="/"
-          className="navbars-logo "
-          onClick={(closeMobileMenu, toggleHome)}
-        >
+        <Link to="/" className="navbars-logo " onClick={closeMobileMenu}>
           <MdHome className="navbars-icon" />
           BASIC HOMES
         </Link>
@@ -70,7 +66,10 @@ const LoggedIn = (props) => {
             <Link
               to="/"
               className="navs-links"
-              onClick={(closeMobileMenu, toggleHome)}
+              onClick={() => {
+                closeMobileMenu();
+                toggleHome();
+              }}
             >
               HOME
             </Link>
@@ -79,7 +78,10 @@ const LoggedIn = (props) => {
             <Link
               to="/rooms"
               className="navs-links"
-              onClick={(closeMobileMenu, toggleHome)}
+              onClick={() => {
+                closeMobileMenu();
+                toggleHome();
+              }}
             >
               ROOMS
             </Link>
@@ -88,7 +90,10 @@ const LoggedIn = (props) => {
             <Link
               to="/jobs"
               className="navs-links"
-              onClick={(closeMobileMenu, toggleHome)}
+              onClick={() => {
+                closeMobileMenu();
+                toggleHome();
+              }}
             >
               SERVICE CENTER
             </Link>
@@ -98,7 +103,10 @@ const LoggedIn = (props) => {
             <Link
               to="/contact"
               className="navs-links"
-              onClick={(closeMobileMenu, toggleHome)}
+              onClick={() => {
+                closeMobileMenu();
+                toggleHome();
+              }}
             >
               CONTACT
             </Link>
@@ -108,7 +116,10 @@ const LoggedIn = (props) => {
             <Link
               to="/aboutus"
               className="navs-links"
-              onClick={(closeMobileMenu, toggleHome)}
+              onClick={() => {
+                closeMobileMenu();
+                toggleHome();
+              }}
             >
               ABOUT US
             </Link>
