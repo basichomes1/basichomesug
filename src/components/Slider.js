@@ -49,8 +49,8 @@ export default class SimpleSlider extends Component {
     services2: [
       {
         icon: <FaBlackTie />,
-        title: "JOB CREATION",
-        info: "REGISTER YOUR JOB SKILLS",
+        title: "SERVICE CENTER",
+        info: "REGISTER YOUR  SKILLS",
       },
     ],
 

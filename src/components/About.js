@@ -9,7 +9,7 @@ function About() {
   return (
     <>
       <section className="about">
-        <Title title="ABOUT US" />
+        <Title title="ABOUT US" span="serviceColor" />
         <div className="abouty">
           <div className="image">
             <img src={about} alt="about" width="400px" height="400px" />
