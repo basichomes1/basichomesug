@@ -1,6 +1,7 @@
 .about {
   background: black;
   height: 100%;
+  padding-top: 90px;
 }
 
 .abouty {
@@ -9,7 +10,7 @@
   align-items: center;
   font-size: 10px;
   color: #f15a24;
-  padding: 20px;
+  padding: 90px;
 }
 
 .abouty span {
