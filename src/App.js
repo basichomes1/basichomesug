@@ -24,11 +24,9 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/project/:id" component={ProjectDetails} />
-
         <Route exact path="/create" component={CreateProject} />
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/rooms/" component={Rooms} />
@@ -37,7 +35,7 @@ function App() {
         <Route exact path="/contact/" component={Contact} />
         <Route exact path="/signin" component={SignIn} />
         <Route exact path="/signup" component={SignUp} />
-        <Route exact path="/create" component={CreateProject} />
+
         <Route component={Error} />
       </Switch>
     </BrowserRouter>

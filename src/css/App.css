@@ -372,7 +372,12 @@ h6 {
 /* single room*/
 
 .single-room {
-  padding: 5rem 0 0 0;
+  padding: 7rem 0 0 0;
+  background: #662d91;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 5px;
+  font-size: 20px;
 }
 .single-room-images {
   width: 80vw;

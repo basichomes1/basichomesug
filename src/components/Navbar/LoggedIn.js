@@ -32,7 +32,7 @@ const LoggedIn = (props) => {
   return (
     <div className="navbars">
       <div>
-        <NavLink to="/profile" className=" btn-floating ">
+        <NavLink to="/profile/" className=" btn-floating ">
           <p>{profile.initials}</p>
         </NavLink>
       </div>
