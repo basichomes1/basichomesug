@@ -31,14 +31,30 @@ const LoggedIn = (props) => {
 
   return (
     <div className="navbars">
+      <div>
+        <NavLink to="jobs" className=" btn-floating ">
+          <p>{profile.initials}</p>
+        </NavLink>
+      </div>
+
       <div className="navbars-container containers">
         <Link to="/" className="navbars-logo " onClick={closeMobileMenu}>
           <MdHome className="navbars-icon" />
           BASIC HOMES
         </Link>
+
         <div className="menu-icon" onClick={handleClick}>
-          {click ? <FaTimes /> : <FaBars />}
+          {click ? (
+            <>
+              <FaTimes />
+            </>
+          ) : (
+            <>
+              <FaBars />
+            </>
+          )}
         </div>
+
         <ul className={click ? "navs-menu active " : "navs-menu"}>
           <li className="navs-item">
             <Link to="/" className="navs-links" onClick={closeMobileMenu}>
@@ -54,11 +70,6 @@ const LoggedIn = (props) => {
             <Link to="/jobs" className="navs-links" onClick={closeMobileMenu}>
               SERVICE CENTER
             </Link>
-          </li>
-          <li>
-            <NavLink to="/" className=" btn-floating ">
-              <p>{profile.initials}</p>
-            </NavLink>
           </li>
 
           <li className="navs-btn">

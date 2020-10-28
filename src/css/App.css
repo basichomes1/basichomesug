@@ -685,6 +685,34 @@ a {
   vertical-align: middle;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
+  z-index: 200;
+}
+
+@media screen and (max-width: 960px) {
+  .btn-floating {
+    margin-right: -40px;
+    margin-top: -14px;
+    margin-left: 10px;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    line-height: 40px;
+    padding: 0;
+    background-color: #31a626;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+  }
 }
 
 .btn-floating p {

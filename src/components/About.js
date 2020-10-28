@@ -1,12 +1,10 @@
 import React from "react";
 import logo from "../images/svg/logo.svg";
 import "../css/About.css";
-import Loading from "./Loading";
 
 function About() {
   return (
     <section className="about">
-      <Loading />
       <div className="abouty">
         <h1>ABOUT US SECTION</h1>
       </div>
