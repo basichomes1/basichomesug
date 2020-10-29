@@ -360,7 +360,7 @@ h6 {
   transform: translate(-20%, -120%) scale(1);
 }
 .room-info {
-  background: var(--orane);
+  background: var(--orange);
   text-transform: capitalize;
   padding: 0.7rem 0;
   text-align: center;
