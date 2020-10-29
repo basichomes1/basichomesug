@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
+import Footer from "../components/dashboard/Footer";
 import { connect } from "react-redux";
 
 import { Redirect } from "react-router-dom";
-import StyledHero from "../components/StyledHero";
-import Hero from "../components/Hero";
-import Banner from "../components/Banner";
+import Hero from "../components/dashboard/Hero";
+import Banner from "../components/dashboard/Banner";
+import StyledHero from "../components/Extras/StyledHero";
 
 class Job extends Component {
   render() {

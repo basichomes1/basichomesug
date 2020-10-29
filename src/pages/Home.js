@@ -1,25 +1,13 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Banner from "../components/Banner";
-import { Link } from "react-router-dom";
-
-import About from "../components/About";
-import Footer from "../components/Footer";
-import FeaturedRooms from "../components/FeaturedRooms";
-import SimpleSlider from "../components/Slider";
+import Footer from "../components/dashboard/Footer";
+import FeaturedRooms from "../components/Rooms/FeaturedRooms";
+import SimpleSlider from "../components/Extras/Slider";
+import Showcase from "../components/dashboard/Showcase";
 
 export default function Home() {
   return (
     <>
-      <Hero>
-        <Banner title="BASIC HOMES UG" subtitle="LET'S DO THE HUNTING">
-          <Link to="/rooms" className="btn-primary">
-            OUR ROOMS
-          </Link>
-        </Banner>
-      </Hero>
-
-      <About />
+      <Showcase />
       <SimpleSlider />
       <FeaturedRooms />
       <Footer />

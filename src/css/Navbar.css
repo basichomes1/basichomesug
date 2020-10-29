@@ -1,7 +1,7 @@
 :root {
   --primaryColor: #af9a7d;
   --mainWhite: #fff;
-  --purple: #662d91;
+  --purple: #4b0082;
   --orange: #f15a24;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -11,6 +11,9 @@
   --mainSpacing: 3px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --shadowDark: #d9dde6;
+  --background: #e4e9f2;
+  --shadowLight: #eff5fe;
 }
 
 .navbars {
@@ -75,6 +78,7 @@
 
 .navs-item:hover {
   border-bottom: 2px solid #f00946;
+  color: white;
 }
 
 .navs-links {
@@ -84,6 +88,10 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
+}
+
+.navs-links:hover {
+  color: white;
 }
 
 .fa-bars {
@@ -107,10 +115,10 @@
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
-    border-top: 8px solid #662d91;
-    border-left: 8px solid #f15a24;
-    border-right: 8px solid #f15a24;
-    border-bottom: 8px solid #f15a24;
+    border-top: 8px solid var(--purple);
+    border-left: 8px solid var(--orange);
+    border-right: 8px solid var(--orange);
+    border-bottom: 8px solid var(--orange);
     border-top-right-radius: 70px;
     border-top-left-radius: 70px;
   }
@@ -137,7 +145,7 @@
   }
 
   .navs-links:hover {
-    color: #e4d7db;
+    color: white;
     transform: scale(1.2);
     transition: all 0.3s ease;
   }

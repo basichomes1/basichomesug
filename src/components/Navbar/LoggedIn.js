@@ -6,7 +6,6 @@ import { MdHome } from "react-icons/md";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../../css/Navbar.css";
 import { connect } from "react-redux";
-
 import { animateScroll as scroll } from "react-scroll";
 
 const LoggedIn = (props) => {
@@ -44,9 +43,15 @@ const LoggedIn = (props) => {
       </div>
 
       <div className="navbars-container containers">
-        <Link to="/" className="navbars-logo " onClick={closeMobileMenu}>
+        <Link
+          to="/"
+          className="navbars-logo "
+          onClick={() => {
+            closeMobileMenu();
+            toggleHome();
+          }}
+        >
           <MdHome className="navbars-icon" />
-          BASIC HOMES
         </Link>
 
         <div className="menu-icon" onClick={handleClick}>

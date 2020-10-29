@@ -1,10 +1,10 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Banner from "../components/Banner";
+import Hero from "../components/dashboard/Hero";
+import Banner from "../components/dashboard/Banner";
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
-import RoomsContainer from "../components/RoomsContainer";
-import ScrollToTop from "../components/ScrollToTop";
+import Footer from "../components/dashboard/Footer";
+import RoomsContainer from "../components/Rooms/RoomsContainer";
+import ScrollToTop from "../components/Extras/ScrollToTop";
 
 export default function Rooms() {
   return (

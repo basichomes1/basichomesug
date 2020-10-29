@@ -40,7 +40,6 @@ export default function Logout() {
           }}
         >
           <MdHome className="navbars-icon" />
-          BASIC HOMES
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           {click ? <FaTimes /> : <FaBars />}

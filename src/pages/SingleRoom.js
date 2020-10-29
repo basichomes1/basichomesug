@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import defaultBcg from "../images/bg/bg.jpg";
-
-import Banner from "../components/Banner";
+import Banner from "../components/dashboard/Banner";
 import { Link } from "react-router-dom";
 import { RoomContext } from "../Context";
-import StyledHero from "../components/StyledHero";
+import StyledHero from "../components/Extras/StyledHero";
 export default class SingleRoom extends Component {
   constructor(props) {
     super(props);

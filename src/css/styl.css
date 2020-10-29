@@ -11,7 +11,7 @@
 .hero {
   background: url("../images/bg/basic.png");
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: 150%;
   display: flex;
 }
 
@@ -22,12 +22,12 @@
 
 .login {
   border-radius: 25px;
-  padding: 1.5rem;
+  padding: 1rem;
   box-shadow: 8px 8px 15px var(--shadowDark), -8px -8px 15px var(--shadowLight);
   background-color: #662d91;
-  transform: scale(0.85);
+  transform: scale(0.75);
   position: fixed;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 input {

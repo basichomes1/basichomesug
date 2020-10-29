@@ -10,7 +10,7 @@ body {
 :root {
   --primaryColor: #af9a7d;
   --mainWhite: #fff;
-  --purple: #662d91;
+  --purple: #4b0082;
   --orange: #f15a24;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -20,6 +20,9 @@ body {
   --mainSpacing: 3px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --shadowDark: #d9dde6;
+  --background: #e4e9f2;
+  --shadowLight: #eff5fe;
 }
 /* globals */
 input[type="range"] {
@@ -86,16 +89,16 @@ h6 {
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
   color: lightgrey;
-  background: #662d91;
+  background: var(--purple);
   padding: 0.4rem 0.9rem;
-  border-bottom: 1px solid #f15a24;
+  border-bottom: 1px solid var(--orange);
   border-radius: 20px;
   transition: var(--mainTransition);
   text-transform: uppercase;
   cursor: pointer;
 }
 .btn-primary:hover {
-  background: #f15a24;
+  background: var(--orange);
   color: black;
 }
 .loading {
@@ -180,6 +183,7 @@ h6 {
 .feature,
 .serviceColor {
   text-align: center;
+  margin-top: -50px;
   margin-bottom: 2rem;
 }
 .section-title h4,
@@ -197,7 +201,7 @@ h6 {
   width: 10rem;
   height: 5px;
   margin: 0 auto;
-  background: #f15a24;
+  background: var(--orange);
 }
 .serviceColor {
   color: white;
@@ -214,7 +218,7 @@ h6 {
 }
 
 .feature div {
-  background: #662d91;
+  background: var(--purple);
 }
 /* end of Title */
 
@@ -222,11 +226,11 @@ h6 {
 
 .services {
   padding: 5rem 1rem;
-  background: #662d91;
+  background: var(--purple);
   text-align: center;
 }
 .services-center {
-  background: #662d91;
+  background: var(--purple);
   width: 90vw;
   margin: 0 auto;
   display: flex;
@@ -237,16 +241,16 @@ h6 {
 }
 
 .services-article {
-  background: #f15a24;
+  background: var(--orange);
   padding: 50px;
   width: 100%;
   height: 290px;
 
-  box-shadow: 2px 2px 50px #662d91;
+  box-shadow: 2px 2px 50px var(--purple);
 }
 .services span {
   display: inline-block;
-  color: #662d91;
+  color: var(--purple);
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   margin-top: 1rem;
@@ -343,7 +347,7 @@ h6 {
   transition: all 0.3s linear;
 }
 .img-container:hover {
-  background: #f15a24;
+  background: var(--orange);
 }
 .img-container:hover img {
   opacity: 1.8;
@@ -356,24 +360,25 @@ h6 {
   transform: translate(-20%, -120%) scale(1);
 }
 .room-info {
-  background: #f15a24;
+  background: var(--orane);
   text-transform: capitalize;
   padding: 0.7rem 0;
   text-align: center;
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
   position: relative;
+  color: white;
 }
 
 .roomslist {
-  background: #662d91;
+  background: var(--purple);
 }
 /* end of room  */
 /* single room*/
 
 .single-room {
   padding: 7rem 0 0 0;
-  background: #662d91;
+  background: var(--purple);
   color: #fff;
   letter-spacing: 1px;
   line-height: 5px;
@@ -452,6 +457,7 @@ h6 {
 /* roomlist */
 .roomslist {
   padding: 5rem 0;
+  color: white;
 }
 .roomslist-center {
   width: 80vw;
@@ -477,7 +483,7 @@ h6 {
 /*  rooms fitler*/
 .filter-container {
   padding: 4rem 0;
-  background: #f15a24;
+  background: var(--orange);
 }
 .filter-form {
   padding: 15px;
@@ -509,16 +515,6 @@ h6 {
   color: black;
 }
 
-input[type="reset"] {
-  background-color: red;
-  color: red;
-  height: 60px;
-  font-weight: bold;
-  transition: all 0.4s ease-in-out;
-}
-input[type="reset"]:hover {
-  background-color: #202020;
-}
 .size-inputs {
   display: flex;
 }
@@ -626,7 +622,6 @@ input[type="range"]:focus::-ms-fill-upper {
 
 .slides {
   background: var(--orange);
-
   padding: 20px;
   margin: 20px;
 }
@@ -635,12 +630,6 @@ input[type="range"]:focus::-ms-fill-upper {
 
 * {
   font-family: "Nunito Sans", sans-serif;
-}
-
-:root {
-  --shadowDark: #d9dde6;
-  --background: #e4e9f2;
-  --shadowLight: #eff5fe;
 }
 
 .hero-body {
@@ -663,13 +652,13 @@ a {
 
 /* LOADING FOR AUTHENTIFICATION SCREEN FIREBASE  */
 .centers {
-  background: #662d91;
+  background: var(--purple);
   height: 100vh;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding-top: 200px;
-  color: #f15a24;
+  color: var(--orange);
   font-size: 20px;
 }
 
@@ -684,7 +673,7 @@ a {
   height: 60px;
   line-height: 40px;
   padding: 0;
-  background-color: #f15a24;
+  background-color: var(--orange);
   border-radius: 50%;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
@@ -710,7 +699,7 @@ a {
     height: 60px;
     line-height: 40px;
     padding: 0;
-    background-color: #f15a24;
+    background-color: var(--orange);
     color: #efebf1;
     border-radius: 50%;
     -webkit-transition: background-color 0.3s;
@@ -735,4 +724,8 @@ a {
 
 .btn-floating:before {
   border-radius: 0;
+}
+
+.link-color {
+  color: black;
 }
