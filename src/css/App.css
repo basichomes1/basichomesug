@@ -662,6 +662,11 @@ a {
   font-size: 20px;
 }
 
+.centers-img {
+  width: 100px;
+  height: 100px;
+}
+
 .btn-floating {
   display: inline-block;
 

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import Title from "./Title";
 import { FaBlackTie, FaWarehouse } from "react-icons/fa";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -134,7 +134,7 @@ export default class SimpleSlider extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            fade: true,
+
             autoplay: true,
             autoplaySpeed: 3000,
             cssEase: "linear",
@@ -147,7 +147,7 @@ export default class SimpleSlider extends Component {
       <div className="services">
         <Title title="SERVICES" span="serviceColor" />
         <Slider {...settings}>
-          <Link to="/rooms" className="link-color">
+          <a href="/rooms" className="link-color">
             <div>
               {this.state.services1.map((item, index) => {
                 return (
@@ -159,9 +159,9 @@ export default class SimpleSlider extends Component {
                 );
               })}
             </div>
-          </Link>
+          </a>
 
-          <Link to="/jobs" className="link-color">
+          <a href="/jobs" className="link-color">
             <div>
               {this.state.services2.map((item, index) => {
                 return (
@@ -173,7 +173,7 @@ export default class SimpleSlider extends Component {
                 );
               })}
             </div>
-          </Link>
+          </a>
         </Slider>
       </div>
     );
