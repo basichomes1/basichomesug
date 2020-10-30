@@ -256,3 +256,21 @@
 .p-5 {
   padding: 4rem;
 }
+
+
+/* LOADING FOR AUTHENTIFICATION SCREEN FIREBASE  */
+.centers {
+  background: var(--purple);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 200px;
+  color: var(--orange);
+  font-size: 20px;
+}
+
+.centers-img {
+  width: 100px;
+  height: 100px;
+}

@@ -3,7 +3,7 @@ import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { signUp } from "../../store/actions/authActions";
 import logo from "../../images/svg/logo.svg";
-import "../../css/styl.css";
+import "../../css/style.css";
 
 class SignUp extends Component {
   state = {
