@@ -1,0 +1,42 @@
+/* Title */
+.section-title,
+.feature,
+.serviceColor {
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 2rem;
+}
+.section-title h4,
+.feature h4,
+.serviceColor {
+  font-size: 2rem;
+  letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.section-title div,
+.feature div {
+  width: 10rem;
+  height: 5px;
+  margin: 0 auto;
+  background: var(--orange);
+}
+.feature div {
+  background: var(--purple);
+}
+.serviceColor {
+  color: white;
+}
+.serviceColor h4 {
+  margin-bottom: 0.8rem;
+}
+.serviceColor div {
+  width: 10rem;
+  height: 5px;
+  margin: -10px auto;
+  background: #24f179;
+}
+
+/* end of Title */

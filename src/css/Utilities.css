@@ -17,12 +17,12 @@
   background: var(--purple);
   border: 1px solid #f15a24;
   border-radius: 70px;
-  filter: drop-shadow(10px 10px 10px #f15a24);
-  box-shadow: 1px 50px 20px #000000, 0px 0px 1px #0d0d0d;
+  filter: drop-shadow(1px 1px 1px #f15a24);
+  box-shadow: 1px 15px 2px #000000, 0px 0px 1px #0d0d0d;
 }
 
 #root {
-  background: linear-gradient(rgba(24, 24, 24, 0.96), rgba(24, 24, 24, 1.86)),
+  background: linear-gradient(rgba(222, 64, 24, 1.46), rgba(24, 24, 24, 1.86)),
     url("../images/bg/Taieri.png");
 }
 .space {
@@ -30,12 +30,16 @@
   margin-bottom: 20px;
 }
 .card {
-  background: var(--light-color);
-  color: #f15a24;
+  background: var(--orange);
+  color: #19181a;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  margin: 10px;
+  margin-top: 1px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-family: monospace;
 }
 
 .btnn {
@@ -61,7 +65,7 @@
 .bg-primary,
 .btn-primary {
   background-color: var(--primary-color);
-  color: #fff;
+  color: #f00946;
 }
 
 .bg-secondary,
@@ -158,9 +162,9 @@
 .flex {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
+
+  height: 100%;
+  transform: scale(0.8);
 }
 
 .grid {

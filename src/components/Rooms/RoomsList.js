@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Room from "./Room";
+import "../../css/Rooms.css";
 import Loading from "../Extras/Loading";
 import { Button } from "../Button/Button";
 

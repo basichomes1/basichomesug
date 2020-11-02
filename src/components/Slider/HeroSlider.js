@@ -8,9 +8,9 @@ export default class HeroSlider extends Component {
     return (
       <div className="heroslider">
         <Carousel breakPoints={breakPoints}>
-          <Herocontent slideTitle="FIRST DISPLAY" />
-          <Herocontent slideTitle="SECOND DISPLAY" />
-          <Herocontent slideTitle="THIRD DISPLAY" />
+          <Herocontent slideTitle="BASIC HOMES INTRO" />
+          <Herocontent slideTitle="BASIC HOMES FEATURES" />
+          <Herocontent slideTitle="BASIC HOMES CERTIFICATION" />
         </Carousel>
       </div>
     );

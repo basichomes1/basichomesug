@@ -7,6 +7,7 @@ import { Redirect } from "react-router-dom";
 import Hero from "../components/dashboard/Hero";
 import Banner from "../components/dashboard/Banner";
 import StyledHero from "../components/Extras/StyledHero";
+import RegisterSkill from "../components/ServiceCenter/RegisterSkill";
 
 class Job extends Component {
   render() {
@@ -24,6 +25,7 @@ class Job extends Component {
             </Link>
           </Banner>
         </Hero>
+        <RegisterSkill />
         <StyledHero />
         <Footer />
       </>

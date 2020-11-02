@@ -4,7 +4,6 @@ import Banner from "../components/dashboard/Banner";
 import { Link } from "react-router-dom";
 import Footer from "../components/dashboard/Footer";
 import { connect } from "react-redux";
-
 import { Redirect } from "react-router-dom";
 
 class Profile extends Component {

@@ -54,12 +54,13 @@
   font-weight: 600;
   padding-right: 100px;
   display: flex;
-
+  z-index: 20000;
   align-items: center;
 }
 
 .navbars-icon {
-  margin-right: 0.5rem;
+  margin-right: 3.5rem;
+  font-size: 50px;
 }
 
 .navs-menu {
@@ -193,7 +194,6 @@
 
 .btn-floating {
   display: inline-block;
-
   color: #efebf1;
   position: relative;
   overflow: hidden;
@@ -233,11 +233,10 @@
 
 @media screen and (max-width: 960px) {
   .btn-floating {
-    margin-right: -40px;
+    margin-right: -90px;
     margin-top: -30px;
     margin-left: 5px;
     display: inline-block;
-
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -260,6 +259,7 @@
     text-transform: uppercase;
     margin-top: -5px;
     margin-left: 4px;
+
     font-size: 10px;
   }
 }

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import Title from "./Title";
-import { FaBlackTie, FaWarehouse } from "react-icons/fa";
-// import { Link } from "react-router-dom";
+import Title from "../Extras/Title";
+import { FaWarehouse } from "react-icons/fa";
+import "../../css/Slider.css";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -37,21 +37,13 @@ function SamplePrevArrow(props) {
     />
   );
 }
-
-export default class SimpleSlider extends Component {
+class SliderNoUser extends Component {
   state = {
-    services1: [
+    services: [
       {
         icon: <FaWarehouse />,
         title: "HOUSE RESERVATIONS",
         info: "BOOK FOR A ROOM ONLINE",
-      },
-    ],
-    services2: [
-      {
-        icon: <FaBlackTie />,
-        title: "SERVICE CENTER",
-        info: "REGISTER YOUR  SKILLS",
       },
     ],
   };
@@ -59,15 +51,12 @@ export default class SimpleSlider extends Component {
     const settings = {
       dots: true,
       dotsClass: "slick-dots slick-thumb",
-
       infinite: true,
-
       speed: 800,
       slidesToShow: 1,
       slidesToScroll: 1,
       className: "slides",
       initialSlide: 0,
-
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
       appendDots: (dots) => (
@@ -87,7 +76,7 @@ export default class SimpleSlider extends Component {
         {
           breakpoint: 1544,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,
             dots: true,
@@ -134,7 +123,6 @@ export default class SimpleSlider extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-
             autoplay: true,
             autoplaySpeed: 3000,
             cssEase: "linear",
@@ -149,21 +137,7 @@ export default class SimpleSlider extends Component {
         <Slider {...settings}>
           <a href="/rooms" className="link-color">
             <div>
-              {this.state.services1.map((item, index) => {
-                return (
-                  <article key={index} className="services-article">
-                    <span>{item.icon}</span>
-                    <h5>{item.title}</h5>
-                    <p>{item.info}</p>
-                  </article>
-                );
-              })}
-            </div>
-          </a>
-
-          <a href="/jobs" className="link-color">
-            <div>
-              {this.state.services2.map((item, index) => {
+              {this.state.services.map((item, index) => {
                 return (
                   <article key={index} className="services-article">
                     <span>{item.icon}</span>
@@ -179,3 +153,5 @@ export default class SimpleSlider extends Component {
     );
   }
 }
+
+export default SliderNoUser;

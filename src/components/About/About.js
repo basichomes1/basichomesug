@@ -1,13 +1,12 @@
 import React from "react";
-import Footer from "./Footer";
+import Footer from "../dashboard/Footer";
 import "../../css/Showcase.css";
 import "../../css/Utilities.css";
-// import sponsor from "../../images/svg/logo2.svg";
+import "../../css/About.css";
 import Title from "../Extras/Title";
-import Hero from "./Hero";
-import Banner from "./Banner";
+import Hero from "../dashboard/Hero";
+import Banner from "../dashboard/Banner";
 import { Link } from "react-router-dom";
-
 import { Button } from "../Button/Button";
 import Carousel from "react-elastic-carousel";
 import AboutTeam from "./AboutTeam";
@@ -24,36 +23,45 @@ function AboutUs() {
         </Banner>
       </Hero>
 
-      <section className="features-main my-2">
-        <div className="container grid grid-3 my-3">
+      <section className="features-main my-1">
+        <div className="container grid grid-1 ">
           <div className="card flex">
-            <Title title="MISSION " />
-
+            <Title title="MISSION " span=" abouttitle mission" />
             <p>
               BASIC HOMES UG is an online platform with the major Aim of linking
               a student/tenant to a House Owner/ Hostel Manager in the quickest
               way possible and turn students skills to money by offering their
-              services to individuals in need of it. We Operate from districts
-              of uganda but coordinating to help students and migrants in all
-              parts of the country and extend to other parts of the East African
-              Commuinity. To provide unique , outstanding and trustworthy level
-              of services with adequate expertise in accomodation services as
-              well as offering customers most compelling, best , comfortable and
-              happy homes
+              services to individuals in need of it. We Operate from central
+              districts of uganda but coordinating to help students and migrants
+              in all parts of the country and extend to other parts of the East
+              African Commuinity. To provide unique , outstanding and
+              trustworthy level of services with adequate expertise in
+              accomodation services as well as offering customers most
+              compelling, best , comfortable and happy homes
             </p>
           </div>
+        </div>
+      </section>
 
+      <section className="features-main my-2">
+        <div className="container grid grid-1 ">
           <div className="card flex">
-            <Title title="VISION " />
-
+            <Title title="VISION " span=" abouttitle mission" />
             <p>
               To be the quickest leading company in extending professional and
               affordable HOUSE MANAGEMENT SERVICES.
             </p>
           </div>
-          <div className="card flex">
-            <Title title="TERMS AND CONDITIONS " />
+        </div>
+      </section>
 
+      <section className="features-main my-2">
+        <div className="container grid grid-1 ">
+          <div className="card flex">
+            <Title
+              title="TERMS AND CONDITIONS "
+              span=" abouttitle mission terms"
+            />
             <p>
               In order to Conduct business and provide the perfect service, we
               have laid down Specific guidelines and conditions to put into
