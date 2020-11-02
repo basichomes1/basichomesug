@@ -35,6 +35,7 @@ function App() {
         <Route exact path="/aboutus/" component={AboutUs} />
         <Route exact path="/signin" component={SignIn} />
         <Route exact path="/signup" component={SignUp} />
+
         <Route component={Error} />
       </Switch>
     </BrowserRouter>

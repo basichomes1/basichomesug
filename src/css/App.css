@@ -278,7 +278,7 @@ h6 {
 /* featured rooms */
 
 .featured-rooms {
-  padding: 5rem 0;
+  padding-top: 10rem;
   background: #8d533e;
 }
 .featured-rooms-center {
@@ -650,6 +650,51 @@ a {
   font-weight: 600;
 }
 
+.roomListLoading {
+  color: white;
+  width: 200px;
+  height: 20px;
+}
 
+.roomloadingdiv {
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
+  margin-top: 5%;
+}
 
+.heroslider {
+  margin-top: 13vh;
+  height: 80vh;
+  background: url("../images/bg/basicbig.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
+.ogu {
+  height: 80vh;
+  width: 100vw;
+  color: rgb(94, 28, 66);
+  background: rgba(95, 167, 115, 0.9);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.aboutteam {
+  background: red;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.aboutSlider {
+  margin-top: 100px;
+}

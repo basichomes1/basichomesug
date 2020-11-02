@@ -48,7 +48,7 @@ export default class SingleRoom extends Component {
     return (
       <>
         <StyledHero img={mainImg || this.state.defaultBcg}>
-          <Banner title={`${name.toUpperCase()} `}>
+          <Banner title={`${name} `}>
             <Link to="/rooms" className="btn-primary">
               back to rooms
             </Link>
@@ -79,17 +79,17 @@ export default class SingleRoom extends Component {
 
             <article className="info">
               <h3>LOCATION</h3>
-              <h5>{location.toUpperCase()}</h5>
+              <h5 style={{ textTransform: "uppercase" }}>{location}</h5>
             </article>
 
             <article className="info">
               <h3>ACCOMODATION TYPE</h3>
-              <p>{accomodation.toUpperCase()}</p>
+              <p style={{ textTransform: "uppercase" }}>{accomodation}</p>
             </article>
 
             <article className="info">
               <h3>ROOM TYPE</h3>
-              <p>{type.toUpperCase()}</p>
+              <p style={{ textTransform: "uppercase" }}>{type}</p>
             </article>
           </div>
         </section>
@@ -98,7 +98,9 @@ export default class SingleRoom extends Component {
           <h6>FEATURES </h6>
           <ul className="extras">
             {extras.map((item, index) => (
-              <li key={index}>- {item.toUpperCase()}</li>
+              <li key={index} style={{ textTransform: "uppercase" }}>
+                - {item}
+              </li>
             ))}
           </ul>
         </section>

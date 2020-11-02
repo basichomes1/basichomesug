@@ -67,7 +67,7 @@ blockquote {
 
 /* Showcase */
 .showcase {
-  margin-top: 70px;
+  margin-top: -50px;
   height: 400px;
   background-color: var(--primary-color);
   color: #fff;

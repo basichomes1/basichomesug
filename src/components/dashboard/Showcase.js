@@ -4,10 +4,22 @@ import "../../css/Utilities.css";
 import Hero from "./Hero";
 import Banner from "./Banner";
 import { Link } from "react-router-dom";
+import SimpleSlider from "../Extras/Slider";
+import FeaturedRooms from "../Rooms/FeaturedRooms";
+import HeroSlider from "./HeroSlider";
 
 export default function Showcase() {
   return (
     <>
+      <HeroSlider />
+      <Hero>
+        <Banner subtitle="LET'S DO THE HUNTING">
+          <Link to="/rooms" className="btn-primary">
+            OUR ROOMS
+          </Link>
+        </Banner>
+      </Hero>
+      <SimpleSlider />
       <section className="showcase">
         <div className="container grid">
           <div className="showcase-text">
@@ -59,14 +71,7 @@ export default function Showcase() {
           </div>
         </div>
       </section>
-
-      <Hero>
-        <Banner subtitle="LET'S DO THE HUNTING">
-          <Link to="/rooms" className="btn-primary">
-            OUR ROOMS
-          </Link>
-        </Banner>
-      </Hero>
+      <FeaturedRooms />
     </>
   );
 }

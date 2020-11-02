@@ -10,6 +10,7 @@ export default class RoomProvider extends Component {
     sortedRooms: [],
     featuredRooms: [],
     loading: true,
+
     type: "all",
     capacity: 1,
     price: 0,
@@ -19,7 +20,7 @@ export default class RoomProvider extends Component {
     accomodation: "all",
     location: "all",
   };
-  // GETDATA
+  GETDATA;
   getData = async () => {
     try {
       let response = await Client.getEntries({
@@ -76,6 +77,7 @@ export default class RoomProvider extends Component {
       this.filterRooms
     );
   };
+
   filterRooms = () => {
     let { rooms, type, capacity, price, accomodation, location } = this.state;
     let tempRooms = [...rooms];
