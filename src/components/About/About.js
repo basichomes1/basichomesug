@@ -82,24 +82,12 @@ function AboutUs() {
       </div>
 
       <div className="space">
-        <Title title="SPONSORS  " span="serviceColor" />
+        <Title title="PARTNERS  " span="serviceColor" />
       </div>
       <section className="languages">
         <div className="container flex">
           <div className="card">
-            <h4>SPONSOR</h4>
-            {/* <img src={sponsor} alt="sponsor" /> */}
-          </div>
-          <div className="card">
-            <h4>PARTNER</h4>
-            {/* <img src={sponsor} alt="sponsor" /> */}
-          </div>
-          <div className="card">
-            <h4>SPONSOR</h4>
-            {/* <img src={sponsor} alt="sponsor" /> */}
-          </div>
-          <div className="card">
-            <h4>PARTNER</h4>
+            <h2>WORKVILLE ENTERPRISE</h2>
             {/* <img src={sponsor} alt="sponsor" /> */}
           </div>
         </div>
