@@ -13,7 +13,7 @@
 }
 
 .abouttitle {
-  color: #f00946;
+  color: #e9e1e3;
   text-align: center;
   height: 5px;
 }
@@ -22,7 +22,7 @@
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
   margin-bottom: -0.4rem;
-  color: #f00946;
+  color: #e9e1e3;
 }
 
 .abouttitle div {
