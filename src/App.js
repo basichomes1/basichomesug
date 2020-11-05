@@ -22,29 +22,22 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="App">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-12 px-0">
-              <Navbar />
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/project/:id" component={ProjectDetails} />
-                <Route exact path="/create" component={CreateProject} />
-                <Route exact path="/profile" component={Profile} />
-                <Route exact path="/rooms/" component={Rooms} />
-                <Route exact path="/rooms/:slug" component={SingleRoom} />
-                <Route exact path="/jobs/" component={Jobs} />
-                <Route exact path="/contact/" component={Contact} />
-                <Route exact path="/aboutus/" component={AboutUs} />
-                <Route exact path="/signin" component={SignIn} />
-                <Route exact path="/signup" component={SignUp} />
-                <Route component={Error} />
-              </Switch>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/project/:id" component={ProjectDetails} />
+        <Route exact path="/create" component={CreateProject} />
+        <Route exact path="/profile" component={Profile} />
+        <Route exact path="/rooms/" component={Rooms} />
+        <Route exact path="/rooms/:slug" component={SingleRoom} />
+        <Route exact path="/jobs/" component={Jobs} />
+        <Route exact path="/contact/" component={Contact} />
+        <Route exact path="/aboutus/" component={AboutUs} />
+        <Route exact path="/signin" component={SignIn} />
+        <Route exact path="/signup" component={SignUp} />
+        <Route component={Error} />
+      </Switch>
     </BrowserRouter>
   );
 }
