@@ -15,7 +15,7 @@ function AboutUs() {
   const breakPoints = [{ width: 1, itemsToShow: 1 }];
   return (
     <>
-      <Hero>
+      <Hero hero="roomsHero">
         <Banner title="ABOUT US" subtitle="">
           <Link to="/rooms" className="btn-primary">
             OUR ROOMS
@@ -30,14 +30,14 @@ function AboutUs() {
             <p>
               BASIC HOMES UG is an online platform with the major Aim of linking
               a student/tenant to a House Owner/ Hostel Manager in the quickest
-              way possible and turn students skills to money by offering their
+              way possible and turn student's skills to money by offering their
               services to individuals in need of it. We Operate from central
               districts of uganda but coordinating to help students and migrants
               in all parts of the country and extend to other parts of the East
-              African Commuinity. To provide unique , outstanding and
-              trustworthy level of services with adequate expertise in
-              accomodation services as well as offering customers most
-              compelling, best , comfortable and happy homes
+              African Community. To provide unique , outstanding and trustworthy
+              level of services with adequate expertise in accomodation services
+              as well as offering customers most compelling, best , comfortable
+              and happy homes
             </p>
           </div>
         </div>
@@ -87,8 +87,9 @@ function AboutUs() {
       <section className="languages">
         <div className="container flex">
           <div className="card">
-            <h2>WORKVILLE ENTERPRISE</h2>
-            {/* <img src={sponsor} alt="sponsor" /> */}
+            <a href="https://workville.netlify.app/">
+              <h2>WORKVILLE ENTERPRISE</h2>
+            </a>
           </div>
         </div>
       </section>

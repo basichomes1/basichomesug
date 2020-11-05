@@ -7,7 +7,7 @@ import Footer from "../components/dashboard/Footer";
 export default function Contact() {
   return (
     <>
-      <Hero>
+      <Hero hero="roomsHero">
         <Banner title="CONTACT US" subtitle="">
           <Link to="/rooms" className="btn-primary">
             OUR ROOMS

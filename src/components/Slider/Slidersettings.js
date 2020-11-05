@@ -20,7 +20,7 @@ export const settings = {
     <div
       style={{
         backgroundColor: "#f15a24",
-        borderRadius: "1px",
+        borderRadius: "100px",
         padding: "1px",
         marginTop: "2px",
         marginLeft: "-20px",
