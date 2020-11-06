@@ -1,0 +1,57 @@
+.homehero {
+  min-height: 60vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+/* End of Hero */
+/* Banner */
+.Homebanner {
+  display: inline-block;
+  background: rgba(100, 0, 0, 0.8);
+  color: var(--mainWhite);
+  padding: 80px auto;
+  margin: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  height: 100%;
+  border: 3px solid white;
+  border-width: 1px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 30%;
+}
+.Homebanner h1 {
+  font-size: 2.5rem;
+  padding: 20px;
+}
+.Homebanner div {
+  width: 10rem;
+  height: 5px;
+  background: #f15a24;
+  margin: 1.7rem auto;
+}
+.Homebanner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 576px) {
+  .Homebanner {
+    padding: 2rem 3rem;
+  }
+  .Homebanner h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .Homebanner {
+    padding: 2rem 6rem;
+  }
+  .Homebanner h1 {
+    font-size: 4rem;
+  }
+}
+/* End of Banner */

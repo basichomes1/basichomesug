@@ -32,7 +32,7 @@ class SignUp extends Component {
           <div className="login">
             <img src={logo} width="325px" alt="logo" />
 
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} style={{ color: "white" }}>
               <div className="field">
                 <div className="control">
                   <label htmlFor="email">EMAIL</label>
@@ -108,7 +108,14 @@ class SignUp extends Component {
             <nav className="level">
               <div className="level-item has-text-centered">
                 <div>
-                  <a href="/signin">ALREADY HAVE AN ACCOUNT?</a>
+                  <p style={{ color: "gold", fontSize: "20px" }}>
+                    Already a user?
+                  </p>
+                  <a href="/signin">
+                    <span style={{ color: "red", fontSize: "20px" }}>
+                      CLICK HERE
+                    </span>
+                  </a>
                 </div>
               </div>
             </nav>

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import Title from "../Extras/Title";
 import { FaBlackTie, FaWarehouse } from "react-icons/fa";
-import "../../css/Slider.css";
+
 import { settings } from "./Slidersettings";
 
 class SliderNoUser extends Component {

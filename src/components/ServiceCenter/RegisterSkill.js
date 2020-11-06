@@ -22,18 +22,9 @@ const RegisterSkill = () => {
 
         <div className="showcase-form card">
           <h2>REGISTER YOUR SKILL</h2>
-          <form
-            name="contact"
-            netlify-honeypot="bot-field"
-            method="POST"
-            data-netlify="true"
-          >
+          <form name="contact">
             <input type="hidden" name="form-name" value="contact" />
-            <p className="hidden">
-              <label>
-                Don’t fill this out if you're human: <input name="bot-field" />
-              </label>
-            </p>
+
             <div className="form-control">
               <input type="text" name="name" placeholder="NAME" required />
             </div>

@@ -21,14 +21,6 @@
   box-shadow: 1px 15px 2px #000000, 0px 0px 1px #0d0d0d;
 }
 
-#root {
-  background: linear-gradient(rgba(222, 64, 24, 1.46), rgba(24, 24, 24, 1.86)),
-    url("../images/bg/Taieri.png");
-}
-.space {
-  margin-top: 100px;
-  margin-bottom: 20px;
-}
 .card {
   background: var(--orange);
   color: #19181a;

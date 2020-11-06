@@ -7,12 +7,10 @@ import Title from "../Extras/Title";
 import Hero from "../dashboard/Hero";
 import Banner from "../dashboard/Banner";
 import { Link } from "react-router-dom";
-import { Button } from "../Button/Button";
-import Carousel from "react-elastic-carousel";
-import AboutTeam from "./AboutTeam";
+// import { Button } from "../Button/Button";
 
 function AboutUs() {
-  const breakPoints = [{ width: 1, itemsToShow: 1 }];
+  // const breakPoints = [{ width: 1, itemsToShow: 1 }];
   return (
     <>
       <Hero hero="roomsHero">
@@ -23,6 +21,13 @@ function AboutUs() {
         </Banner>
       </Hero>
 
+      <Hero>
+        <Title title="MISSION" />
+        <Title title="VISION" />
+        <Title title="TERMS AND CONDITIONS" />
+        <Title title="TEAM" />
+      </Hero>
+      {/* 
       <section className="features-main my-1">
         <div className="container grid grid-1 ">
           <div className="card flex">
@@ -92,7 +97,7 @@ function AboutUs() {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>

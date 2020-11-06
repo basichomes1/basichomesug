@@ -1,3 +1,40 @@
+.col-md-6 {
+  position: relative;
+  font-size: 10px;
+  width: 100%;
+  top: -160px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 100%;
+}
+
+.offset-md-3 {
+  margin-left: 25%;
+}
+
+.my-auto {
+  margin-top: auto !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
 .hero-slide {
   height: 500px !important;
   display: flex;

@@ -31,9 +31,10 @@ class SigIn extends Component {
             <div className="login">
               <img src={logo} width="325px" alt="logo" />
 
-              <form onSubmit={this.handleSubmit}>
+              <form onSubmit={this.handleSubmit} style={{ color: "white" }}>
                 <div className="field">
                   <div className="control">
+                    <label htmlFor="email">EMAIL</label>
                     <input
                       className="input is-medium is-rounded"
                       type="email"
@@ -71,14 +72,24 @@ class SigIn extends Component {
                   className="button is-block is-fullwidth is-primary is-medium is-rounded"
                   type="submit"
                 >
-                  Login
+                  LOGIN
                 </button>
               </form>
               <br />
               <nav className="level">
                 <div className="level-item has-text-centered">
                   <div>
-                    <a href="/signup">Create an Account</a>
+                    <p style={{ color: "gold", fontSize: "20px" }}>NEW USER?</p>
+                    <a href="/signup">
+                      <span
+                        style={{
+                          color: "red",
+                          fontSize: "20px",
+                        }}
+                      >
+                        CLICK HERE TO REGISTER
+                      </span>
+                    </a>
                   </div>
                 </div>
               </nav>

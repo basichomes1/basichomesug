@@ -31,8 +31,8 @@ const HeroSliderConfigs = {
 // slider component
 const HeroSwiper = () => {
   const [parallaxSwiper, setParallaxSwiper] = useState(null);
-  const parallaxAmount = parallaxSwiper ? parallaxSwiper.width * 0.95 : 0;
-  const parallaxOpacity = 0.5;
+  const parallaxAmount = parallaxSwiper ? parallaxSwiper.width * 0.55 : 0;
+  const parallaxOpacity = 0.2;
   return (
     <Swiper {...HeroSliderConfigs} getSwiper={setParallaxSwiper}>
       <div className="hero-slide">
@@ -50,6 +50,7 @@ const HeroSwiper = () => {
           <p className="mb-5 small">FIRST DISPLAY</p>
         </div>
       </div>
+
       <div className="hero-slide">
         <div
           className="slide-image"
