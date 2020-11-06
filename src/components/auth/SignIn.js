@@ -4,6 +4,7 @@ import { signIn } from "../../store/actions/authActions";
 import { Redirect } from "react-router-dom";
 import logo from "../../images/svg/logo.svg";
 import "../../css/style.css";
+import { Button } from "../Button/Button";
 
 class SigIn extends Component {
   state = {
@@ -79,16 +80,17 @@ class SigIn extends Component {
               <nav className="level">
                 <div className="level-item has-text-centered">
                   <div>
-                    <p style={{ color: "gold", fontSize: "20px" }}>NEW USER?</p>
+                    <p style={{ color: "dark", fontSize: "20px" }}>
+                      Don't Have An Account ?
+                    </p>
                     <a href="/signup">
-                      <span
-                        style={{
-                          color: "red",
-                          fontSize: "20px",
-                        }}
+                      <Button
+                        buttonStyle="btn--outline "
+                        buttonSize="btn--large"
+                        buttonColor="red"
                       >
-                        CLICK HERE TO REGISTER
-                      </span>
+                        <p className="move">CLICK TO REGISTER</p>
+                      </Button>
                     </a>
                   </div>
                 </div>

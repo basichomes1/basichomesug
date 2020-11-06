@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { signUp } from "../../store/actions/authActions";
 import logo from "../../images/svg/logo.svg";
 import "../../css/style.css";
+import { Button } from "../Button/Button";
 
 class SignUp extends Component {
   state = {
@@ -108,13 +109,17 @@ class SignUp extends Component {
             <nav className="level">
               <div className="level-item has-text-centered">
                 <div>
-                  <p style={{ color: "gold", fontSize: "20px" }}>
+                  <p style={{ color: "white", fontSize: "20px" }}>
                     Already a user?
                   </p>
                   <a href="/signin">
-                    <span style={{ color: "red", fontSize: "20px" }}>
-                      CLICK HERE
-                    </span>
+                    <Button
+                      buttonStyle="btn--outline "
+                      buttonSize="btn--large"
+                      buttonColor="red"
+                    >
+                      <p className="move">CLICK TO LOGIN</p>
+                    </Button>
                   </a>
                 </div>
               </div>
