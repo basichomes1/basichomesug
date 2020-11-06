@@ -1,10 +1,17 @@
 .homehero {
   min-height: 60vh;
-
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 2px;
+  background: linear-gradient(rgba(39, 33, 33, 0.9), rgba(27, 24, 24, 0.9)),
+    url("../images/bg/Taieri.png") center no-repeat;
+
+  border: 10px solid rgba(39, 33, 33, 0.9);
+  box-shadow: -10px -1px 10px rgba(39, 33, 33, 0.9),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset -10px -10px 10px rgba(39, 33, 33, 0.9),
+    inset 15px 15px 15px rgba(39, 33, 33, 0.9);
 }
 /* End of Hero */
 /* Banner */
@@ -23,6 +30,10 @@
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 30%;
+  box-shadow: -10px -1px 10px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset -10px -10px 10px rgba(255, 255, 255, 0.2),
+    inset 15px 15px 15px rgba(0, 0, 0, 0.1);
 }
 .Homebanner h1 {
   font-size: 2.5rem;

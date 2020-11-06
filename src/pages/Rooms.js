@@ -13,7 +13,7 @@ export default function Rooms() {
       <Hero hero="roomsHero">
         <Banner title="OUR ROOMS">
           <Link to="/" className="btn-primary">
-            RETURN TO HOME PAGE
+            BACK TO HOME
           </Link>
         </Banner>
       </Hero>

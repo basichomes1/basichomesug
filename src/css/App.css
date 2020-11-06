@@ -144,8 +144,8 @@ h6 {
   display: inline-block;
   background: rgba(100, 0, 0, 0.8);
   color: var(--mainWhite);
-  padding: 20px auto;
-  margin: 100px;
+  margin: 50px auto;
+  width: 80%;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
