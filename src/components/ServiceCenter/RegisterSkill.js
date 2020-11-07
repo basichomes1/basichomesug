@@ -29,16 +29,18 @@ class RegisterSkill extends React.Component {
                 <label htmlFor="name">NAME</label>
                 <input type="text" name="name" placeholder="FULL NAME" />
               </div>
-              {/* <div className="form-control">
-                <label htmlFor="skills">SKILLS</label>
-                <select name="skills" className="form-control">
+              <div className="form-control">
+                <label htmlFor="skills">SKILLS: </label>
+                <select name="skills">
                   <option value="SKILLS">HAIR DRESSER</option>
                   <option value="SKILLS">HOUSE CLEANER</option>
-                  <option value="SKILLS">PROPOSAL WRITING & DESERTATIONS</option>
+                  <option value="SKILLS">
+                    PROPOSAL WRITING & DESERTATIONS
+                  </option>
                   <option value="SKILLS">ELECTRICIAN</option>
                   <option value="SKILLS">LAUNDRYMAN</option>
                 </select>
-              </div> */}
+              </div>
               <div className="form-control">
                 <label htmlFor="email">EMAIL</label>
                 <input type="email" name="email" placeholder="EMAIL" />
