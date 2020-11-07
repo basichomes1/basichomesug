@@ -22,25 +22,29 @@ const RegisterSkill = () => {
 
         <div className="showcase-form card">
           <h2>REGISTER YOUR SKILL</h2>
-          <form name="contact" method="POST" data-netlify="true">
-            <div className="form-control">
-              <label htmlFor="name">NAME</label>
-              <input type="text" name="name" placeholder="NAME" required />
+          <form method="POST" data-netlify="true">
+            <div class="fields">
+              <div class="field half">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="field half">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="4"></textarea>
+              </div>
             </div>
-            <div className="form-control">
-              <label htmlFor="skills">SKILLS</label>
-              <select name="skills" className="form-control">
-                <option value="SKILLS">HAIR DRESSER</option>
-                <option value="SKILLS">HOUSE CLEANER</option>
-                <option value="SKILLS">PROPOSAL WRITING & DESERTATIONS</option>
-                <option value="SKILLS">ELECTRICIAN</option>
-                <option value="SKILLS">LAUNDRYMAN</option>
-              </select>
-            </div>
-            <div className="form-control">
-              <input type="email" name="email" placeholder="EMAIL" required />
-            </div>
-            <input type="submit" value="Send " class="btn btn-primary" />
+            <ul class="actions">
+              <li>
+                <input type="submit" value="Send Message" class="primary" />
+              </li>
+              <li>
+                <input type="reset" value="Reset" />
+              </li>
+            </ul>
           </form>
         </div>
       </div>
