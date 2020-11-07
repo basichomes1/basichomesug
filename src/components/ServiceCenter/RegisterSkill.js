@@ -1,36 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const encode = (data) => {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-};
-
 class RegisterSkill extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { name: "", email: "" };
-  }
-
-  /* Here’s the juicy bit for posting the form submission */
-
-  handleSubmit = (e) => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
-
-    e.preventDefault();
-  };
-
-  handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
-
   render() {
-    const { name, email } = this.state;
     return (
       <section className="showcase">
         <div className="container grid">
@@ -51,16 +23,11 @@ class RegisterSkill extends React.Component {
 
           <div className="showcase-form card">
             <h2>REGISTER YOUR SKILL</h2>
-            <form onSubmit={this.handleSubmit}>
+            <form name="contact" method="post">
+              <input type="hidden" name="form-name" value="contact" />
               <div className="form-control">
                 <label htmlFor="name">NAME</label>
-                <input
-                  type="text"
-                  name="name"
-                  value={name}
-                  placeholder="FULL NAME"
-                  onChange={this.handleChange}
-                />
+                <input type="text" name="name" placeholder="FULL NAME" />
               </div>
               {/* <div className="form-control">
                 <label htmlFor="skills">SKILLS</label>
@@ -74,13 +41,7 @@ class RegisterSkill extends React.Component {
               </div> */}
               <div className="form-control">
                 <label htmlFor="email">EMAIL</label>
-                <input
-                  type="email"
-                  name="email"
-                  value={email}
-                  placeholder="EMAIL"
-                  onChange={this.handleChange}
-                />
+                <input type="email" name="email" placeholder="EMAIL" />
               </div>
               <input type="submit" value="Send " class="btn btn-primary" />
             </form>
