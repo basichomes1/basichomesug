@@ -32,8 +32,9 @@ function AboutUs() {
       </Hero>
 
       <div style={trialtest}>
-        <Title title="MISSION" />
-        <Title title="VISION" />
+        <Title title="WHO WE ARE"></Title>
+
+        <Title title="WHAT WE DO" />
         <Title title="TERMS AND CONDITIONS" />
         <Title title="TEAM" />
       </div>
