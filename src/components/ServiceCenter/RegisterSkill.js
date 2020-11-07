@@ -28,7 +28,7 @@ const RegisterSkill = () => {
             action="/contact"
             data-netlify="true"
           >
-            <input type="hidden" name="form-name" value="contact">
+            <input type="hidden" name="form-name" value="contact" />
             <div className="form-control">
               <label htmlFor="name">NAME</label>
               <input type="text" name="name" placeholder="NAME" required />
