@@ -27,7 +27,9 @@ class RegisterSkill extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state }),
     })
-      .then(() => <Thanks />)
+      .then(() => {
+        return <Thanks />;
+      })
       .catch((error) => alert(error));
     e.preventDefault();
   };
