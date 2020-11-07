@@ -15,7 +15,7 @@ const RegisterSkill = () => {
             living ......
           </blockquote>
 
-          <Link to="/aboutus" className="btnn btnn-outline">
+          <Link to="/aboutus" className="btn btn-outline">
             READ MORE
           </Link>
         </div>
@@ -40,9 +40,7 @@ const RegisterSkill = () => {
             <div className="form-control">
               <input type="email" name="email" placeholder="EMAIL" required />
             </div>
-            <button type="submit" className="btn btn-primary">
-              Send
-            </button>
+            <input type="submit" value="Send " class="btn btn-primary" />
           </form>
         </div>
       </div>
