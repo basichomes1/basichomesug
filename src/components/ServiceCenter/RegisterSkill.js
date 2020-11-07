@@ -42,6 +42,19 @@ class RegisterSkill extends React.Component {
                 </select>
               </div>
               <div className="form-control">
+                <label htmlFor="university">UNIVERSITY: </label>
+                <select name="university">
+                  <option value="university">KIU</option>
+                  <option value="university">IUEA</option>
+                  <option value="university">MAKERERE</option>
+                  <option value="university">KYAMBOGO</option>
+                </select>
+              </div>
+              <div className="form-control">
+                <label htmlFor="regno">REG NO:</label>
+                <input type="text" name="regno" placeholder="REGISTRATION NO" />
+              </div>
+              <div className="form-control">
                 <label htmlFor="email">EMAIL</label>
                 <input type="email" name="email" placeholder="EMAIL" />
               </div>
