@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Thanks from "../../pages/Thanks";
 
 const encode = (data) => {
   return Object.keys(data)
@@ -26,9 +27,7 @@ class RegisterSkill extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state }),
     })
-      .then(() =>
-        alert("YOUR REQUEST HAS BEEN RECEIVED.. WE ARE WEOKING ON IT")
-      )
+      .then(() => <Thanks />)
       .catch((error) => alert(error));
     e.preventDefault();
   };
