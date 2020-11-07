@@ -32,22 +32,32 @@ class RegisterSkill extends React.Component {
               <div className="form-control">
                 <label htmlFor="skills">SKILLS: </label>
                 <select name="skills">
-                  <option value="SKILLS">HAIR DRESSER</option>
-                  <option value="SKILLS">HOUSE CLEANER</option>
-                  <option value="SKILLS">
+                  <option name="skillsoption" value="SKILLS">
+                    HAIR DRESSER
+                  </option>
+                  <option name="skillsoption" value="SKILLS">
+                    HOUSE CLEANER
+                  </option>
+                  <option name="skillsoption" value="SKILLS">
                     PROPOSAL WRITING & DESERTATIONS
                   </option>
-                  <option value="SKILLS">ELECTRICIAN</option>
-                  <option value="SKILLS">LAUNDRYMAN</option>
+                  <option name="skillsoption" value="SKILLS">
+                    ELECTRICIAN
+                  </option>
+                  <option name="skillsoption" value="SKILLS">
+                    LAUNDRYMAN
+                  </option>
                 </select>
               </div>
               <div className="form-control">
                 <label htmlFor="university">UNIVERSITY: </label>
                 <select name="university">
-                  <option value="university">KIU</option>
-                  <option value="university">IUEA</option>
-                  <option value="university">MAKERERE</option>
-                  <option value="university">KYAMBOGO</option>
+                  <option name="universityoption" value="university">
+                    KIU
+                  </option>
+                  <option name="universityoption">IUEA</option>
+                  <option vname="universityoption">MAKERERE</option>
+                  <option name="universityoption">KYAMBOGO</option>
                 </select>
               </div>
               <div className="form-control">
