@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 class RegisterSkill extends React.Component {
+  handleSubmit = (e) => {
+    e.preventDefault();
+  };
   render() {
     return (
       <section className="showcase">
@@ -29,6 +32,7 @@ class RegisterSkill extends React.Component {
               method="post"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
+              onSubmit={this.handleSubmit}
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-control">
