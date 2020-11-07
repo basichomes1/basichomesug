@@ -19,6 +19,7 @@ import App from "./App";
 import { RoomProvider } from "./Context";
 import { BrowserRouter } from "react-router-dom";
 import logo from "./images/gif/718.gif";
+import Loading from "./components/Extras/Loading";
 
 const store = createStore(
   rootReducer,
@@ -50,7 +51,10 @@ function AuthIsLoaded({ children }) {
     return (
       <div className="centers">
         <h1>JUST A SEC</h1>
-        <img src={logo} alt="loading" className="centers-img" />
+
+        <div className="centers-img">
+          <Loading />
+        </div>
       </div>
     );
   return children;
