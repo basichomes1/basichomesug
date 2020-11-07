@@ -1,11 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 class RegisterSkill extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: "", email: "", regno: "", phoneno: "" };
+  }
+
   handleSubmit = (e) => {
+    fetch("/thanks", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state }),
+    })
+      .then(() =>
+        alert("YOUR REQUEST HAS BEEN RECEIVED.. WE ARE WEOKING ON IT")
+      )
+      .catch((error) => alert(error));
     e.preventDefault();
   };
+  handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
   render() {
+    const { name, email, regno, phoneno } = this.state;
     return (
       <section className="showcase">
         <div className="container grid">
@@ -41,7 +63,9 @@ class RegisterSkill extends React.Component {
                   type="text"
                   name="name"
                   placeholder="FULL NAME"
+                  value={name}
                   required
+                  onChange={this.handleChange}
                 />
               </div>
               <div className="form-control">
@@ -73,7 +97,9 @@ class RegisterSkill extends React.Component {
                   type="text"
                   name="regno"
                   placeholder="REGISTRATION NO"
+                  value={regno}
                   required
+                  onChange={this.handleChange}
                 />
               </div>
 
@@ -83,12 +109,21 @@ class RegisterSkill extends React.Component {
                   type="text"
                   name="phoneno"
                   placeholder="Phone"
+                  value={phoneno}
                   required
+                  onChange={this.handleChange}
                 />
               </div>
               <div className="form-control">
                 <label htmlFor="email">EMAIL</label>
-                <input type="email" name="email" placeholder="EMAIL" required />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="EMAIL"
+                  value={email}
+                  required
+                  onChange={this.handleChange}
+                />
               </div>
               <input type="submit" value="Send " class="btn btn-primary" />
             </form>
