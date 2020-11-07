@@ -9,7 +9,7 @@ class RegisterSkill extends React.Component {
           <div className="showcase-text">
             <h1>BASIC HOMES UG</h1>
 
-            <blockquote>
+            <blockquote className="skillblockquote">
               Our major role is to Link up students to available accomodation
               facilities with just a single click as well as promotion of
               student skills to those who demand for them to help the students
@@ -45,6 +45,7 @@ class RegisterSkill extends React.Component {
                   <option name="skillsoption">
                     PROPOSAL WRITING & DESERTATIONS
                   </option>
+
                   <option name="skillsoption">ELECTRICIAN</option>
                   <option name="skillsoption">LAUNDRYMAN</option>
                 </select>

@@ -278,3 +278,8 @@ a {
   margin-left: 20%;
   margin-top: 5%;
 }
+
+.skillblockquote {
+  letter-spacing: var(--mainSpacing);
+  margin: 50px auto;
+}

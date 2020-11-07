@@ -83,32 +83,6 @@
   z-index: -20;
 }
 
-/* Languages */
-
-.languages .flex {
-  flex-wrap: wrap;
-}
-
-.languages .card {
-  text-align: center;
-  margin: 18px 10px 40px;
-  transition: transform 0.2s ease-in;
-}
-
-.languages .card h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.languages .card:hover {
-  transform: translateY(-15px);
-}
-
-/* Footer */
-.footer .social a {
-  margin: 0 10px;
-}
-
 /* Animations */
 @keyframes slideInFromLeft {
   0% {
@@ -170,7 +144,7 @@
 
   .showcase-text {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 90px;
     animation: slideInFromTop 1s ease-in;
     z-index: 20;
   }
