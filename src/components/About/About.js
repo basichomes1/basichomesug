@@ -11,6 +11,16 @@ import { Link } from "react-router-dom";
 
 function AboutUs() {
   // const breakPoints = [{ width: 1, itemsToShow: 1 }];
+
+  const trialtest = {
+    width: "100%",
+    height: "500px",
+    background: "crimson",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-evenly",
+    alignItems: "center",
+  };
   return (
     <>
       <Hero hero="roomsHero">
@@ -21,12 +31,12 @@ function AboutUs() {
         </Banner>
       </Hero>
 
-      <Hero>
+      <div style={trialtest}>
         <Title title="MISSION" />
         <Title title="VISION" />
         <Title title="TERMS AND CONDITIONS" />
         <Title title="TEAM" />
-      </Hero>
+      </div>
       {/* 
       <section className="features-main my-1">
         <div className="container grid grid-1 ">
