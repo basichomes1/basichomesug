@@ -27,31 +27,34 @@ class RegisterSkill extends React.Component {
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-control">
                 <label htmlFor="name">NAME</label>
-                <input type="text" name="name" placeholder="FULL NAME" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="FULL NAME"
+                  required
+                />
               </div>
               <div className="form-control">
                 <label htmlFor="skills">SKILLS: </label>
-                <select name="skills">
-                  <option name="skillsoption" value="SKILLS">
-                    HAIR DRESSER
+                <select name="skills" required>
+                  <option disabled selected hidden>
+                    SELECT SKILL----
                   </option>
-                  <option name="skillsoption" value="SKILLS">
-                    HOUSE CLEANER
-                  </option>
-                  <option name="skillsoption" value="SKILLS">
+                  <option name="skillsoption">HAIR DRESSER</option>
+                  <option name="skillsoption">HOUSE CLEANER</option>
+                  <option name="skillsoption">
                     PROPOSAL WRITING & DESERTATIONS
                   </option>
-                  <option name="skillsoption" value="SKILLS">
-                    ELECTRICIAN
-                  </option>
-                  <option name="skillsoption" value="SKILLS">
-                    LAUNDRYMAN
-                  </option>
+                  <option name="skillsoption">ELECTRICIAN</option>
+                  <option name="skillsoption">LAUNDRYMAN</option>
                 </select>
               </div>
               <div className="form-control">
                 <label htmlFor="university">UNIVERSITY: </label>
-                <select name="university">
+                <select name="university" required>
+                  <option disabled selected hidden>
+                    SELECT UNIVERSITY----
+                  </option>
                   <option name="universityoption" value="university">
                     KIU
                   </option>
