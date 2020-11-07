@@ -23,7 +23,7 @@ class RegisterSkill extends React.Component {
 
           <div className="showcase-form card">
             <h2>REGISTER YOUR SKILL</h2>
-            <form action="/thanks" name="contact" method="post">
+            <form action="/rooms" name="contact" method="post">
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-control">
                 <label htmlFor="name">NAME</label>
@@ -37,7 +37,9 @@ class RegisterSkill extends React.Component {
               <div className="form-control">
                 <label htmlFor="skills">SKILLS: </label>
                 <select name="skills" required>
-                  <option value="">SELECT SKILL----</option>
+                  <option value="" className="optioncolor">
+                    SELECT SKILL----
+                  </option>
                   <option name="skillsoption">HAIR DRESSER</option>
                   <option name="skillsoption">HOUSE CLEANER</option>
                   <option name="skillsoption">
