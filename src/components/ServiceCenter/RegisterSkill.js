@@ -10,7 +10,14 @@ const encode = (data) => {
 class RegisterSkill extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { name: "", email: "", regno: "", phoneno: "" };
+    this.state = {
+      name: "",
+      email: "",
+      regno: "",
+      phoneno: "",
+      skill: "",
+      university: "",
+    };
   }
 
   handleSubmit = (e) => {
@@ -27,7 +34,7 @@ class RegisterSkill extends React.Component {
   };
   handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
   render() {
-    const { name, email, regno, phoneno } = this.state;
+    const { name, email, regno, phoneno, skills, university } = this.state;
     return (
       <section className="showcase">
         <div className="container grid">
@@ -70,25 +77,33 @@ class RegisterSkill extends React.Component {
               </div>
               <div className="form-control">
                 <label htmlFor="skills">SKILLS: </label>
-                <select name="skills" required>
+                <select
+                  name="skills"
+                  value={skills}
+                  required
+                  onChange={this.handleChange}
+                >
                   <option value="">SELECT SKILL----</option>
-                  <option name="skillsoption">HAIR DRESSER</option>
-                  <option name="skillsoption">HOUSE CLEANER</option>
-                  <option name="skillsoption">
-                    PROPOSAL WRITING & DESERTATIONS
-                  </option>
-                  <option name="skillsoption">ELECTRICIAN</option>
-                  <option name="skillsoption">LAUNDRYMAN</option>
+                  <option>HAIR DRESSER</option>
+                  <option>HOUSE CLEANER</option>
+                  <option>PROPOSAL WRITING & DESERTATIONS</option>
+                  <option>ELECTRICIAN</option>
+                  <option>LAUNDRYMAN</option>
                 </select>
               </div>
               <div className="form-control">
                 <label htmlFor="university">UNIVERSITY: </label>
-                <select name="university" required>
+                <select
+                  name="university"
+                  value={university}
+                  required
+                  onChange={this.handleChange}
+                >
                   <option value="">SELECT UNIVERSITY----</option>
-                  <option name="universityoption">KIU</option>
-                  <option name="universityoption">IUEA</option>
-                  <option vname="universityoption">MAKERERE</option>
-                  <option name="universityoption">KYAMBOGO</option>
+                  <option>KIU</option>
+                  <option>IUEA</option>
+                  <option>MAKERERE</option>
+                  <option>KYAMBOGO</option>
                 </select>
               </div>
               <div className="form-control">
