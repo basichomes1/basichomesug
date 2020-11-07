@@ -16,7 +16,13 @@
     <title>BASIC HOMES UG</title>
   </head>
   <body>
-    <form action="/thanks" name="contact" netlify hidden>
+    <form
+      action="/thanks"
+      name="contact"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
       <input type="text" name="name" required />
       <select name="skills" required>
         <option name="skillsoption"></option>

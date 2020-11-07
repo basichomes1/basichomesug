@@ -23,7 +23,13 @@ class RegisterSkill extends React.Component {
 
           <div className="showcase-form card">
             <h2>REGISTER YOUR SKILL</h2>
-            <form action="/rooms" name="contact" method="post">
+            <form
+              action="/rooms"
+              name="contact"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-control">
                 <label htmlFor="name">NAME</label>
