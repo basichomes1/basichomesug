@@ -272,14 +272,28 @@ a {
   height: 20px;
 }
 
-.roomloadingdiv {
-  justify-content: center;
-  align-items: center;
-  margin-left: 20%;
-  margin-top: 5%;
-}
-
 .skillblockquote {
   letter-spacing: var(--mainSpacing);
   margin: 50px auto;
+}
+
+.feedbackdisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/bg/basic.png") no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  display: flex;
+  color: var(--orange);
+  font-size: 10px !important;
+  height: 100vh;
+}
+@media screen and (max-width: 992px) {
+  .feedbackdisplay {
+    background: url("../images/bg/basic.png") no-repeat;
+    background-attachment: fixed;
+    background-size: 290%;
+    display: flex;
+  }
 }

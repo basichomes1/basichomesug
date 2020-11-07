@@ -17,6 +17,7 @@ import CreateProject from "./components/projects/CreateProject";
 import Profile from "./pages/Profile";
 import AboutUs from "./pages/AboutUs";
 import ScrollToTop from "./components/Extras/ScrollToTop";
+import Thanks from "./pages/Thanks";
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
         <Route exact path="/aboutus/" component={AboutUs} />
         <Route exact path="/signin" component={SignIn} />
         <Route exact path="/signup" component={SignUp} />
+        <Route exact path="/thanks" component={Thanks} />
+
         <Route component={Error} />
       </Switch>
     </BrowserRouter>
