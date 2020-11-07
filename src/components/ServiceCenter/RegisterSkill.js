@@ -22,14 +22,14 @@ const RegisterSkill = () => {
 
         <div className="showcase-form card">
           <h2>REGISTER YOUR SKILL</h2>
-          <form method="POST" data-netlify="true">
+          <form name="contact" method="POST" data-netlify="true">
             <div className="form-control">
               <label htmlFor="name">NAME</label>
               <input type="text" name="name" placeholder="NAME" required />
             </div>
             <div className="form-control">
               <label htmlFor="skills">SKILLS</label>
-              <select name="skills" id="skills" className="form-control">
+              <select name="skills" className="form-control">
                 <option value="SKILLS">HAIR DRESSER</option>
                 <option value="SKILLS">HOUSE CLEANER</option>
                 <option value="SKILLS">PROPOSAL WRITING & DESERTATIONS</option>
