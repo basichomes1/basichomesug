@@ -37,9 +37,7 @@ class RegisterSkill extends React.Component {
               <div className="form-control">
                 <label htmlFor="skills">SKILLS: </label>
                 <select name="skills" required>
-                  <option disabled selected hidden value="">
-                    SELECT SKILL----
-                  </option>
+                  <option value="">SELECT SKILL----</option>
                   <option name="skillsoption">HAIR DRESSER</option>
                   <option name="skillsoption">HOUSE CLEANER</option>
                   <option name="skillsoption">
@@ -53,9 +51,7 @@ class RegisterSkill extends React.Component {
               <div className="form-control">
                 <label htmlFor="university">UNIVERSITY: </label>
                 <select name="university" required>
-                  <option disabled selected hidden value="">
-                    SELECT UNIVERSITY----
-                  </option>
+                  <option value="">SELECT UNIVERSITY----</option>
                   <option name="universityoption" value="university">
                     KIU
                   </option>
