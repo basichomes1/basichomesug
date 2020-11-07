@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 // import { Redirect } from "react-router-dom";
 import Hero from "../components/dashboard/Hero";
 import Banner from "../components/dashboard/Banner";
-import StyledHero from "../components/Extras/StyledHero";
+
 import RegisterSkill from "../components/ServiceCenter/RegisterSkill";
 import { Mustregister } from "./Mustregister";
 
@@ -41,7 +41,8 @@ class Job extends Component {
           </Banner>
         </Hero>
         <RegisterSkill />
-        <StyledHero />
+        <Hero />
+
         <Footer />
       </>
     );

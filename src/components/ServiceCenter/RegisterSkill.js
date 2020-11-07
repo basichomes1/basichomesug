@@ -68,6 +68,11 @@ class RegisterSkill extends React.Component {
                 <label htmlFor="regno">REG NO:</label>
                 <input type="text" name="regno" placeholder="REGISTRATION NO" />
               </div>
+
+              <div className="form-control">
+                <label htmlFor="phoneno">MOBILE NUMBER:</label>
+                <input type="text" name="phoneno" placeholder="Phone" />
+              </div>
               <div className="form-control">
                 <label htmlFor="email">EMAIL</label>
                 <input type="email" name="email" placeholder="EMAIL" />

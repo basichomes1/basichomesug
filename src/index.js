@@ -52,9 +52,7 @@ function AuthIsLoaded({ children }) {
       <div className="centers">
         <h1>JUST A SEC</h1>
 
-        <div className="centers-img">
-          <Loading />
-        </div>
+        <Loading />
       </div>
     );
   return children;

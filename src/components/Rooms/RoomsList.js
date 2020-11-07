@@ -54,7 +54,7 @@ export default function RoomsList({ rooms }) {
         })}
       </div>
 
-      <div buttonStyle="btn--primary" className="roomloadingdiv">
+      <div buttonStyle="btn--primary" className="roomsloading">
         {!isLoading && (
           <Button
             buttonStyle="btn--primary"
@@ -71,12 +71,12 @@ export default function RoomsList({ rooms }) {
             {visible > rooms.length ? (
               <>
                 <Loading />
-                <div className="empty-search">
-                  <h3>NO MORE ROOMS</h3>
-                </div>
+                <h6>NO MORE ROOMS</h6>
               </>
             ) : (
-              <Loading title="LOADING" />
+              <>
+                <Loading />
+              </>
             )}
             {console.log(visible)}
           </Button>

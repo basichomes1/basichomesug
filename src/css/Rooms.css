@@ -342,3 +342,10 @@ input[type="range"]:focus::-ms-fill-upper {
   }
 }
 /* end of rooms fitler*/
+
+.roomsloading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
