@@ -22,12 +22,7 @@ const RegisterSkill = () => {
 
         <div className="showcase-form card">
           <h2>REGISTER YOUR SKILL</h2>
-          <form
-            method="POST"
-            name="contact"
-            action="/contact"
-            data-netlify="true"
-          >
+          <form method="POST" name="contact" data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
             <div className="form-control">
               <label htmlFor="name">NAME</label>
