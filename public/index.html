@@ -17,16 +17,16 @@
   </head>
   <body>
     <form action="/thanks" name="contact" netlify hidden>
-      <input type="text" name="name" />
-      <select name="skills">
+      <input type="text" name="name" required />
+      <select name="skills" required>
         <option name="skillsoption"></option>
       </select>
-      <select name="university">
+      <select name="university" required>
         <option name="universityoption"></option>
       </select>
-      <input type="text" name="regno" />
-      <input type="text" name="phoneno" />
-      <input type="email" name="email" />
+      <input type="text" name="regno" required />
+      <input type="text" name="phoneno" required />
+      <input type="email" name="email" required />
     </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
