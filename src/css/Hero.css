@@ -41,7 +41,8 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 5px;
-  margin-top: 85px;
+  margin-top: 83px;
+  background: var(--orange);
 }
 .slide-image {
   height: 100%;
@@ -56,17 +57,18 @@
   justify-content: center;
   align-items: center;
 }
-.hero-slider .content {
-  position: relative;
-  z-index: 2;
-}
+
 @media screen and (max-width: 768px) {
   .hero-slide {
-    height: 500px !important;
+    height: 800px !important;
     display: flex;
     position: relative;
     overflow: hidden;
     margin-bottom: -100px;
     margin-top: -35px;
+  }
+  .slide-image {
+    height: 100%;
+    width: 100%;
   }
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import "../../css/Showcase.css";
 import "../../css/Utilities.css";
-
 import { Link } from "react-router-dom";
 import FeaturedRooms from "../Rooms/FeaturedRooms";
 import SimpleSlider from "../Slider/Slider";
