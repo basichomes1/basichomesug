@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 768px) {
   .hero-slide {
-    height: 800px !important;
+    height: 500px !important;
     display: flex;
     position: relative;
     overflow: hidden;
