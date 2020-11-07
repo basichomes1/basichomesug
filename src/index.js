@@ -18,7 +18,7 @@ import firebase from "firebase/app";
 import App from "./App";
 import { RoomProvider } from "./Context";
 import { BrowserRouter } from "react-router-dom";
-import logo from "./images/gif/718.gif";
+
 import Loading from "./components/Extras/Loading";
 
 const store = createStore(
