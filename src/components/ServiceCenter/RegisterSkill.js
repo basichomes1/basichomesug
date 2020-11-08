@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
+
 // import Thanks from "../../pages/Thanks";
 
 const encode = (data) => {
@@ -33,6 +34,11 @@ class RegisterSkill extends React.Component {
       .catch((error) => alert(error));
   };
   handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
+
+  submitForm(e) {
+    e.preventDefault();
+    this.props.history.push("/thanks"); // <--- The page you want to redirect your user to.
+  }
   render() {
     const { name, email, regno, phoneno, skills, university } = this.state;
 
@@ -57,12 +63,14 @@ class RegisterSkill extends React.Component {
           <div className="showcase-form card">
             <h2>REGISTER YOUR SKILL</h2>
             <form
-              action="/thanks"
               name="contact"
               method="post"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
-              onSubmit={this.handleSubmit}
+              onSubmit={() => {
+                this.handleSubmit();
+                this.submitForm.bind(this);
+              }}
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-control">
@@ -150,4 +158,4 @@ class RegisterSkill extends React.Component {
   }
 }
 
-export default RegisterSkill;
+export default withRouter(RegisterSkill);
