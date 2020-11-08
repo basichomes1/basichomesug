@@ -2,10 +2,10 @@
   background: linear-gradient(rgba(24, 24, 34, 0.9), rgba(23, 56, 78, 1.4));
   color: #eae6ee;
   border-radius: 50px;
-  box-shadow: -10px -1px 10px rgba(42, 139, 69, 0.9),
+  box-shadow: -10px -1px 10px rgba(179, 119, 54, 0.487),
     15px 15px 15px rgba(240, 220, 220, 0.1),
-    inset -10px -10px 10px rgba(39, 33, 33, 0.9),
-    inset 15px 15px 15px rgba(45, 122, 124, 0.9);
+    inset -10px -10px 10px rgba(218, 212, 212, 0.624),
+    inset 15px 15px 15px rgba(112, 20, 33, 0.631);
   padding: 20px;
   margin-top: 1px;
   margin-bottom: 14px;

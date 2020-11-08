@@ -6,7 +6,7 @@ export default function Thanks() {
   return (
     <>
       <div className="feedbackdisplay">
-        <div className="card">
+        <div className="card-thanks">
           <h1>
             WE HAVE RECEIVED YOUR REQUEST AND YOUR APPLICATION IS BEING
             PROCESSED

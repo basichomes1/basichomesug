@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+
 import Footer from "../components/dashboard/Footer";
 import { connect } from "react-redux";
 
@@ -34,11 +34,7 @@ class Job extends Component {
           <Banner
             title="REGISTER A SKILL"
             subtitle="WORK AND STILL BE A STUDENT"
-          >
-            <Link to="/" className="btn-primary">
-              GET STARTED
-            </Link>
-          </Banner>
+          ></Banner>
         </Hero>
         <RegisterSkill />
         <Hero />

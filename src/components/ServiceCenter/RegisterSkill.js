@@ -1,8 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 
-// import Thanks from "../../pages/Thanks";
-
 const encode = (data) => {
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -28,17 +26,13 @@ class RegisterSkill extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state }),
     })
-      .then(() =>
-        alert("YOUR REQUEST HAS BEEN RECEIVED, AND WE ARE WORKING ON IT...")
-      )
+      .then(function (response) {
+        window.location.assign("/thanks/");
+      })
       .catch((error) => alert(error));
   };
   handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
-  // submitForm(e) {
-  //   e.preventDefault();
-  //   this.props.history.push("/thanks"); // <--- The page you want to redirect your user to.
-  // }
   render() {
     const { name, email, regno, phoneno, skills, university } = this.state;
 

@@ -284,7 +284,7 @@ a {
   background: url("../images/bg/basic.png") no-repeat;
   background-attachment: fixed;
   background-size: 100%;
-  display: flex;
+
   color: var(--orange);
   font-size: 10px !important;
   height: 100vh;
@@ -295,9 +295,25 @@ a {
     background-attachment: fixed;
     background-size: 290%;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-.optioncolor {
-  color: red;
+.card-thanks {
+  background: var(--orange);
+  color: #19181a;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 50, 224, 0.8);
+  padding: 20px;
+  margin-top: 1px;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-family: monospace;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
