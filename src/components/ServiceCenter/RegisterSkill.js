@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import Thanks from "../../pages/Thanks";
 
 const encode = (data) => {
@@ -22,20 +22,27 @@ class RegisterSkill extends React.Component {
   }
 
   handleSubmit = (e) => {
-    fetch("/thanks", {
+    fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state }),
     })
-      .then(() => {
-        return <Thanks />;
-      })
+      .then(() => alert("Success!"))
       .catch((error) => alert(error));
+
     e.preventDefault();
   };
+
+  if(isLoading) {
+    return <Thanks />;
+  }
   handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
   render() {
     const { name, email, regno, phoneno, skills, university } = this.state;
+
+    const Gothanks = () => {
+      return <Redirect to="/rooms" />;
+    };
     return (
       <section className="showcase">
         <div className="container grid">
@@ -57,12 +64,13 @@ class RegisterSkill extends React.Component {
           <div className="showcase-form card">
             <h2>REGISTER YOUR SKILL</h2>
             <form
-              action="/rooms"
               name="contact"
               method="post"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
-              onSubmit={this.handleSubmit}
+              onSubmit={() => {
+                this.handleSubmit();
+              }}
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-control">
@@ -141,7 +149,12 @@ class RegisterSkill extends React.Component {
                   onChange={this.handleChange}
                 />
               </div>
-              <input type="submit" value="Send " class="btn btn-primary" />
+              <input
+                type="submit"
+                value="Send "
+                class="btn btn-primary"
+                onClick={Gothanks}
+              />
             </form>
           </div>
         </div>
