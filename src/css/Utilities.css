@@ -24,15 +24,14 @@
 .card {
   background: var(--orange);
   color: #19181a;
-  border-radius: 20px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin-top: 1px;
-  font-size: 8px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   font-family: monospace;
-  width: 80%;
 }
 
 .btnn {
