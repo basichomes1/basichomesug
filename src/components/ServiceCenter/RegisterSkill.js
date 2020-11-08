@@ -21,15 +21,16 @@ class RegisterSkill extends React.Component {
     };
   }
   handleSubmit = (e) => {
+    e.preventDefault();
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state }),
     })
-      .then(() => alert("Success!"))
+      .then(() =>
+        alert("YOUR REQUEST HAS BEEN RECEIVED, AND WE ARE WORKING ON IT...")
+      )
       .catch((error) => alert(error));
-
-    e.preventDefault();
   };
   handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
   render() {
