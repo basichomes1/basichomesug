@@ -61,6 +61,7 @@ class RegisterSkill extends React.Component {
           <div className="showcase-form card">
             <h2>REGISTER YOUR SKILL</h2>
             <form
+              action="/thanks"
               name="contact"
               method="post"
               data-netlify="true"
