@@ -35,10 +35,10 @@ class RegisterSkill extends React.Component {
   };
   handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
-  submitForm(e) {
-    e.preventDefault();
-    this.props.history.push("/thanks"); // <--- The page you want to redirect your user to.
-  }
+  // submitForm(e) {
+  //   e.preventDefault();
+  //   this.props.history.push("/thanks"); // <--- The page you want to redirect your user to.
+  // }
   render() {
     const { name, email, regno, phoneno, skills, university } = this.state;
 
@@ -68,7 +68,7 @@ class RegisterSkill extends React.Component {
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={() => {
-                this.submitForm.bind(this);
+                this.handleSubmit();
               }}
             >
               <input type="hidden" name="form-name" value="contact" />
