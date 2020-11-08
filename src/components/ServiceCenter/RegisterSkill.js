@@ -67,9 +67,7 @@ class RegisterSkill extends React.Component {
               method="post"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
-              onSubmit={() => {
-                this.handleSubmit();
-              }}
+              onSubmit={this.handleSubmit}
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-control">
