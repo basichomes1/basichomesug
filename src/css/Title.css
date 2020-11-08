@@ -1,23 +1,25 @@
 /* Title */
 .section-title,
 .feature,
-.serviceColor {
+.serviceColor,
+.about {
   text-align: center;
-  margin-top: -50px;
   margin-bottom: 2rem;
 }
 .section-title h4,
 .feature h4,
-.serviceColor {
+.serviceColor,
+.about h4 {
   font-size: 2rem;
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
-  margin-bottom: 1rem;
+  margin-bottom: 0.1rem;
   color: black;
 }
 
 .section-title div,
-.feature div {
+.feature div,
+.about div {
   width: 10rem;
   height: 5px;
   margin: 0 auto;
@@ -26,8 +28,17 @@
 .feature div {
   background: var(--purple);
 }
+
+.about div {
+  color: white;
+}
+
+.about h4 {
+  color: white;
+}
 .serviceColor {
   color: white;
+  margin-top: -90px;
 }
 .serviceColor h4 {
   margin-bottom: 0.8rem;

@@ -3,6 +3,7 @@ import Hero from "../components/dashboard/Hero";
 import Banner from "../components/dashboard/Banner";
 import { Link } from "react-router-dom";
 import Footer from "../components/dashboard/Footer";
+import "../css/Contact.css";
 
 export default function Contact() {
   return (

@@ -1,47 +1,61 @@
-.aboutteam {
-  background: red;
-  height: 90px;
-  width: 100%;
+.text-about {
+  display: flex;
+  background: linear-gradient(rgba(24, 24, 34, 0.9), rgba(23, 56, 78, 0.4)),
+    url("../images/bg/6.jpg") no-repeat;
+  background-size: 100%;
+  color: white;
+  border-radius: 20%;
+  border: 2px solid black;
+  background-size: 200%;
+}
+
+.text-about-1 {
+  display: flex;
+  background: linear-gradient(rgba(39, 33, 33, 0.9), rgba(27, 24, 24, 0.9)),
+    url("../images/bg/background7.jpg") no-repeat;
+  background-size: 300%;
+  color: white;
+  border-radius: 10%;
+  border: 2px solid black;
+  padding: 20px;
+  background-position: top;
+}
+.onee {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 20px;
+  flex-direction: column;
 }
 
-.aboutSlider {
-  margin-top: 100px;
+.onee p {
+  font-size: 10px;
 }
 
-.abouttitle {
-  color: #e9e1e3;
-  text-align: center;
-  height: 5px;
-}
-.abouttitle h4 {
-  font-size: 2rem;
-  letter-spacing: var(--mainSpacing);
-  text-transform: capitalize;
-  margin-bottom: -0.4rem;
-  color: #e9e1e3;
+.one {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
 }
 
-.abouttitle div {
-  width: 10rem;
-  height: 5px;
-  margin: 0 auto;
-  background: var(--orange);
+.second {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
 }
 
-.mission {
-  margin-bottom: 40px;
-}
+@media screen and (max-width: 992px) {
+  .text-about {
+    display: flex;
+    flex-direction: column;
+  }
 
-.terms {
-  margin-bottom: 70px;
-}
-.mission div {
-  width: 10rem;
-  height: 5px;
-  margin-top: 5px;
-  background: var(--purple);
+  .card-one {
+    margin-top: 50px;
+  }
 }
