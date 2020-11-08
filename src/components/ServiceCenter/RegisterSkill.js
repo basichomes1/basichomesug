@@ -68,7 +68,6 @@ class RegisterSkill extends React.Component {
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={() => {
-                this.handleSubmit();
                 this.submitForm.bind(this);
               }}
             >
