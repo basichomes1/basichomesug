@@ -11,7 +11,7 @@ function AboutUs() {
   const trialtest = {
     width: "100%",
     height: "100%",
-    background: "crimson",
+    background: "var(--purple)",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-evenly",
@@ -29,7 +29,7 @@ function AboutUs() {
       </Hero>
 
       <div style={trialtest}>
-        <div className="card">
+        <div className="cardd">
           <Title title="WHO WE ARE" span="about" />
           <div className="text-about-1">
             <div className="onee">
@@ -57,7 +57,7 @@ function AboutUs() {
           </div>
         </div>
 
-        <div className="card card-one">
+        <div className="cardd cardd-one">
           <Title title="WHAT WE DO" span="about" />
           <div className="text-about">
             <div className="one">
@@ -87,9 +87,9 @@ function AboutUs() {
             </div>
           </div>
         </div>
-        <div className="card">
+        <div className="cardd">
           <Title title="TERMS AND CONDITIONS" span="about" />
-          <div className="text-about-1">
+          <div className="text-about-2">
             <div className="onee">
               <p>
                 In order to Conduct business and provide the perfect service, we

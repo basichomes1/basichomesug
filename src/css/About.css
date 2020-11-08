@@ -1,10 +1,28 @@
+.cardd {
+  background: linear-gradient(rgba(24, 24, 34, 0.9), rgba(23, 56, 78, 1.4));
+  color: #eae6ee;
+  border-radius: 50px;
+  box-shadow: -10px -1px 10px rgba(42, 139, 69, 0.9),
+    15px 15px 15px rgba(240, 220, 220, 0.1),
+    inset -10px -10px 10px rgba(39, 33, 33, 0.9),
+    inset 15px 15px 15px rgba(45, 122, 124, 0.9);
+  padding: 20px;
+  margin-top: 1px;
+  margin-bottom: 14px;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-family: monospace;
+  width: 80%;
+}
+
 .text-about {
   display: flex;
   background: linear-gradient(rgba(24, 24, 34, 0.9), rgba(23, 56, 78, 0.4)),
     url("../images/bg/6.jpg") no-repeat;
   background-size: 100%;
   color: white;
-  border-radius: 20%;
+  border-radius: 24%;
   border: 2px solid black;
   background-size: 200%;
 }
@@ -15,9 +33,21 @@
     url("../images/bg/background7.jpg") no-repeat;
   background-size: 300%;
   color: white;
-  border-radius: 10%;
+  border-radius: 8%;
   border: 2px solid black;
   padding: 20px;
+  background-position: top;
+}
+.text-about-2 {
+  display: flex;
+  background: linear-gradient(rgba(39, 33, 33, 0.9), rgba(27, 24, 24, 1.9)),
+    url("../images/bg/Taieri.png") no-repeat;
+  background-size: 300%;
+  color: white;
+  border-radius: 20%;
+  border: 2px solid black;
+  padding: 20px;
+
   background-position: top;
 }
 .onee {
@@ -29,6 +59,7 @@
 
 .onee p {
   font-size: 10px;
+  font-size: 14px;
 }
 
 .one {

@@ -18,19 +18,16 @@
   border: 1px solid #f15a24;
   border-radius: 70px;
   filter: drop-shadow(1px 1px 1px #f15a24);
+  box-shadow: 1px 15px 2px #000000, 0px 0px 1px #0d0d0d;
 }
 
 .card {
-  background: linear-gradient(rgba(24, 24, 34, 0.9), rgba(23, 56, 78, 1.4));
-  color: #eae6ee;
-  border-radius: 50px;
-  box-shadow: -10px -1px 10px rgba(42, 139, 69, 0.9),
-    15px 15px 15px rgba(240, 220, 220, 0.1),
-    inset -10px -10px 10px rgba(39, 33, 33, 0.9),
-    inset 15px 15px 15px rgba(45, 122, 124, 0.9);
+  background: var(--orange);
+  color: #19181a;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.9);
   padding: 20px;
   margin-top: 1px;
-  margin-bottom: 14px;
   font-size: 8px;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
