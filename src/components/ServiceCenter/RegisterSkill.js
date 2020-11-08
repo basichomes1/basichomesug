@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Thanks from "../../pages/Thanks";
+// import Thanks from "../../pages/Thanks";
 
 const encode = (data) => {
   return Object.keys(data)
@@ -20,7 +20,6 @@ class RegisterSkill extends React.Component {
       university: "",
     };
   }
-
   handleSubmit = (e) => {
     fetch("/", {
       method: "POST",
@@ -32,10 +31,6 @@ class RegisterSkill extends React.Component {
 
     e.preventDefault();
   };
-
-  if(isLoading) {
-    return <Thanks />;
-  }
   handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
   render() {
     const { name, email, regno, phoneno, skills, university } = this.state;
@@ -66,9 +61,7 @@ class RegisterSkill extends React.Component {
               method="post"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
-              onSubmit={() => {
-                this.handleSubmit();
-              }}
+              onSubmit={this.handleSubmit}
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-control">
@@ -147,7 +140,7 @@ class RegisterSkill extends React.Component {
                   onChange={this.handleChange}
                 />
               </div>
-              <input type="submit" value="Send " class="btn btn-primary" />
+              <input type="submit" value="SUBMIT " class="btn btn-primary" />
             </form>
           </div>
         </div>
