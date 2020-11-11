@@ -9,9 +9,9 @@ import "../../css/Hero.css";
 
 // images
 
-import image1 from "../../images/bg/2.png";
-import image2 from "../../images/bg/3.png";
-import image3 from "../../images/bg/4.png";
+import image2 from "../../images/bg/2.jpg";
+import image3 from "../../images/bg/3.jpg";
+import image4 from "../../images/bg/4.jpg";
 
 // slider configuration
 const HeroSliderConfigs = {
@@ -42,9 +42,10 @@ const HeroSwiper = () => {
   const [parallaxSwiper, setParallaxSwiper] = useState(null);
   const parallaxAmount = parallaxSwiper ? parallaxSwiper.width * 0.55 : 0;
   const parallaxOpacity = 0.2;
-  const ImgSize = {
-    width: "1099px",
-    height: "1099px",
+
+  const ImgContainer = {
+    width: "100%",
+    height: "100%",
   };
   return (
     <Swiper {...HeroSliderConfigs} getSwiper={setParallaxSwiper}>
@@ -53,33 +54,16 @@ const HeroSwiper = () => {
           className="slide-image"
           data-swiper-parallax={parallaxAmount}
           data-swiper-parallax-opacity={parallaxOpacity}
-          style={ImgSize}
-        >
-          <img src={image1} alt="image1" />
-        </div>
-        <div className="col-md-6 offset-md-3 my-auto text-center text-white">
-          <h1 className="text-uppercase mb-2 font-weight-bold">
-            BASIC HOMES UGANDA
-          </h1>
-          <p className="mb-5 small">FIRST DISPLAY</p>
-        </div>
-      </div>
-
-      <div className="hero-slide">
-        <div
-          className="slide-image"
-          data-swiper-parallax={parallaxAmount}
-          data-swiper-parallax-opacity={parallaxOpacity}
-          style={ImgSize}
+          style={ImgContainer}
         >
           <img src={image2} alt="image1" />
         </div>
-        <div className="col-md-6 offset-md-3 my-auto text-center text-white">
+        {/* <div className="col-md-6 offset-md-3 my-auto text-center text-white">
           <h1 className="text-uppercase mb-2 font-weight-bold">
             BASIC HOMES UGANDA
           </h1>
           <p className="mb-5 small">SECOND DISPLAY</p>
-        </div>
+        </div> */}
       </div>
 
       <div className="hero-slide">
@@ -87,16 +71,33 @@ const HeroSwiper = () => {
           className="slide-image"
           data-swiper-parallax={parallaxAmount}
           data-swiper-parallax-opacity={parallaxOpacity}
-          style={ImgSize}
+          style={ImgContainer}
         >
           <img src={image3} alt="image1" />
         </div>
-        <div className="col-md-6 offset-md-3 my-auto text-center text-white">
+        {/* <div className="col-md-6 offset-md-3 my-auto text-center text-white">
           <h1 className="text-uppercase mb-2 font-weight-bold">
             BASIC HOMES UGANDA
           </h1>
           <p className="mb-5 small">THIRD DISPLAY</p>
+        </div> */}
+      </div>
+
+      <div className="hero-slide">
+        <div
+          className="slide-image"
+          data-swiper-parallax={parallaxAmount}
+          data-swiper-parallax-opacity={parallaxOpacity}
+          style={ImgContainer}
+        >
+          <img src={image4} alt="image1" />
         </div>
+        {/* <div className="col-md-6 offset-md-3 my-auto text-center text-white">
+          <h1 className="text-uppercase mb-2 font-weight-bold">
+            BASIC HOMES UGANDA
+          </h1>
+          <p className="mb-5 small">THIRD DISPLAY</p>
+        </div> */}
       </div>
     </Swiper>
   );

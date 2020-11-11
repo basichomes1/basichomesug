@@ -37,6 +37,7 @@
 
 .hero-slide {
   height: 500px !important;
+
   display: flex;
   position: relative;
   overflow: hidden;
@@ -45,8 +46,6 @@
   background: var(--orange);
 }
 .slide-image {
-  height: 100%;
-  width: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -56,6 +55,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.slide-image img {
+  object-fit: contain;
+  transform: scale(1.1, 0.8);
+  width: 100vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -71,4 +75,17 @@
     height: 100%;
     width: 100%;
   }
+  .slide-image img {
+    object-fit: contain;
+    transform: scale(1.1, 1.4);
+    width: 100vw;
+    height: 900px;
+  }
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: rgb(31, 30, 30);
+  transform: scale(1.4);
+  width: 22px;
+  height: 22px;
 }

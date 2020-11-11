@@ -39,11 +39,11 @@ function AboutUs() {
                 quickest way possible and turn student's skills to money by
                 offering their services to individuals in need of it. We Operate
                 from central districts of uganda but coordinating to help
-                students and migrants in all parts of the country and extend to
-                other parts of the East African Community. To provide unique ,
-                outstanding and trustworthy level of services with adequate
-                expertise in accomodation services as well as offering customers
-                most compelling, best , comfortable and happy homes
+                students and migrants in all parts of the country and East
+                African Community. To provide unique , outstanding and
+                trustworthy level of services with adequate expertise in
+                accomodation services as well as offering customers most
+                compelling, best , comfortable and happy homes
               </p>
 
               <Button

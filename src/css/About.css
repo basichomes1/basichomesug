@@ -15,7 +15,9 @@
   font-family: monospace;
   width: 80%;
 }
-
+.cardd p {
+  text-transform: capitalize;
+}
 .text-about {
   display: flex;
   background: linear-gradient(rgba(24, 24, 34, 0.9), rgba(23, 56, 78, 0.4)),

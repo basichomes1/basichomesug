@@ -1,10 +1,19 @@
 import React from "react";
 import "../../css/Loading.css";
 
-export default function Loading() {
+const Loading = ({ title }) => {
   return (
-    <section className="loading-section">
-      <div className="loader"></div>
-    </section>
+    <>
+      <div class="wrap">
+        <div class="loading">
+          <div class="bounceball"></div>
+          <div class="bounceball"></div>
+          <div class="bounceball"></div>
+          <div class="text">{title}</div>
+        </div>
+      </div>
+    </>
   );
-}
+};
+
+export default Loading;

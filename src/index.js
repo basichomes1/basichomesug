@@ -49,10 +49,9 @@ function AuthIsLoaded({ children }) {
   const auth = useSelector((state) => state.firebase.auth);
   if (!isLoaded(auth))
     return (
-      <div className="centers">
+      <div className="auth-card feedbackdisplay">
         <h1>JUST A SEC</h1>
-
-        <Loading />
+        <Loading title="LOADING..." />
       </div>
     );
   return children;

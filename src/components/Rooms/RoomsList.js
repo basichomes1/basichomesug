@@ -10,20 +10,16 @@ export default function RoomsList({ rooms }) {
 
   const showMoreitems = () => {
     setLoading(true);
-    const timer = setTimeout(() => {
+    setTimeout(() => {
       setVisible((prevValue) => prevValue + 4);
     }, 1500);
-    return () => {
-      clearTimeout(timer);
-      setLoading(true);
-    };
   };
 
   const showNoMoreitems = () => {
     const timer = setTimeout(() => {
-      setLoading();
+      setLoading(false);
       setVisible((prevValue) => prevValue);
-    }, 2000);
+    }, 1500);
     return () => {
       clearTimeout(timer);
     };
@@ -56,26 +52,37 @@ export default function RoomsList({ rooms }) {
 
       <div buttonStyle="btn--primary" className="roomsloading">
         {!isLoading && (
-          <Button
-            buttonStyle="btn--primary"
-            onClick={() => {
-              showMoreitems();
-              showNoMoreitems();
-            }}
-          >
-            LOAD MORE
-          </Button>
+          <div>
+            {visible > rooms.length ? (
+              <>
+                <div className="auth-card" style={{ color: "white" }}>
+                  <h2>NO MORE ROOMS</h2>
+                </div>
+              </>
+            ) : (
+              <>
+                <Button
+                  buttonStyle="btn--primary"
+                  onClick={() => {
+                    showMoreitems();
+                    showNoMoreitems();
+                  }}
+                >
+                  LOAD MORE
+                </Button>
+              </>
+            )}
+          </div>
         )}
         {isLoading && (
           <Button buttonStyle="btn--primary">
             {visible > rooms.length ? (
               <>
-                <Loading />
-                <h6>NO MORE ROOMS</h6>
+                <Loading title="NO MORE ROOMS" />
               </>
             ) : (
               <>
-                <Loading />
+                <Loading title="PLEASE WAIT" />
               </>
             )}
             {console.log(visible)}
