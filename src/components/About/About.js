@@ -35,15 +35,15 @@ function AboutUs() {
             <div className="onee">
               <p>
                 BASIC HOMES UG is an online platform with the major Aim of
-                linking a student/tenant to a House Owner/ Hostel Manager in the
-                quickest way possible and turn students skills to money by
-                offering their services to individuals in need of it. We Operate
-                from central districts of uganda but coordinating to help
-                students and migrants in all parts of the country and East
-                African Community. To provide unique , outstanding and
-                trustworthy level of services with adequate expertise in
-                accomodation services as well as offering customers most
-                compelling, best , comfortable and happy homes
+                linking a student/tenant to a Hostel Manager in the quickest way
+                possible and turn students skills to money by offering their
+                services to individuals in need of it. We Operate from central
+                districts of uganda but coordinating to help students and
+                migrants in all parts of the country and East African Community.
+                To provide unique , outstanding and trustworthy level of
+                services with adequate expertise in accomodation services as
+                well as offering customers most compelling, best , comfortable
+                and happy homes
               </p>
 
               <Button

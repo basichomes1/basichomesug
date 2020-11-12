@@ -8,9 +8,11 @@ import Contactdetails from "../components/Contact/Contactdetails";
 export default function Contact() {
   return (
     <>
-      <Hero hero="roomsHero">
-        <Banner title="CONTACT US" subtitle=""></Banner>
-      </Hero>
+      <div>
+        <Hero hero="contactHero">
+          <Banner title="CONTACT US" subtitle=""></Banner>
+        </Hero>
+      </div>
       <Contactdetails />
       <Title title="LOCATION" />
     </>

@@ -1,10 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap"); */
 
+/* @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif !important;
+  /* font-family: "Lato", sans-serif !important; */
+
+  /* font-family: "Abhaya Libre", serif !important; */
+
+  font-family: "Nunito", sans-serif !important;
 }
 
 :root {
@@ -120,6 +127,28 @@ body {
   min-height: 60vh;
 }
 
+.contactHero {
+  background: url("../images/bg/contact.jpg") center/cover no-repeat;
+  object-fit: contain;
+  background-size: 120%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+@media screen and (max-width: 768px) {
+  .contactHero {
+    background: url("../images/bg/contact.jpg") center/cover no-repeat;
+    object-fit: contain;
+    background-size: 180%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 53vh;
+  }
+}
 /* End of Hero */
 /* Banner */
 .banner {
