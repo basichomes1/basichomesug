@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import { Button } from "../Button/Button";
 
 const encode = (data) => {
   return Object.keys(data)
@@ -65,18 +66,16 @@ class RegisterSkill extends React.Component {
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-control">
-                <label htmlFor="name">NAME</label>
                 <input
                   type="text"
                   name="name"
-                  placeholder="FULL NAME"
+                  placeholder="Full Name"
                   value={name}
                   required
                   onChange={this.handleChange}
                 />
               </div>
               <div className="form-control">
-                <label htmlFor="skills">SKILLS: </label>
                 <select
                   name="skills"
                   value={skills}
@@ -92,9 +91,8 @@ class RegisterSkill extends React.Component {
                 </select>
               </div>
               <div className="form-control">
-                <label htmlFor="university">UNIVERSITY: </label>
                 <select
-                  name="university"
+                  name="University"
                   value={university}
                   required
                   onChange={this.handleChange}
@@ -107,11 +105,10 @@ class RegisterSkill extends React.Component {
                 </select>
               </div>
               <div className="form-control">
-                <label htmlFor="regno">REG NO:</label>
                 <input
                   type="text"
                   name="regno"
-                  placeholder="REGISTRATION NO"
+                  placeholder="Registration Number"
                   value={regno}
                   required
                   onChange={this.handleChange}
@@ -119,28 +116,27 @@ class RegisterSkill extends React.Component {
               </div>
 
               <div className="form-control">
-                <label htmlFor="phoneno">MOBILE NUMBER:</label>
                 <input
                   type="text"
                   name="phoneno"
-                  placeholder="Phone"
+                  placeholder="Phone Number"
                   value={phoneno}
                   required
                   onChange={this.handleChange}
                 />
               </div>
               <div className="form-control">
-                <label htmlFor="email">EMAIL</label>
                 <input
                   type="email"
                   name="email"
-                  placeholder="EMAIL"
+                  placeholder="Email"
                   value={email}
                   required
                   onChange={this.handleChange}
                 />
               </div>
-              <input type="submit" value="SUBMIT " class="btn btn-primary" />
+
+              <Button type="submit">SUBMIT</Button>
             </form>
           </div>
         </div>

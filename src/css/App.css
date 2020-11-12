@@ -1,12 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif !important;
 }
-body {
-  padding: 0px;
-  margin: 0;
-}
+
 :root {
   --primaryColor: #af9a7d;
   --mainWhite: #fff;
@@ -51,7 +51,7 @@ input[type="range"]::-ms-track {
 body {
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   line-height: 1.4;
 }
 h1 {
@@ -117,6 +117,18 @@ h6 {
   margin: 2rem 0;
   padding: 1rem;
   letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+  animation: shake 2s linear infinite;
+  color: white;
+}
+
+@keyframes shake {
+  0% {
+    background: red;
+  }
+  100% {
+    background: blue;
+  }
 }
 /* end of globals */
 /* Navbar */
@@ -185,7 +197,7 @@ h6 {
 /* services */
 
 .services {
-  padding: 5rem 1rem;
+  padding: 8rem 1rem;
   background: var(--purple);
   text-align: center;
 }

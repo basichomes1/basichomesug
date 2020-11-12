@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
 .cardd {
   background: linear-gradient(rgba(24, 24, 34, 0.9), rgba(23, 56, 78, 1.4));
   color: #eae6ee;
@@ -12,11 +14,12 @@
   font-size: 8px;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
-  font-family: monospace;
+  font-family: "Arvo", serif !important;
   width: 80%;
 }
 .cardd p {
   text-transform: capitalize;
+  font-family: "Arvo", serif !important;
 }
 .text-about {
   display: flex;

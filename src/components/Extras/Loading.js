@@ -3,16 +3,14 @@ import "../../css/Loading.css";
 
 const Loading = ({ title }) => {
   return (
-    <>
-      <div class="wrap">
-        <div class="loading">
-          <div class="bounceball"></div>
-          <div class="bounceball"></div>
-          <div class="bounceball"></div>
-          <div class="text">{title}</div>
-        </div>
+    <div className="wrap">
+      <div className="loading">
+        <div className="bounceball"></div>
+        <div className="bounceball"></div>
+        <div className="bounceball"></div>
+        <div className="text">{title}</div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -23,7 +23,6 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -37,8 +36,8 @@ function App() {
         <Route exact path="/aboutus/" component={AboutUs} />
         <Route exact path="/signin" component={SignIn} />
         <Route exact path="/signup" component={SignUp} />
-        <Route exact path="/thanks" component={Thanks} />
 
+        <Route exact path="/thanks" component={Thanks} />
         <Route component={Error} />
       </Switch>
     </BrowserRouter>

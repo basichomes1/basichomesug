@@ -11,7 +11,6 @@ import { animateScroll as scroll } from "react-scroll";
 const LoggedIn = (props) => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
-
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
@@ -36,7 +35,7 @@ const LoggedIn = (props) => {
 
   return (
     <div className="navbars">
-      <div>
+      <div className="profile-btn">
         <NavLink to="/profile/" className=" btn-floating ">
           <p>{profile.initials}</p>
         </NavLink>
@@ -91,18 +90,7 @@ const LoggedIn = (props) => {
               ROOMS
             </Link>
           </li>
-          <li className="navs-item">
-            <Link
-              to="/jobs"
-              className="navs-links"
-              onClick={() => {
-                closeMobileMenu();
-                toggleHome();
-              }}
-            >
-              SERVICE CENTER
-            </Link>
-          </li>
+          <li className="navs-links">SERVICES</li>
 
           <li className="navs-item">
             <Link
@@ -116,7 +104,6 @@ const LoggedIn = (props) => {
               CONTACT
             </Link>
           </li>
-
           <li className="navs-item">
             <Link
               to="/aboutus"
@@ -129,7 +116,6 @@ const LoggedIn = (props) => {
               ABOUT US
             </Link>
           </li>
-
           <li className="navs-btn">
             {button ? (
               <Link to="/signup" className="btn-link" onClick={props.signOut}>
@@ -137,7 +123,7 @@ const LoggedIn = (props) => {
                   buttonStyle="btn--outline "
                   buttonSize="btn--large"
                   buttonColor="red"
-                  onClick={closeMobileMenu}
+                  // onClick={closeMobileMenu}
                 >
                   <p className="move">LOGOUT</p>
                 </Button>
@@ -148,7 +134,7 @@ const LoggedIn = (props) => {
                   buttonStyle="btn--outline "
                   buttonSize="btn--large"
                   buttonColor="red"
-                  onClick={closeMobileMenu}
+                  // onClick={closeMobileMenu}
                 >
                   <p className="move">LOGOUT</p>
                 </Button>

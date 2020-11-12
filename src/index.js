@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "jquery/dist/jquery.min.js";
+// import "jquery/dist/jquery.min.js";
 import { createStore, applyMiddleware, compose } from "redux";
 import rootReducer from "./store/reducers/rootReducer";
 import { Provider } from "react-redux";
@@ -49,11 +49,14 @@ function AuthIsLoaded({ children }) {
   const auth = useSelector((state) => state.firebase.auth);
   if (!isLoaded(auth))
     return (
-      <div className="auth-card feedbackdisplay">
-        <h1>JUST A SEC</h1>
-        <Loading title="LOADING..." />
-      </div>
+      <>
+        <div className="auth-card feedbackdisplay">
+          <h1>JUST A SEC</h1>
+          <Loading title="LOADING..." />
+        </div>
+      </>
     );
+
   return children;
 }
 ReactDOM.render(

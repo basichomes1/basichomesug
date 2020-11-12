@@ -37,7 +37,7 @@ export default function RoomsList({ rooms }) {
   if (rooms.length === 0) {
     return (
       <div className="empty-search">
-        <h3>NO ROOMS MATCHED</h3>
+        <h3>NO ROOMS MATCH YOUR SEARCH CRITERIA</h3>
       </div>
     );
   }

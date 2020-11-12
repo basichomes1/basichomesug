@@ -5,7 +5,7 @@ import Banner from "../components/dashboard/Banner";
 import Footer from "../components/dashboard/Footer";
 import "../css/Contact.css";
 import { Button } from "../components/Button/Button";
-import { FaFacebookF, FaInstagram, FaMailBulk } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import Title from "../components/Extras/Title";
 
 export default function Contact() {
@@ -14,19 +14,19 @@ export default function Contact() {
       <Hero hero="roomsHero">
         <Banner title="CONTACT US" subtitle=""></Banner>
       </Hero>
+
       <div className="contact-container">
         <div className="contact-card">
           <div className="contact-box">
             <div className="contact-content">
-              <h2>01</h2>
-              <h3>CONTACT US VIA EMAIL</h3>
+              <h3>CONTACT US VIA MOBILE</h3>
               <p>BASIC HOMES UGANDA</p>
               <Button
                 buttonStyle="btn--outline "
                 buttonSize="btn--mobile"
                 buttonColor="red"
               >
-                <FaMailBulk />
+                <FaPhoneAlt />
               </Button>
             </div>
           </div>
@@ -34,7 +34,6 @@ export default function Contact() {
         <div className="contact-card">
           <div className="contact-box">
             <div className="contact-content">
-              <h2>02</h2>
               <h3>FIND US ON INSTAGRAM</h3>
               <p>BASIC HOMES UGANDA</p>
               <Button
@@ -50,7 +49,6 @@ export default function Contact() {
         <div className="contact-card">
           <div className="contact-box">
             <div className="contact-content">
-              <h2>03</h2>
               <h3>FIND US ON FACEBOOK</h3>
               <p>BASIC HOMES UGANDA</p>
               <Button
@@ -64,6 +62,29 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <section className="new-section">
+        <div className="new-container">
+          <div className="newform">
+            <form action="">
+              <h2>SEND MESSAGE</h2>
+              <div className="newinputbox">
+                <input type="text" name="name" required />
+                <span>NAME</span>
+              </div>
+              <div className="newinputbox">
+                <input type="email" name="email" required />
+                <span>EMAIL </span>
+              </div>
+              <div className="newinputbox">
+                <textarea name="message" required></textarea>
+                <span>MESSAGE...</span>
+              </div>
+
+              <Button type="submit">SUBMIT</Button>
+            </form>
+          </div>
+        </div>
+      </section>
       <Title title="LOCATION" />
       <Footer />
     </>

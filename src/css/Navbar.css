@@ -22,7 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   position: fixed;
   width: 100vw;
   top: 0;
@@ -60,7 +60,7 @@
 
 .navbars-icon {
   margin-right: 3.5rem;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .navs-menu {
@@ -101,6 +101,48 @@
 
 .menu-icon {
   display: none;
+}
+
+.btn-floating {
+  display: inline-block;
+  color: #efebf1;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  background-color: var(--orange);
+  border-radius: 50%;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  z-index: 200;
+}
+.btn-floating p {
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.btn-floating:hover {
+  background-color: #26a69a;
+}
+
+.btn-floating:before {
+  border-radius: 0;
+}
+
+.link-color {
+  color: black;
 }
 
 @media screen and (max-width: 960px) {
@@ -147,7 +189,7 @@
 
   .navs-links:hover {
     color: white;
-    transform: scale(1.2);
+    transform: scale(0.9);
     transition: all 0.3s ease;
   }
 
@@ -190,58 +232,16 @@
     width: 100%;
     height: 120px;
   }
-}
-
-.btn-floating {
-  display: inline-block;
-  color: #efebf1;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  width: 60px;
-  height: 60px;
-  line-height: 40px;
-  padding: 0;
-  background-color: var(--orange);
-  border-radius: 50%;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-  cursor: pointer;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-  z-index: 200;
-}
-.btn-floating p {
-  text-transform: uppercase;
-  margin-top: 12px;
-  margin-left: 14px;
-  font-size: 20px;
-}
-.btn-floating:hover {
-  background-color: #26a69a;
-}
-
-.btn-floating:before {
-  border-radius: 0;
-}
-
-.link-color {
-  color: black;
-}
-
-@media screen and (max-width: 960px) {
-  .btn-floating {
+  /* .btn-floating {
     margin-right: -90px;
-    margin-top: -30px;
+    margin-top: -10px;
     margin-left: 5px;
-    display: inline-block;
+    display: flex;
     position: relative;
     overflow: hidden;
     z-index: 1;
-    width: 30px;
-    height: 30px;
+    width: 47px;
+    height: 47px;
     line-height: 40px;
     padding: 0;
     background-color: var(--orange);
@@ -250,16 +250,23 @@
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
     cursor: pointer;
-    vertical-align: middle;
     justify-content: center;
     align-items: center;
     z-index: 200;
+    text-align: center;
   }
-  .btn-floating p {
-    text-transform: uppercase;
-    margin-top: -5px;
-    margin-left: 4px;
 
-    font-size: 10px;
+  .btn-floating p {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-30%, -10%);
+    font-size: 25px;
+  } */
+  .navbars-icon {
+    margin-right: 6rem;
+    margin-top: 0.4rem;
+    font-size: 30px;
   }
 }

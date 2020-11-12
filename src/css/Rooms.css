@@ -210,7 +210,7 @@
 }
 .filter-form {
   padding: 15px;
-  width: 60vw;
+  width: 90vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(222px, 1fr));

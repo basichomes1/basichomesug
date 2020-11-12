@@ -5,15 +5,17 @@
 .about {
   text-align: center;
   margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 .section-title h4,
 .feature h4,
 .serviceColor,
 .about h4 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
   margin-bottom: 0.1rem;
+
   color: black;
 }
 
