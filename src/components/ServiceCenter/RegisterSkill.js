@@ -55,8 +55,8 @@ class RegisterSkill extends React.Component {
             </Link>
           </div>
 
-          <div className="showcase-form card">
-            <h2>REGISTER YOUR SKILL</h2>
+          <div className="showcase-form form-card">
+            <h1>REGISTER YOUR SKILL</h1>
             <form
               name="contact"
               method="post"

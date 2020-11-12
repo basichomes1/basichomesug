@@ -68,8 +68,6 @@ export const settings = {
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        infinite: true,
-        initialSlide: 1,
         autoplay: true,
         autoplaySpeed: 3000,
         cssEase: "linear",
@@ -78,9 +76,8 @@ export const settings = {
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
-
         autoplay: true,
         autoplaySpeed: 3000,
         cssEase: "linear",

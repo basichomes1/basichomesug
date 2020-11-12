@@ -43,30 +43,37 @@
   position: relative;
   top: 60px;
   height: 100%;
-  width: 400px;
-  padding: 40px;
+  width: 100%;
   z-index: 1000;
   justify-self: flex-end;
   animation: slideInFromRight 1s ease-in;
-  background: crimson;
+}
+
+.form-card {
+  background: var(--orange);
+  color: #19181a;
+  border-radius: 2%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  letter-spacing: var(--mainSpacing);
 }
 
 .showcase-form .form-control {
-  margin: 30px 0;
+  margin: 10px 0;
   background: var(--orange);
 }
 
 .showcase-form input[type="text"],
 .showcase-form input[type="email"] {
-  border: 3px solid crimson;
+  border: 2px solid crimson;
   color: crimson;
   width: 100%;
   padding: 3px;
   font-size: 16px;
-  background-color: #002240;
 }
 ::placeholder {
-  color: crimson;
+  color: black;
+  text-shadow: 0px 1px 20px grey;
   opacity: 1;
 }
 
@@ -170,8 +177,12 @@
 }
 
 /* Mobile */
-@media (max-width: 500px) {
+@media (max-width: 960px) {
   .showcase-form {
-    width: 300px;
+    width: 100%;
+  }
+
+  .showcase-form h1 {
+    font-size: 19.4px;
   }
 }

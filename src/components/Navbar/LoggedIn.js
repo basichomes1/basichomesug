@@ -56,11 +56,23 @@ const LoggedIn = (props) => {
         <div className="menu-icon" onClick={handleClick}>
           {click ? (
             <>
-              <FaTimes />
+              <FaTimes
+                style={{
+                  fontSize: "20px",
+                  verticalAlign: "middle",
+                  marginTop: "-40px",
+                }}
+              />
             </>
           ) : (
             <>
-              <FaBars />
+              <FaBars
+                style={{
+                  fontSize: "20px",
+                  verticalAlign: "middle",
+                  marginTop: "-40px",
+                }}
+              />
             </>
           )}
         </div>
@@ -78,7 +90,7 @@ const LoggedIn = (props) => {
               HOME
             </Link>
           </li>
-          <li className="navs-item">
+          <li className="navs-item pad-block">
             <Link
               to="/rooms"
               className="navs-links"
@@ -90,7 +102,7 @@ const LoggedIn = (props) => {
               ROOMS
             </Link>
           </li>
-          <li className="navs-item">
+          <li className="navs-item pad-block">
             <Link
               to="/jobs"
               className="navs-links"
@@ -103,7 +115,7 @@ const LoggedIn = (props) => {
             </Link>
           </li>
 
-          <li className="navs-item">
+          <li className="navs-item pad-block">
             <Link
               to="/contact"
               className="navs-links"
@@ -115,7 +127,7 @@ const LoggedIn = (props) => {
               CONTACT
             </Link>
           </li>
-          <li className="navs-item">
+          <li className="navs-item pad-block">
             <Link
               to="/aboutus"
               className="navs-links"

@@ -31,10 +31,7 @@ class Job extends Component {
     return (
       <>
         <Hero hero="roomsHero">
-          <Banner
-            title="REGISTER A SKILL"
-            subtitle="WORK AND STILL BE A STUDENT"
-          ></Banner>
+          <Banner title=" SKILLS AREA"></Banner>
         </Hero>
         <RegisterSkill />
         <Hero />
