@@ -159,12 +159,7 @@
     opacity: 1;
     transition: all 0.5s ease;
     border-top: 1px groove var(--orange);
-    /* border-left: 2px groove var(--orange); */
-    /* border-right: 2px groove var(--orange); */
     border-bottom: 2px groove var(--orange);
-
-    /* border-top-right-radius: 70px;
-    border-top-left-radius: 70px; */
   }
 
   .navs-menu.active {
@@ -191,18 +186,10 @@
     position: relative;
   }
 
-  .navs-links:hover {
-    color: white;
-    transform: scale(0.2);
-    transition: all 0.3s ease;
-  }
-
-  .navs-item:hover {
-    border: none;
-  }
-
   .navs-item {
     width: 100%;
+    height: 100%;
+    margin-left: 50px;
   }
 
   .navbars-logo {
