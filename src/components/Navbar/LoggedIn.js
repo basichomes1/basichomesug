@@ -90,7 +90,18 @@ const LoggedIn = (props) => {
               ROOMS
             </Link>
           </li>
-          <li className="navs-links">SERVICES</li>
+          <li className="navs-item">
+            <Link
+              to="/jobs"
+              className="navs-links"
+              onClick={() => {
+                closeMobileMenu();
+                toggleHome();
+              }}
+            >
+              SERVICE CENTER
+            </Link>
+          </li>
 
           <li className="navs-item">
             <Link

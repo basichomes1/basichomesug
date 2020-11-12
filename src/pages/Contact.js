@@ -2,7 +2,6 @@ import React from "react";
 import Hero from "../components/dashboard/Hero";
 import Banner from "../components/dashboard/Banner";
 
-import Footer from "../components/dashboard/Footer";
 import "../css/Contact.css";
 import { Button } from "../components/Button/Button";
 import { FaFacebookF, FaInstagram, FaPhoneAlt } from "react-icons/fa";
@@ -86,7 +85,6 @@ export default function Contact() {
         </div>
       </section>
       <Title title="LOCATION" />
-      <Footer />
     </>
   );
 }

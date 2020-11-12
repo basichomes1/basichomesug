@@ -48,19 +48,26 @@
   z-index: 1000;
   justify-self: flex-end;
   animation: slideInFromRight 1s ease-in;
+  background: crimson;
 }
 
 .showcase-form .form-control {
   margin: 30px 0;
+  background: var(--orange);
 }
 
 .showcase-form input[type="text"],
 .showcase-form input[type="email"] {
-  border: 0;
-  border-bottom: 1px solid #b4becb;
+  border: 3px solid crimson;
+  color: crimson;
   width: 100%;
   padding: 3px;
   font-size: 16px;
+  background-color: #002240;
+}
+::placeholder {
+  color: crimson;
+  opacity: 1;
 }
 
 .showcase-form input:focus {

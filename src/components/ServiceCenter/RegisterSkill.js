@@ -69,10 +69,12 @@ class RegisterSkill extends React.Component {
                 <input
                   type="text"
                   name="name"
+                  id="name"
                   placeholder="Full Name"
                   value={name}
                   required
                   onChange={this.handleChange}
+                  style={{ backgroundColor: "red" }}
                 />
               </div>
               <div className="form-control">
@@ -92,7 +94,7 @@ class RegisterSkill extends React.Component {
               </div>
               <div className="form-control">
                 <select
-                  name="University"
+                  name="university"
                   value={university}
                   required
                   onChange={this.handleChange}
