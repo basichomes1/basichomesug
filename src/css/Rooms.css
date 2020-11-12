@@ -6,7 +6,7 @@
 }
 .featured-rooms-center {
   width: 80vw;
-  margin: 10px auto;
+  margin: 1px auto;
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));

@@ -1,11 +1,14 @@
 .homehero {
-  min-height: 60vh;
+  min-height: 30vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 2px;
-  background: linear-gradient(rgba(39, 33, 33, 0.9), rgba(27, 24, 24, 0.9)),
-    url("../images/bg/Taieri.png") center no-repeat;
+  /* background: linear-gradient(rgba(39, 33, 33, 0.9), rgba(27, 24, 24, 0.9)),
+    url("../images/bg/Taieri.png") center no-repeat; */
+
+  background: linear-gradient(rgba(39, 33, 33, 0.9), rgba(27, 24, 24, 0.9));
 
   border: 10px solid rgba(39, 33, 33, 0.9);
   box-shadow: -10px -1px 10px rgba(39, 33, 33, 0.9),
@@ -14,80 +17,3 @@
     inset 15px 15px 15px rgba(39, 33, 33, 0.9);
 }
 /* End of Hero */
-/* Banner */
-.Homebanner {
-  display: inline-block;
-  color: var(--mainWhite);
-  padding: 80px auto;
-  margin: 50px;
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: var(--mainSpacing);
-  height: 100%;
-}
-
-.trial {
-  border: 10px solid white;
-  background: rgba(100, 0, 0, 0.8);
-  border-top-left-radius: 100%;
-  border-bottom-right-radius: 100%;
-  border-bottom-left-radius: 100%;
-  border-top-right-radius: 100%;
-  box-shadow: -10px -1px 10px rgba(255, 255, 255, 0.2),
-    15px 15px 15px rgba(0, 0, 0, 0.1),
-    inset -10px -10px 10px rgba(255, 255, 255, 0.2),
-    inset 15px 15px 15px rgba(0, 0, 0, 0.1);
-}
-.Homebanner h1 {
-  font-size: 0.5rem;
-  padding: 2px;
-}
-.Homebanner div {
-  width: 10rem;
-  height: 5px;
-  background: #f15a24;
-  margin: 1.7rem auto;
-}
-.Homebanner p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-@media screen and (min-width: 576px) {
-  .Homebanner {
-    padding: 2rem 3rem;
-  }
-  .Homebanner h1 {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 992px) {
-  .Homebanner {
-    display: inline-block;
-    color: var(--mainWhite);
-    padding: 20px auto;
-    margin: 50px;
-    text-align: center;
-    text-transform: capitalize;
-    letter-spacing: var(--mainSpacing);
-    height: 100%;
-  }
-
-  .trial {
-    border: 10px solid white;
-    background: rgba(100, 0, 0, 0.8);
-    border-top-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    border-bottom-left-radius: 100%;
-    border-top-right-radius: 100%;
-    box-shadow: -10px -1px 10px rgba(255, 255, 255, 0.2),
-      15px 15px 15px rgba(0, 0, 0, 0.1),
-      inset -10px -10px 10px rgba(255, 255, 255, 0.2),
-      inset 15px 15px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    height: 100%;
-  }
-  .Homebanner h1 {
-    font-size: 2rem;
-  }
-}
-/* End of Banner */

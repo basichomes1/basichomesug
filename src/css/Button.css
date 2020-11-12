@@ -11,7 +11,7 @@
   white-space: nowrap;
   color: #fff;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 200;
   margin: 10px 0;
   cursor: pointer;
   transition: 0.5s;
@@ -21,6 +21,7 @@
   background-color: #242424;
   color: #fff;
   border: 1px solid var(--primary);
+  font-family: sans-serif !important;
 }
 
 .btn--outline {
@@ -29,6 +30,7 @@
   padding: 8px 20px;
   border: 1px solid orange;
   transition: all 0.3s ease-out;
+  font-family: sans-serif !important;
 }
 
 .btn--medium {

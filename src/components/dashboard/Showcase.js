@@ -1,24 +1,19 @@
 import React from "react";
 import "../../css/Showcase.css";
 import "../../css/Utilities.css";
-// import { Link } from "react-router-dom";
+import Title from "../Extras/Title";
 import FeaturedRooms from "../Rooms/FeaturedRooms";
-import SimpleSlider from "../Slider/Slider";
-// import Homehero from "./Homehero";
-// import Homebanner from "./Homebanner";
+import Slider from "../Slider/Slider";
+
+import Homehero from "./Homehero";
 
 export default function Showcase() {
   return (
     <>
-      {/* <Homehero>
-        <Homebanner title="GET READY" subtitle="LET'S DO THE HUNTING">
-          <Link to="/rooms" className="btn-primary">
-            OUR ROOMS
-          </Link>
-        </Homebanner>
-      </Homehero> */}
-
-      <SimpleSlider />
+      <Homehero>
+        <Title title="SERVICES" span="about" />
+        <Slider />
+      </Homehero>
       <FeaturedRooms />
     </>
   );

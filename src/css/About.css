@@ -12,12 +12,12 @@
   margin-top: 1px;
   margin-bottom: 14px;
   font-size: 10px;
-  font-family: "Arvo", serif !important;
+  font-family: serif !important;
   width: 80%;
 }
 .cardd p {
   text-transform: capitalize;
-  font-family: "Arvo", serif !important;
+  font-family: serif !important;
 }
 .text-about {
   display: flex;

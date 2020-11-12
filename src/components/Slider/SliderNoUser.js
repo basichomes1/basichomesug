@@ -1,63 +1,41 @@
 import React, { Component } from "react";
-import Slider from "react-slick";
-import Title from "../Extras/Title";
 import { FaBlackTie, FaWarehouse } from "react-icons/fa";
 
-import { settings } from "./Slidersettings";
-
 class SliderNoUser extends Component {
-  state = {
-    services1: [
-      {
-        icon: <FaWarehouse />,
-        title: "HOUSE RESERVATIONS",
-        info: "BOOK FOR A ROOM ONLINE",
-      },
-    ],
-    services2: [
-      {
-        icon: <FaBlackTie />,
-        title: "SERVICE CENTER",
-        info: "REGISTER YOUR  SKILLS",
-      },
-    ],
-  };
   render() {
     return (
-      <div className="services">
-        <Title title="SERVICES" span="serviceColor" />
-        <Slider {...settings}>
-          <a href="/rooms" className="link-color">
-            <div>
-              {this.state.services1.map((item, index) => {
-                return (
-                  <article key={index} className="services-article">
-                    <span>{item.icon}</span>
-                    <h5>{item.title}</h5>
-                    <p>{item.info}</p>
-                  </article>
-                );
-              })}
+      <div className="service-container">
+        <div className="service-card first-card">
+          <div className="service-box">
+            <span className="service-card-span">
+              <FaWarehouse />
+            </span>
+            <div className="service-text">
+              <p>HOUSE </p>
+              <p> RESERVATIONS</p>
             </div>
+          </div>
+          <a href="/rooms">
+            <button className="service-btn">BOOK</button>
           </a>
+        </div>
 
-          <a href="/jobs" className="link-color">
-            <div>
-              {this.state.services2.map((item, index) => {
-                return (
-                  <article key={index} className="services-article">
-                    <span>{item.icon}</span>
-                    <h5>{item.title}</h5>
-                    <p>{item.info}</p>
-                  </article>
-                );
-              })}
+        <div className="service-card second-card">
+          <div className="service-box">
+            <span className="service-card-span">
+              <FaBlackTie />
+            </span>
+            <div className="service-text">
+              <p>SERVICE </p>
+              <p> CENTER</p>
             </div>
+          </div>
+          <a href="/jobs">
+            <button className="service-btn">REGISTER</button>
           </a>
-        </Slider>
+        </div>
       </div>
     );
   }
 }
-
 export default SliderNoUser;
