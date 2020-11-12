@@ -37,6 +37,7 @@ a {
   .hero {
     background: url("../images/bg/basic.png") no-repeat;
     background-attachment: fixed;
+    background-position: fixed;
     background-size: 220%;
     display: flex;
   }
