@@ -172,10 +172,9 @@
 }
 .second-section h6 {
   flex: 0.2;
-  height: 20vh;
+  height: 100%;
   background: transparent;
-  margin-bottom: 20px;
-  margin-left: 20px;
+
   text-align: center;
   font-size: 14px;
 }
