@@ -176,7 +176,10 @@
     height: 100%;
   }
   .form-card {
-    margin-top: -10px;
+    text-align: center;
+    margin-top: -40px;
+    margin-left: -60px;
+
     height: 100%;
   }
   .cli .grid > *:first-child {

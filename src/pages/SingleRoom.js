@@ -61,36 +61,44 @@ export default class SingleRoom extends Component {
             ))}
           </div>
           <div className="single-room-info">
-            <article className="desc">
+            <div className="first-section">
               <h3>DETAILS</h3>
               <p>{description}</p>
-            </article>
+            </div>
 
-            <article className="info">
-              <h3>INFO</h3>
-              <h6>price : {price}UGX</h6>
-              <h6>size : {size} SQFT</h6>
-              <h6>
-                max capacity :
-                {capacity > 1 ? ` ${capacity} people` : ` ${capacity} person`}
-              </h6>
-              <h6>{pets ? "pets allowed" : "no pets allowed"}</h6>
-            </article>
+            <div className="second-section">
+              <article className="info">
+                <h3>INFO</h3>
+                <h6>Price : {price}UGX</h6>
+                <h6>Size : {size} SQFT</h6>
+                <h6>
+                  Max Capacity :
+                  {capacity > 1 ? ` ${capacity} people` : ` ${capacity} person`}
+                </h6>
+                <h6>{pets ? "Pets Allowed" : "No Pets Allowed"}</h6>
+              </article>
+            </div>
 
-            <article className="info">
-              <h3>LOCATION</h3>
-              <h5 style={{ textTransform: "uppercase" }}>{location}</h5>
-            </article>
+            <div className="third-section">
+              <article className="info">
+                <h3>Location</h3>
+                <h5 style={{ textTransform: "uppercase" }}>{location}</h5>
+              </article>
+            </div>
 
-            <article className="info">
-              <h3>ACCOMODATION TYPE</h3>
-              <p style={{ textTransform: "uppercase" }}>{accomodation}</p>
-            </article>
+            <div className="fourth-section">
+              <article className="info">
+                <h3>Accomodation Type</h3>
+                <p style={{ textTransform: "uppercase" }}>{accomodation}</p>
+              </article>
+            </div>
 
-            <article className="info">
-              <h3>ROOM TYPE</h3>
-              <p style={{ textTransform: "uppercase" }}>{type}</p>
-            </article>
+            <div className="fifth-section">
+              <article className="info">
+                <h3>Room Type</h3>
+                <p style={{ textTransform: "uppercase" }}>{type}</p>
+              </article>
+            </div>
           </div>
         </section>
 
