@@ -54,7 +54,7 @@ export default function Logout() {
                 toggleHome();
               }}
             >
-              HOME
+              Home
             </Link>
           </li>
           <li className="navs-item">
@@ -66,7 +66,7 @@ export default function Logout() {
                 toggleHome();
               }}
             >
-              ROOMS
+              Rooms
             </Link>
           </li>
 
@@ -79,7 +79,7 @@ export default function Logout() {
                 toggleHome();
               }}
             >
-              CONTACT
+              Contact
             </Link>
           </li>
 
@@ -92,7 +92,7 @@ export default function Logout() {
                 toggleHome();
               }}
             >
-              ABOUT US
+              About Us
             </Link>
           </li>
           <li className="navs-btn">
@@ -105,7 +105,7 @@ export default function Logout() {
                     buttonColor="red"
                     onClick={closeMobileMenu}
                   >
-                    <p className="move">LOGIN</p>
+                    <p className="move">Login</p>
                   </Button>
                 </Link>
                 <Link to="/signup" className="btn-link">
@@ -115,7 +115,7 @@ export default function Logout() {
                     buttonColor="red"
                     onClick={closeMobileMenu}
                   >
-                    <p className="move">SIGN UP</p>
+                    <p className="move">Sign Up</p>
                   </Button>
                 </Link>
               </>
@@ -128,7 +128,7 @@ export default function Logout() {
                     buttonColor="red"
                     onClick={closeMobileMenu}
                   >
-                    <p className="move">LOGIN</p>
+                    <p className="move">Login</p>
                   </Button>
                 </Link>
                 <Link to="/signup" className="btn-link">
@@ -138,7 +138,7 @@ export default function Logout() {
                     buttonColor="red"
                     onClick={closeMobileMenu}
                   >
-                    <p className="move">SIGNUP</p>
+                    <p className="move">Sign Up</p>
                   </Button>
                 </Link>
               </>

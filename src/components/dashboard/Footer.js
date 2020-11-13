@@ -1,13 +1,13 @@
 import React from "react";
 import "../../css/Footer.css";
-import logo from "../../images/svg/logo.svg";
+// import logo from "../../images/svg/logo.svg";
 
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div className="frame">
-      <img src={logo} alt="basic homes" width="200px" />
+      <h1>BASIC HOMES UGANDA</h1>
       <a href="facebook.com" className="footer-btn">
         <FaFacebookF style={{ color: "#000000" }} />
       </a>

@@ -10,7 +10,7 @@
   cursor: pointer;
   white-space: nowrap;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 200;
   margin: 10px 0;
   cursor: pointer;

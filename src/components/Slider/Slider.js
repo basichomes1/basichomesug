@@ -1,13 +1,13 @@
 import React from "react";
 import SliderUser from "./SliderUser";
-import SliderNoUser from "./SliderNoUser";
+// import SliderNoUser from "./SliderNoUser";
 import { connect } from "react-redux";
 import { compose } from "redux";
 import { firebaseConnect } from "react-redux-firebase";
 
 const SimpleSlider = (props) => {
   const { auth } = props;
-  const links = auth.uid ? <SliderUser /> : <SliderNoUser />;
+  const links = auth.uid ? <SliderUser /> : <SliderUser />;
 
   return <>{links}</>;
 };

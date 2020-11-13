@@ -87,7 +87,7 @@ const LoggedIn = (props) => {
                 toggleHome();
               }}
             >
-              HOME
+              Home
             </Link>
           </li>
           <li className="navs-item pad-block">
@@ -99,7 +99,7 @@ const LoggedIn = (props) => {
                 toggleHome();
               }}
             >
-              ROOMS
+              Rooms
             </Link>
           </li>
           <li className="navs-item pad-block">
@@ -111,7 +111,7 @@ const LoggedIn = (props) => {
                 toggleHome();
               }}
             >
-              SERVICE CENTER
+              Skills Area
             </Link>
           </li>
 
@@ -124,7 +124,7 @@ const LoggedIn = (props) => {
                 toggleHome();
               }}
             >
-              CONTACT
+              Contact
             </Link>
           </li>
           <li className="navs-item pad-block">
@@ -136,7 +136,7 @@ const LoggedIn = (props) => {
                 toggleHome();
               }}
             >
-              ABOUT US
+              About Us
             </Link>
           </li>
           <li className="navs-btn">
@@ -148,7 +148,7 @@ const LoggedIn = (props) => {
                   buttonColor="red"
                   // onClick={closeMobileMenu}
                 >
-                  <p className="move">LOGOUT</p>
+                  <p className="move">Log Out</p>
                 </Button>
               </Link>
             ) : (
@@ -159,7 +159,7 @@ const LoggedIn = (props) => {
                   buttonColor="red"
                   // onClick={closeMobileMenu}
                 >
-                  <p className="move">LOGOUT</p>
+                  <p className="move">Log Out</p>
                 </Button>
               </Link>
             )}
