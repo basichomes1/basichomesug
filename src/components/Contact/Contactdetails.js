@@ -5,6 +5,31 @@ import { Button } from "../Button/Button";
 const Contactdetails = () => {
   return (
     <>
+      <div className="new-section-bg">
+        <section className="new-section">
+          <div className="new-container">
+            <div className="newform">
+              <form action="">
+                <h2>SEND MESSAGE</h2>
+                <div className="newinputbox">
+                  <input type="text" name="name" required />
+                  <span>NAME</span>
+                </div>
+                <div className="newinputbox">
+                  <input type="email" name="email" required />
+                  <span>EMAIL </span>
+                </div>
+                <div className="newinputbox">
+                  <textarea name="message" required></textarea>
+                  <span>MESSAGE...</span>
+                </div>
+
+                <Button type="submit">SUBMIT</Button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
       <div className="contact-container">
         <div className="contact-card">
           <div className="contact-box">
@@ -55,32 +80,6 @@ const Contactdetails = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="new-section-bg">
-        <section className="new-section">
-          <div className="new-container">
-            <div className="newform">
-              <form action="">
-                <h2>SEND MESSAGE</h2>
-                <div className="newinputbox">
-                  <input type="text" name="name" required />
-                  <span>NAME</span>
-                </div>
-                <div className="newinputbox">
-                  <input type="email" name="email" required />
-                  <span>EMAIL </span>
-                </div>
-                <div className="newinputbox">
-                  <textarea name="message" required></textarea>
-                  <span>MESSAGE...</span>
-                </div>
-
-                <Button type="submit">SUBMIT</Button>
-              </form>
-            </div>
-          </div>
-        </section>
       </div>
     </>
   );

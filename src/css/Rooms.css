@@ -173,6 +173,7 @@
 .second-section h6 {
   background: transparent;
   margin-top: 20px;
+  /* margin-bottom: -2px; */
   text-align: center;
   font-size: 14px;
 }

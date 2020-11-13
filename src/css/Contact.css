@@ -201,9 +201,10 @@
 
 @media (max-width: 991px) {
   .new-section {
-    padding: 50px;
-    max-width: 100vw;
+    padding: 70px;
+    max-width: 90vw;
     text-align: center;
+    margin-left: -50px;
   }
 
   .new-container {
