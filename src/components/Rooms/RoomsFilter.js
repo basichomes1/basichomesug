@@ -60,7 +60,7 @@ const RoomsFilter = ({ rooms }) => {
       <form className="filter-form">
         {/* select type */}
         <div className="form-group">
-          <label htmlFor="location">LOCATION</label>
+          <label htmlFor="location">Location</label>
           <select
             name="location"
             id="location"
@@ -74,7 +74,7 @@ const RoomsFilter = ({ rooms }) => {
 
         {/* select type */}
         <div className="form-group">
-          <label htmlFor="accomodation">ACCOMODATION TYPE</label>
+          <label htmlFor="accomodation">Accomodation Type</label>
           <select
             name="accomodation"
             id="accomodation"
@@ -88,7 +88,7 @@ const RoomsFilter = ({ rooms }) => {
 
         {/* ROOM TYPE */}
         <div className="form-group">
-          <label htmlFor="type">ROOM TYPE</label>
+          <label htmlFor="type">Room Type</label>
           <select
             name="type"
             id="type"
@@ -102,7 +102,7 @@ const RoomsFilter = ({ rooms }) => {
 
         {/* select type */}
         <div className="form-group">
-          <label htmlFor="capacity">NUMBER OF PEOPLE</label>
+          <label htmlFor="capacity">Number Of people</label>
           <select
             name="capacity"
             id="capacity"
@@ -116,7 +116,7 @@ const RoomsFilter = ({ rooms }) => {
 
         {/* ROOM PRICE */}
         <div className="form-group">
-          <label htmlFor="price">ROOM PRICE: {price} (UGX)</label>
+          <label htmlFor="price">Price: {price}(UGX)</label>
           <input
             type="range"
             name="price"

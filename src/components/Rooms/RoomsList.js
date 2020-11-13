@@ -55,7 +55,7 @@ export default function RoomsList({ rooms }) {
           <div>
             {visible > rooms.length ? (
               <>
-                <div className="auth-card" style={{ color: "white" }}>
+                <div className="room-card" style={{ color: "white" }}>
                   <h2>NO MORE ROOMS</h2>
                 </div>
               </>

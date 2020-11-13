@@ -91,12 +91,16 @@ body {
 .empty-search {
   text-align: center;
   text-transform: capitalize;
-  margin: 2rem 0;
+
   padding: 1rem;
   letter-spacing: var(--mainSpacing);
+  height: 15vh;
   transition: var(--mainTransition);
-  animation: shake 2s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
+  animation: shake 2s linear infinite;
 }
 
 @keyframes shake {
