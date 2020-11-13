@@ -11,8 +11,8 @@ class SliderUser extends Component {
               <FaWarehouse />
             </span>
             <div className="service-text">
-              <p>HOUSE </p>
-              <p> RESERVATIONS</p>
+              <p>House </p>
+              <p> Reservations</p>
             </div>
           </div>
           <a href="/rooms">
@@ -26,8 +26,8 @@ class SliderUser extends Component {
               <FaBlackTie />
             </span>
             <div className="service-text">
-              <p>SERVICE </p>
-              <p> CENTER</p>
+              <p>Skills </p>
+              <p> Area</p>
             </div>
           </div>
           <a href="/jobs">
