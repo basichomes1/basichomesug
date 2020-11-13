@@ -17,7 +17,9 @@
 }
 
 .navbars {
-  background: linear-gradient(rgba(192, 18, 24, 1.9), rgba(106, 30, 121, 1.27));
+  /* background: linear-gradient(rgba(192, 18, 24, 1.9), rgba(106, 30, 121, 1.27)); */
+  background: var(--purple);
+
   height: 60px;
   display: flex;
   justify-content: center;
@@ -158,19 +160,22 @@
     left: -100%;
     opacity: 1;
     transition: all 1.6s ease;
-    background: linear-gradient(
+    /* background: linear-gradient(
       rgba(106, 30, 121, 1.27),
       rgba(106, 30, 121, 1.27)
-    );
+    ); */
+    background: var(--purple);
   }
 
   .navs-menu.active {
     padding-top: 20px;
     position: absolute;
-    background: linear-gradient(
+    /* background: linear-gradient(
       rgba(106, 30, 121, 1.27),
       rgba(106, 30, 121, 1.27)
-    );
+    ); */
+
+    background: var(--purple);
     left: 0;
     opacity: 1;
     transition: all 1.2s ease;
