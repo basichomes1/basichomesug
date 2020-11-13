@@ -159,7 +159,7 @@
     top: 57px;
     left: -100%;
     opacity: 1;
-    transition: all 1.6s ease;
+    transition: all 1.1s ease;
     /* background: linear-gradient(
       rgba(106, 30, 121, 1.27),
       rgba(106, 30, 121, 1.27)
@@ -178,7 +178,7 @@
     background: var(--purple);
     left: 0;
     opacity: 1;
-    transition: all 1.2s ease;
+    transition: all 1.1s ease;
     z-index: 1;
   }
 
