@@ -82,6 +82,7 @@
   width: 100%;
   padding: 15px;
   background: white;
+  transform: scale(0.9);
   /* margin-top: -400px; */
 }
 
@@ -189,8 +190,14 @@
   }
 
   .newform {
-    height: 60vh;
+    height: 48vh;
     width: 80vw;
     margin: 30px -30px 30px -30px;
+    transform: scale(0.9);
+  }
+
+  .newform h2 {
+    letter-spacing: 10px;
+    font-size: 20px;
   }
 }
