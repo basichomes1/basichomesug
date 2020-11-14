@@ -1,10 +1,12 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaPhoneAlt } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Button } from "../Button/Button";
+import Title from "../Extras/Title";
 
 const Contactdetails = () => {
   return (
     <>
+      <Title title="LET'S START A CONVERSATION" />
       <div className="new-section-bg">
         <section className="new-section">
           <div className="new-container">
@@ -30,56 +32,17 @@ const Contactdetails = () => {
           </div>
         </section>
       </div>
-      <div className="contact-container">
-        <div className="contact-card">
-          <div className="contact-box">
-            <div className="contact-content">
-              <p>BASIC HOMES UGANDA</p>
-              <div className="contact-container-btn">
-                <Button
-                  buttonStyle="btn--outline "
-                  buttonSize="btn--mobile"
-                  buttonColor="red"
-                >
-                  <FaPhoneAlt />
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="contact-card">
-          <div className="contact-box">
-            <div className="contact-content">
-              <p>BASIC HOMES UGANDA</p>
 
-              <div className="contact-container-btn">
-                <Button
-                  buttonStyle="btn--outline "
-                  buttonSize="btn--mobile"
-                  buttonColor="red"
-                >
-                  <FaInstagram style={{ color: "#000000" }} />
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="contact-card">
-          <div className="contact-box">
-            <div className="contact-content">
-              <p>BASIC HOMES UGANDA</p>
-              <div className="contact-container-btn">
-                <Button
-                  buttonStyle="btn--outline "
-                  buttonSize="btn--mobile"
-                  buttonColor="red"
-                >
-                  <FaFacebookF style={{ color: "#000000" }} />
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="contact-frame">
+        <a href="facebook.com" className="contact-frame-btn">
+          <FaFacebookF style={{ color: "#000000" }} />
+        </a>
+        <a href="facebook.com" className="contact-frame-btn">
+          <FaTwitter style={{ color: "#000000" }} />
+        </a>
+        <a href="facebook.com" className="contact-frame-btn">
+          <FaInstagram style={{ color: "#000000" }} />
+        </a>
       </div>
     </>
   );
