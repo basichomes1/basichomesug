@@ -344,7 +344,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   height: 10.4px;
   cursor: pointer;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #0e0f0f, #101111);
+  background: linear-gradient(-45deg, var(--orange), orange);
   border-radius: 1.3px;
   border: 0.2px solid #010101;
   /* transition: all 1s ease; */
