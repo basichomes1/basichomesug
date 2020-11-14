@@ -3,7 +3,7 @@
   min-height: 50vh;
   padding: 50px 100px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   background: var(--purple);

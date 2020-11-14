@@ -1,95 +1,98 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 
-.cardd {
-  background: linear-gradient(rgba(24, 24, 34, 0.9), rgba(23, 56, 78, 1.4));
-  color: #eae6ee;
-  border-radius: 50px;
-  box-shadow: -10px -1px 10px rgba(179, 119, 54, 0.487),
-    15px 15px 15px rgba(240, 220, 220, 0.1),
-    inset -10px -10px 10px rgba(218, 212, 212, 0.624),
-    inset 15px 15px 15px rgba(112, 20, 33, 0.631);
-  padding: 20px;
-  margin-top: 1px;
-  margin-bottom: 14px;
-  font-size: 10px;
-  font-family: serif !important;
-  width: 80%;
-}
-.cardd p {
-  text-transform: capitalize;
-  font-family: serif !important;
-}
-.text-about {
-  display: flex;
-  background: linear-gradient(rgba(24, 24, 34, 0.9), rgba(23, 56, 78, 0.4)),
-    url("../images/bg/6.jpg") no-repeat;
-  background-size: 100%;
-  color: white;
-  border-radius: 24%;
-  border: 2px solid black;
-  background-size: 200%;
-}
-
-.text-about-1 {
-  display: flex;
-  background: linear-gradient(rgba(39, 33, 33, 0.9), rgba(27, 24, 24, 0.9)),
-    url("../images/bg/background7.jpg") no-repeat;
-  background-size: 300%;
-  color: white;
-  border-radius: 8%;
-  border: 2px solid black;
-  padding: 20px;
-  background-position: top;
-}
-.text-about-2 {
-  display: flex;
-  background: linear-gradient(rgba(39, 33, 33, 0.9), rgba(27, 24, 24, 1.9)),
-    url("../images/bg/Taieri.png") no-repeat;
-  background-size: 300%;
-  color: white;
-  border-radius: 20%;
-  border: 2px solid black;
-  padding: 20px;
-
-  background-position: top;
-}
-.onee {
+.about-bg {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  min-height: 100vh;
+  background: pink;
 }
-
-.onee p {
-  font-size: 10px;
-  font-size: 14px;
+.about-container {
+  position: relative;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-
-.one {
-  flex: 0.5;
+.about-card {
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  background: #fff;
+  border: 2px solid blue;
+  margin: 20px 0;
+}
+
+.about-card:nth-child(even) {
+  flex-direction: column-reverse;
+  border: 2px solid red;
+}
+
+.about-imgbx {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: #000;
   margin: 20px;
+  border: 2px solid black;
 }
-
-.second {
-  flex: 0.5;
+.about-imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-content {
+  position: relative;
+  width: 250px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin: 20px;
+  border: 2px solid black;
 }
 
-@media screen and (max-width: 992px) {
-  .text-about {
-    display: flex;
+.about-content div {
+  padding: 20px;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .about-container {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    margin: 50px;
+  }
+
+  .about-card {
+    flex-direction: row;
+    margin: 10px 0;
+  }
+  .about-card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .about-imgbx,
+  .about-content {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600) {
+  .about-card {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .about-card:nth-child(even) {
     flex-direction: column;
   }
 
-  .card-one {
-    margin-top: 50px;
+  .about-imgbx,
+  .about-content {
+    width: 100%;
+  }
+
+  .about-content {
+    height: 200px;
   }
 }
