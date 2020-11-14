@@ -280,8 +280,8 @@
   width: 90vw;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-  grid-row-gap: 1.8rem;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-row-gap: 1.2rem;
   grid-column-gap: 8px;
   background: linear-gradient(rgba(106, 30, 121, 1.27), rgba(192, 18, 24, 0.9));
   font-size: 15px;
@@ -292,21 +292,16 @@
   text-transform: capitalize;
 }
 .form-group label {
-  display: block;
   letter-spacing: var(--mainSpacing);
-  margin-bottom: 0.8rem;
   color: white;
 }
 .form-control {
   width: 100%;
   background: white;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: black;
 }
 
-.size-inputs {
-  display: flex;
-}
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: 1px solid #000000;

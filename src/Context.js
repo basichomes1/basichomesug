@@ -10,15 +10,14 @@ export default class RoomProvider extends Component {
     sortedRooms: [],
     featuredRooms: [],
     loading: true,
-
-    type: "all",
+    type: "Room Type",
     capacity: 1,
     price: 0,
     minPrice: 0,
     maxPrice: 0,
     pets: false,
-    accomodation: "all",
-    location: "all",
+    accomodation: "Accomodation Type",
+    location: "Choose Location",
   };
   GETDATA;
   getData = async () => {
@@ -86,19 +85,19 @@ export default class RoomProvider extends Component {
     capacity = parseInt(capacity);
     price = parseInt(price);
 
-    if (accomodation !== "all") {
+    if (accomodation !== "Accomodation Type") {
       tempRooms = tempRooms.filter(
         (room) => room.accomodation === accomodation
       );
     }
 
     // filter by location
-    if (location !== "all") {
+    if (location !== "Choose Location") {
       tempRooms = tempRooms.filter((room) => room.location === location);
     }
 
     // filter by type
-    if (type !== "all") {
+    if (type !== "Room Type") {
       tempRooms = tempRooms.filter((room) => room.type === type);
     }
     // filter by capacity

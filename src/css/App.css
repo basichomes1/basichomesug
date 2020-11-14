@@ -364,7 +364,7 @@ body {
       rgba(255, 255, 255, 0.63)
     ), */ radial-gradient(
     circle at 100%,
-    white,
+    rgb(205, 205, 230),
     var(--purple) 60%
   );
   transition: all 1s ease;
@@ -374,7 +374,11 @@ body {
   flex: 0.49;
   margin-right: 10px;
   color: white;
-  background: radial-gradient(circle at 1%, white -10%, var(--purple) 60%);
+  background: radial-gradient(
+    circle at 1%,
+    rgb(200, 205, 230) -10%,
+    var(--purple) 60%
+  );
   transition: all 1s ease;
 }
 

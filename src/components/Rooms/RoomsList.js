@@ -50,7 +50,7 @@ export default function RoomsList({ rooms }) {
         })}
       </div>
 
-      <div buttonStyle="btn--primary" className="roomsloading">
+      <div buttonstyle="btn--primary" className="roomsloading">
         {!isLoading && (
           <div>
             {visible > rooms.length ? (
@@ -62,7 +62,7 @@ export default function RoomsList({ rooms }) {
             ) : (
               <>
                 <Button
-                  buttonStyle="btn--primary"
+                  buttonstyle="btn--primary"
                   onClick={() => {
                     showMoreitems();
                     showNoMoreitems();
@@ -75,7 +75,7 @@ export default function RoomsList({ rooms }) {
           </div>
         )}
         {isLoading && (
-          <Button buttonStyle="btn--primary">
+          <Button buttontyle="btn--primary">
             {visible > rooms.length ? (
               <>
                 <Loading title="NO MORE ROOMS" />

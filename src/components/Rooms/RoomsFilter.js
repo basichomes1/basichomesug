@@ -25,7 +25,7 @@ const RoomsFilter = ({ rooms }) => {
   let locations = getUnique(rooms, "location");
   // add all
 
-  types = ["all", ...types];
+  types = ["Room Type", ...types];
 
   // map to jsx
   types = types.map((item, index) => (
@@ -34,14 +34,14 @@ const RoomsFilter = ({ rooms }) => {
     </option>
   ));
 
-  accomodations = ["all", ...accomodations];
+  accomodations = ["Accomodation Type", ...accomodations];
   accomodations = accomodations.map((item, index) => (
     <option key={index} value={item}>
       {item}
     </option>
   ));
 
-  locations = ["all", ...locations];
+  locations = ["Choose Location", ...locations];
   locations = locations.map((item, index) => (
     <option key={index} value={item}>
       {item}
@@ -60,7 +60,7 @@ const RoomsFilter = ({ rooms }) => {
       <form className="filter-form">
         {/* select type */}
         <div className="form-group">
-          <label htmlFor="location">Location</label>
+          <label htmlFor="location"></label>
           <select
             name="location"
             id="location"
@@ -74,7 +74,7 @@ const RoomsFilter = ({ rooms }) => {
 
         {/* select type */}
         <div className="form-group">
-          <label htmlFor="accomodation">Accomodation Type</label>
+          <label htmlFor="accomodation"> </label>
           <select
             name="accomodation"
             id="accomodation"
@@ -88,7 +88,7 @@ const RoomsFilter = ({ rooms }) => {
 
         {/* ROOM TYPE */}
         <div className="form-group">
-          <label htmlFor="type">Room Type</label>
+          <label htmlFor="type"> </label>
           <select
             name="type"
             id="type"
