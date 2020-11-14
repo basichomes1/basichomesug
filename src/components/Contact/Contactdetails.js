@@ -9,6 +9,9 @@ const Contactdetails = () => {
       <Title title="LET'S START A CONVERSATION" />
       <div className="new-section-bg">
         <section className="new-section">
+          <div className="working-hours">
+            <h1>WORKING HOURS</h1>
+          </div>
           <div className="new-container">
             <div className="newform">
               <form action="">
@@ -32,12 +35,12 @@ const Contactdetails = () => {
           </div>
         </section>
       </div>
-
+      <Title title="FIND US ON" />
       <div className="contact-frame">
         <a href="facebook.com" className="contact-frame-btn">
           <FaFacebookF style={{ color: "#000000" }} />
         </a>
-        <a href="facebook.com" className="contact-frame-btn">
+        <a href="facebook.com" className="contact-frame-btn middle">
           <FaTwitter style={{ color: "#000000" }} />
         </a>
         <a href="facebook.com" className="contact-frame-btn">
