@@ -357,10 +357,10 @@ body {
   margin-left: 10px;
   color: white;
   background: linear-gradient(
-    90deg,
+    45deg,
     var(--purple),
     var(--purple),
-    rgba(238, 234, 234, 0.63)
+    rgba(255, 255, 255, 0.63)
   );
   transition: all 1s ease;
 }
@@ -370,8 +370,8 @@ body {
   margin-right: 10px;
   color: white;
   background: linear-gradient(
-    90deg,
-    rgba(238, 234, 234, 0.63),
+    45deg,
+    rgba(255, 255, 255, 0.63),
     var(--purple),
     var(--purple)
   );
