@@ -356,11 +356,16 @@ body {
   flex: 0.49;
   margin-left: 10px;
   color: white;
-  background: linear-gradient(
-    45deg,
-    var(--purple),
-    var(--purple),
-    rgba(255, 255, 255, 0.63)
+  background: 
+  /* linear-gradient(
+      90deg,
+      var(--purple),
+      var(--purple),
+      rgba(255, 255, 255, 0.63)
+    ), */ radial-gradient(
+    circle at 100%,
+    white,
+    var(--purple) 60%
   );
   transition: all 1s ease;
 }
@@ -369,12 +374,7 @@ body {
   flex: 0.49;
   margin-right: 10px;
   color: white;
-  background: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.63),
-    var(--purple),
-    var(--purple)
-  );
+  background: radial-gradient(circle at 1%, white -10%, var(--purple) 60%);
   transition: all 1s ease;
 }
 
