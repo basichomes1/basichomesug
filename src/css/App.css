@@ -357,7 +357,7 @@ body {
   margin-left: 10px;
   color: white;
   /* background: var(--purple); */
-  background: linear-gradient(90deg, rgb(54, 2, 56), rgba(238, 234, 234, 0.53));
+  background: linear-gradient(90deg, var(--purple), rgba(238, 234, 234, 0.43));
   transition: background 2s ease;
 }
 
@@ -365,8 +365,8 @@ body {
   flex: 0.49;
   margin-right: 10px;
   color: white;
-  background: linear-gradient(90deg, rgba(238, 234, 234, 0.53), rgb(54, 2, 56));
-  /* background: var(--purple); */
+  background: linear-gradient(90deg, rgba(238, 234, 234, 0.43), var(--purple));
+
   transition: background 2s ease;
 }
 
