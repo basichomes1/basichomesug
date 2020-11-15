@@ -4,7 +4,6 @@ import { Button } from "../Button/Button";
 import { signOut } from "../../store/actions/authActions";
 import { MdHome } from "react-icons/md";
 import { FaBars, FaTimes } from "react-icons/fa";
-import "../../css/Navbar.css";
 import { connect } from "react-redux";
 import { animateScroll as scroll } from "react-scroll";
 

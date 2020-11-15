@@ -1,11 +1,6 @@
 import React, { useState } from "react";
-
 // react-id-swiper
-import "swiper/css/swiper.css";
 import Swiper from "react-id-swiper";
-
-// custom css
-import "../../css/Hero.css";
 
 // images
 

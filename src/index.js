@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import "jquery/dist/jquery.min.js";
 import { createStore, applyMiddleware, compose } from "redux";
 import rootReducer from "./store/reducers/rootReducer";
 import { Provider } from "react-redux";
@@ -18,7 +17,6 @@ import firebase from "firebase/app";
 import App from "./App";
 import { RoomProvider } from "./Context";
 import { BrowserRouter } from "react-router-dom";
-
 import Loading from "./components/Extras/Loading";
 
 const store = createStore(

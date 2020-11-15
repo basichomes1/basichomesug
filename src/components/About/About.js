@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "../dashboard/Footer";
-import "../../css/About.css";
 import Hero from "../dashboard/Hero";
 import Banner from "../dashboard/Banner";
 import { Link } from "react-router-dom";

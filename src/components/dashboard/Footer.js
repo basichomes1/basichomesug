@@ -1,6 +1,4 @@
 import React from "react";
-import "../../css/Footer.css";
-// import logo from "../../images/svg/logo.svg";
 
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 

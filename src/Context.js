@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-
 import Client from "./Contentful";
-
 const RoomContext = React.createContext();
 
 export default class RoomProvider extends Component {

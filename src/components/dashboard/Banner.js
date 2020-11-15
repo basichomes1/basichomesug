@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../../css/Homehero.css";
-
 export default function Banner({ children, title, subtitle }) {
   return (
     <div className="banner">

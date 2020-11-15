@@ -1,12 +1,9 @@
 import React, { Component } from "react";
-
 import Footer from "../components/dashboard/Footer";
 import { connect } from "react-redux";
-
 // import { Redirect } from "react-router-dom";
 import Hero from "../components/dashboard/Hero";
 import Banner from "../components/dashboard/Banner";
-
 import RegisterSkill from "../components/ServiceCenter/RegisterSkill";
 import { Mustregister } from "./Mustregister";
 

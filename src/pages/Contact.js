@@ -1,7 +1,6 @@
 import React from "react";
 import Hero from "../components/dashboard/Hero";
 import Banner from "../components/dashboard/Banner";
-import "../css/Contact.css";
 import Title from "../components/Extras/Title";
 import Contactdetails from "../components/Contact/Contactdetails";
 
