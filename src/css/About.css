@@ -1,42 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
-
 .about-bg {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: pink;
+  background: var(--clr-grey-10);
 }
+
 .about-container {
   position: relative;
-  width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .about-card {
   position: relative;
+  height: 300px;
+  width: 80vw;
   display: flex;
-  flex-direction: column;
-  background: #fff;
-  border: 2px solid blue;
-  margin: 20px 0;
-}
-
-.about-card:nth-child(even) {
-  flex-direction: column-reverse;
-  border: 2px solid red;
+  flex-direction: row;
+  background: var(--clr-grey-10);
+  filter: drop-shadow(2px 3px 4px black);
+  border-radius: 1%;
+  margin: 10px 10px;
 }
 
 .about-imgbx {
   position: relative;
-  width: 250px;
-  height: 250px;
-  background: #000;
-  margin: 20px;
-  border: 2px solid black;
+  flex: 0.4;
+  height: 100%;
+  border: 1px groove var(--clr-grey-10);
+  filter: drop-shadow(2px 3px 4px black);
 }
 .about-imgbx img {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -44,55 +41,60 @@
   object-fit: cover;
 }
 .about-content {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid black;
+  flex: 0.6;
+}
+.mission {
+  flex: 0.5;
 }
 
-.about-content div {
-  padding: 20px;
-  text-align: center;
+.vision {
+  flex: 0.5;
+}
+
+.second-flex {
+  flex-direction: row-reverse;
+}
+
+.about-content-text {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
 }
 @media screen and (max-width: 1024px) {
   .about-container {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    margin: 50px;
+    margin-top: -50px;
   }
 
   .about-card {
-    flex-direction: row;
-    margin: 10px 0;
-  }
-  .about-card:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
-  .about-imgbx,
-  .about-content {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 600) {
-  .about-card {
+    position: relative;
+    display: flex;
+    width: 95vw;
     flex-direction: column;
-    margin: 10px 0;
+    background: #fff;
+    height: 100%;
+    filter: drop-shadow(2px 3px 4px black);
+    border-radius: 1%;
   }
-
-  .about-card:nth-child(even) {
-    flex-direction: column;
+  .second-flex {
+    flex-direction: column-reverse;
   }
-
-  .about-imgbx,
-  .about-content {
+  .about-imgbx img {
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 50%;
+    object-fit: cover;
   }
 
-  .about-content {
-    height: 200px;
+  .about-content-text {
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
   }
 }

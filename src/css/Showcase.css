@@ -172,17 +172,15 @@
 
   .showcase-form {
     justify-self: center;
-    /* margin: -50px; */
     animation: slideInFromBottom 1s ease-in;
     z-index: 20;
     height: 100%;
   }
   .form-card {
-    text-align: center;
-    margin-top: -40px;
-    margin-left: -60px;
-
+    /* text-align: center; */
     height: 100%;
+    margin-top: -80px;
+    margin-left: -60px;
   }
   .cli .grid > *:first-child {
     grid-column: 1;
@@ -195,9 +193,11 @@
   .showcase {
     margin-top: -65px;
     border-top: 1px groove var(--orange);
+    height: 100%;
   }
   .showcase-form {
     width: 100%;
+    height: 350px;
   }
 
   .showcase-form h1 {

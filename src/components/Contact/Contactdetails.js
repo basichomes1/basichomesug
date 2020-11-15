@@ -10,12 +10,20 @@ const Contactdetails = () => {
       <div className="new-section-bg">
         <section className="new-section">
           <div className="working-hours">
-            <h1>WORKING HOURS</h1>
+            <div className="working-one">
+              <h1>WORKING HOURS</h1>
+              <p>7:30am - 6pm</p>
+            </div>
+            <div className="working-two">
+              <h1>CEO</h1>
+              <p>0784816982</p>
+            </div>
           </div>
+
           <div className="new-container">
             <div className="newform">
               <form action="">
-                <h2>SEND MESSAGE</h2>
+                <h2>Send Message</h2>
                 <div className="newinputbox">
                   <input type="text" name="name" required />
                   <span>NAME</span>

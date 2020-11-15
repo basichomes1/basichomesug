@@ -12,7 +12,7 @@ const Navbar = (props) => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "white" }}>
+      <IconContext.Provider value={{ color: "var(--orange)" }}>
         {links}
       </IconContext.Provider>
     </>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { MdHome } from "react-icons/md";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Button } from "../Button/Button";
@@ -30,17 +30,12 @@ export default function Logout() {
 
   return (
     <div className="navbars">
+      <div className="home-btn">
+        <NavLink to="/" className=" home-btn-floating ">
+          <MdHome className="global-class-name" />
+        </NavLink>
+      </div>
       <div className="navbars-container containers">
-        <Link
-          to="/"
-          className="navbars-logo "
-          onClick={() => {
-            closeMobileMenu();
-            toggleHome();
-          }}
-        >
-          <MdHome className="navbars-icon" />
-        </Link>
         <div className="menu-icon" onClick={handleClick}>
           {click ? <FaTimes /> : <FaBars />}
         </div>
@@ -92,7 +87,7 @@ export default function Logout() {
                 toggleHome();
               }}
             >
-              About Us
+              About
             </Link>
           </li>
           <li className="navs-btn">

@@ -34,7 +34,7 @@
 
 .navbars-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 80px;
 }
 
@@ -141,6 +141,30 @@
 
 .btn-floating:before {
   border-radius: 0;
+}
+
+.home-btn-floating {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: var(--clr-grey-10);
+  border-radius: 20%;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  z-index: 200;
+  filter: drop-shadow(2px 3px 4px var(--purple));
+}
+
+.home-btn-floating:hover {
+  background-color: #26a69a;
 }
 
 .link-color {

@@ -40,19 +40,13 @@ const LoggedIn = (props) => {
           <p>{profile.initials}</p>
         </NavLink>
       </div>
+      <div className="home-btn">
+        <NavLink to="/" className=" home-btn-floating ">
+          <MdHome className="global-class-name" />
+        </NavLink>
+      </div>
 
       <div className="navbars-container containers">
-        <Link
-          to="/"
-          className="navbars-logo "
-          onClick={() => {
-            closeMobileMenu();
-            toggleHome();
-          }}
-        >
-          <MdHome className="navbars-icon" />
-        </Link>
-
         <div className="menu-icon" onClick={handleClick}>
           {click ? (
             <>
@@ -136,7 +130,7 @@ const LoggedIn = (props) => {
                 toggleHome();
               }}
             >
-              About Us
+              About
             </Link>
           </li>
           <li className="navs-btn">

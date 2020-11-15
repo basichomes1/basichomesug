@@ -3,16 +3,6 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap"); */
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* font-family: "Lato", sans-serif !important; */
-
-  /* font-family: "Abhaya Libre", serif !important; */
-
-  font-family: "Nunito", sans-serif !important;
-}
 
 :root {
   --primaryColor: #af9a7d;
@@ -29,9 +19,23 @@
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
   --shadowDark: #d9dde6;
   --background: #e4e9f2;
+  --clr-grey-10: hsl(210, 36%, 96%);
   --shadowLight: #eff5fe;
 }
 /* globals */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+
+  /* font-family: "Lato", sans-serif !important; */
+
+  /* font-family: "Abhaya Libre", serif !important; */
+
+  font-family: "Nunito", sans-serif !important;
+}
 input[type="range"] {
   -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
   width: 100%; /* Specific width is required for Firefox. */
@@ -57,7 +61,7 @@ input[type="range"]::-ms-track {
 }
 body {
   color: var(--mainBlack);
-  background: var(--mainWhite);
+  background: var(--clr-grey-10);
   line-height: 1.4;
 }
 

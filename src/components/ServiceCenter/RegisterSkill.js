@@ -138,7 +138,9 @@ class RegisterSkill extends React.Component {
                 />
               </div>
 
-              <Button type="submit">SUBMIT</Button>
+              <Button type="submit" buttonColor="primary">
+                SUBMIT
+              </Button>
             </form>
           </div>
         </div>
