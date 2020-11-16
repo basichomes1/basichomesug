@@ -1,62 +1,16 @@
-.hero-slide {
-  height: 500px !important;
+.homehero {
+  min-height: 50vh;
   display: flex;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 5px;
-  margin-top: 60px;
-  background: var(--orange);
-}
-.slide-image {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+  background: linear-gradient(rgba(39, 33, 33, 0.9), rgba(27, 24, 24, 0.9));
+  border: 1px solid rgba(39, 33, 33, 0.9);
+  box-shadow: -10px -1px 10px rgba(39, 33, 33, 0.9),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset -10px -10px 10px rgba(39, 33, 33, 0.9),
+    inset 15px 15px 15px rgba(39, 33, 33, 0.9);
+  filter: drop-shadow(0px 10px 2px black);
 }
-.slide-image img {
-  object-fit: contain;
-  transform: scale(1.1, 0.8);
-  width: 100vw;
-}
-
-@media screen and (max-width: 768px) {
-  .hero-slide {
-    height: 500px !important;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: -100px;
-    margin-top: -35px;
-  }
-  .slide-image {
-    height: 100%;
-    width: 100%;
-  }
-  .slide-image img {
-    object-fit: contain;
-    transform: scale(1.1, 1.4);
-    width: 100vw;
-    height: 900px;
-  }
-}
-
-.swiper-pagination-clickable .swiper-pagination-bullet {
-  background: rgb(237, 232, 232);
-  transform: scale(1.1);
-  width: 22px;
-  height: 22px;
-}
-.swiper-button-prev {
-  color: white;
-  transform: scale(0.8);
-}
-
-.swiper-button-next {
-  color: white;
-  transform: scale(0.8);
-}
+/* End of Hero */

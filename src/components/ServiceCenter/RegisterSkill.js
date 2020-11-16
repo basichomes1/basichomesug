@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
-import { Button } from "../Button/Button";
 
 const encode = (data) => {
   return Object.keys(data)
@@ -39,7 +38,7 @@ class RegisterSkill extends React.Component {
 
     return (
       <section className="showcase">
-        <div className="container grid">
+        <div className="showcase-container grid">
           <div className="showcase-text">
             <h1>BASIC HOMES UG</h1>
 
@@ -138,9 +137,9 @@ class RegisterSkill extends React.Component {
                 />
               </div>
 
-              <Button type="submit" buttonColor="primary">
-                SUBMIT
-              </Button>
+              <div className="sendmessage">
+                <button type="submit">Submit</button>
+              </div>
             </form>
           </div>
         </div>

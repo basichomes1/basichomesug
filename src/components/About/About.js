@@ -1,8 +1,6 @@
 import React from "react";
 import Footer from "../dashboard/Footer";
-import Hero from "../dashboard/Hero";
-import Banner from "../dashboard/Banner";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import img1 from "../../images/bg/6.jpg";
 import img2 from "../../images/bg/basicbig.png";
 import Title from "../Extras/Title";
@@ -11,13 +9,11 @@ import { Button } from "../Button/Button";
 function AboutUs() {
   return (
     <>
-      <Hero hero="roomsHero">
-        <Banner title="ABOUT US" subtitle="">
-          <Link to="/rooms" className="btn-primary">
-            OUR ROOMS
-          </Link>
-        </Banner>
-      </Hero>
+      <header className="about-full">
+        <div className="about-background">
+          <h1>ABOUT US</h1>
+        </div>
+      </header>
 
       <div className="about-bg">
         <div className="about-container">

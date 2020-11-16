@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { Button } from "../Button/Button";
 import { signOut } from "../../store/actions/authActions";
 import { MdHome } from "react-icons/md";
-import { FaBars, FaTimes } from "react-icons/fa";
+
 import { connect } from "react-redux";
 import { animateScroll as scroll } from "react-scroll";
 
@@ -46,26 +46,18 @@ const LoggedIn = (props) => {
       </div>
 
       <div className="navbars-container containers">
-        <div className="menu-icon" onClick={handleClick}>
+        <div className="menu-btn" onClick={handleClick}>
           {click ? (
             <>
-              <FaTimes
-                style={{
-                  fontSize: "20px",
-                  verticalAlign: "middle",
-                  marginTop: "-40px",
-                }}
-              />
+              <span className="burger-one"></span>
+              <span className="burger-two"></span>
+              <span className=" burger-three"></span>
             </>
           ) : (
             <>
-              <FaBars
-                style={{
-                  fontSize: "20px",
-                  verticalAlign: "middle",
-                  marginTop: "-40px",
-                }}
-              />
+              <span className="menu-btn-burger top"></span>
+              <span className="menu-btn-burger "></span>
+              <span className="menu-btn-burger "></span>
             </>
           )}
         </div>

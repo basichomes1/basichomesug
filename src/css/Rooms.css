@@ -94,13 +94,16 @@
 
 .roomslist {
   background: linear-gradient(rgba(106, 30, 121, 1.27), rgba(192, 18, 24, 0.9));
+  box-shadow: -1px -10px 7px var(--purple);
 }
 /* end of room  */
 /* single room*/
 
 .single-room {
   padding: 7rem 0 0 0;
-  background: rgba(100, 0, 0, 0.8);
+  background: linear-gradient(rgba(106, 30, 121, 1.27), rgba(192, 18, 24, 0.9));
+
+  box-shadow: 6px 8px 6px var(--purple), 0px 0px 1px var(--purple);
   color: #fff;
   letter-spacing: 1px;
   line-height: 5px;
@@ -215,7 +218,8 @@
   width: 100vw;
   color: white;
   margin: -10px auto 0 auto;
-  background: rgba(106, 30, 12, 1.27);
+  background: linear-gradient(rgba(106, 30, 121, 1.27), rgba(192, 18, 24, 0.9));
+  box-shadow: 6px 8px 6px var(--purple), 0px 0px 1px var(--purple);
 }
 .room-extras h6 {
   text-transform: capitalize;
@@ -271,8 +275,8 @@
 /*  rooms fitler*/
 .filter-container {
   padding: 2.1rem 0;
-  background: var(--orange);
-  border-top: 5px groove rgba(155, 67, 26, 0.2);
+  background: var(--mainbg);
+  box-shadow: -1px -5px 70px var(--orange), inset 1px 30px 8px var(--orange);
 }
 
 .filter-form {
@@ -287,6 +291,7 @@
   font-size: 15px;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 6px 8px 6px var(--purple), 0px 0px 1px var(--purple);
 }
 .form-group {
   text-transform: capitalize;
@@ -379,10 +384,11 @@ input[type="range"]:hover::-webkit-slider-runnable-track {
 @media screen and (max-width: 776px) {
   .filter-form {
     width: 90vw;
+    box-shadow: 6px 8px 6px var(--purple), 0px 0px 1px var(--purple);
   }
   .filter-container {
     margin-top: -70px;
-    background: var(--orange);
+    background: var(--mainbg);
     border-top: 5px groove rgba(155, 67, 26, 0.2);
   }
   .single-room-info {

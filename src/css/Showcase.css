@@ -1,30 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
-:root {
-  --primary-color: #4b0082;
-  --secondary-color: #1c3fa8;
-  --dark-color: #002240;
-  --light-color: #f4f4f4;
-  --success-color: #5cb85c;
-  --error-color: #d9534f;
-  --purple: #4b0082;
-  --orange: #f15a24;
-}
-
 /* Showcase */
 .showcase {
   margin-top: 0.5px;
   border-top: 1px groove var(--orange);
   height: 400px;
-  background-color: var(--primary-color);
+  background-color: var(--mainbg);
   color: #fff;
   position: relative;
   z-index: 20;
 }
 
+.showcase-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+  background: linear-gradient(rgba(106, 30, 121, 1.27), rgba(192, 18, 24, 0.9));
+  border: 1px solid #f15a24;
+  border-radius: 70px;
+  filter: drop-shadow(1px 1px 1px #f15a24);
+  box-shadow: 1px 5px 2px var(--mainbg), 0px 0px 1px var(--mainbg);
+}
+
 .showcase h1 {
   font-size: 30px;
   text-align: center;
+  font-weight: bolder;
 }
 
 .showcase p {
@@ -57,7 +59,7 @@
 }
 
 .form-card {
-  background: var(--orange);
+  background: var(--mainbg);
   color: #19181a;
   border-radius: 2%;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.9);
@@ -67,19 +69,23 @@
 
 .showcase-form .form-control {
   margin: 10px 0;
-  background: var(--orange);
+  background: var(--mainbg);
 }
 
 .showcase-form input[type="text"],
 .showcase-form input[type="email"] {
-  border: 2px solid crimson;
-  color: crimson;
+  border-left: 0.1rem groove var(--purple);
+  border-right: 0.1rem groove var(--orange);
+  border-top: 0.1rem groove var(--purple);
+  border-bottom: 0.1rem groove var(--orange);
+  border-radius: 1%;
   width: 100%;
   padding: 3px;
-  font-size: 16px;
 }
 ::placeholder {
-  color: black;
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #999;
   text-shadow: 0px 1px 20px grey;
   opacity: 1;
 }
