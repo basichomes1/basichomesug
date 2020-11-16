@@ -3,7 +3,8 @@
 .featured-rooms {
   padding-top: 10rem;
   box-shadow: 1px 1px 1px #000000;
-  background: linear-gradient(rgba(39, 33, 33, 1.9), rgba(27, 24, 24, 0.6));
+  /* background: linear-gradient(rgba(39, 33, 33, 1.9), rgba(27, 24, 24, 0.6)); */
+  background: var(--mainbg);
 }
 .featured-rooms-center {
   width: 90vw;
