@@ -4,6 +4,9 @@ import Banner from "../components/dashboard/Banner";
 import { Link } from "react-router-dom";
 import { RoomContext } from "../Context";
 import StyledHero from "../components/Extras/StyledHero";
+import Title from "../components/Extras/Title";
+// react-id-swiper
+import Swiper from "react-id-swiper";
 export default class SingleRoom extends Component {
   constructor(props) {
     super(props);
@@ -44,6 +47,36 @@ export default class SingleRoom extends Component {
     } = room;
     const [mainImg, ...defaultImages] = images;
     console.log(defaultImages);
+    const params = {
+      effect: "cube",
+      spaceBetween: 30,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: false,
+      },
+      speed: 1200,
+      grabCursor: true,
+      centeredSlides: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    };
 
     return (
       <>
@@ -54,12 +87,17 @@ export default class SingleRoom extends Component {
             </Link>
           </Banner>
         </StyledHero>
+
         <section className="single-room">
+          <Title title="PREVIEW IMAGES" />
           <div className="single-room-images">
-            {defaultImages.map((item, index) => (
-              <img key={index} src={item} alt={name} />
-            ))}
+            <Swiper {...params}>
+              {defaultImages.map((item, index) => (
+                <img key={index} src={item} alt={name} />
+              ))}
+            </Swiper>
           </div>
+
           <div className="single-room-info">
             <div className="first-section">
               <h3>DETAILS</h3>
