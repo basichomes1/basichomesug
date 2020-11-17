@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { RoomContext } from "../Context";
 import StyledHero from "../components/Extras/StyledHero";
 import Title from "../components/Extras/Title";
+
 // react-id-swiper
 import Swiper from "react-id-swiper";
 export default class SingleRoom extends Component {
@@ -45,24 +46,24 @@ export default class SingleRoom extends Component {
       accomodation,
       location,
     } = room;
-    const [mainImg, ...defaultImages] = images;
+    const [mainImg, secondImg, thirdImg, ...defaultImages] = images;
+
+    console.log(mainImg);
+    console.log(secondImg);
+    console.log(thirdImg);
     console.log(defaultImages);
     const params = {
-      effect: "cube",
       spaceBetween: 30,
+      loop: true,
+      centeredSlides: true,
+      loopFillGroupWithBlank: true,
       scrollbar: {
         el: ".swiper-scrollbar",
         hide: false,
       },
       speed: 1200,
       grabCursor: true,
-      centeredSlides: true,
-      cubeEffect: {
-        shadow: true,
-        slideShadows: true,
-        shadowOffset: 20,
-        shadowScale: 0.94,
-      },
+
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -78,6 +79,11 @@ export default class SingleRoom extends Component {
       },
     };
 
+    const ImgContainer = {
+      width: "100%",
+      height: "100%",
+    };
+
     return (
       <>
         <StyledHero img={mainImg || this.state.defaultBcg}>
@@ -91,20 +97,37 @@ export default class SingleRoom extends Component {
         <section className="single-room">
           <Title title="PREVIEW IMAGES" />
           <div className="single-room-images">
-            <Swiper {...params}>
-              {defaultImages.map((item, index) => (
-                <img key={index} src={item} alt={name} />
-              ))}
-            </Swiper>
+            <div className="single-room-container">
+              <Swiper {...params}>
+                <div className="hero-slide">
+                  <div className="slide-image" style={ImgContainer}>
+                    <img src={secondImg} alt="image1" />
+                  </div>
+                </div>
+                <div className="hero-slide">
+                  <div className="slide-image" style={ImgContainer}>
+                    <img src={thirdImg} alt="image1" />
+                  </div>
+                </div>
+                <div className="hero-slide">
+                  <div className="slide-image" style={ImgContainer}>
+                    {defaultImages.map((item, index) => (
+                      <img key={index} src={item} alt={name} />
+                    ))}
+                  </div>
+                </div>
+              </Swiper>
+            </div>
+            {/* */}
           </div>
 
           <div className="single-room-info">
-            <div className="first-section">
+            <div className="first-section common-style">
               <h3>DETAILS</h3>
               <p>{description}</p>
             </div>
 
-            <div className="second-section">
+            <div className="second-section common-style">
               <article className="info">
                 <h3>INFO</h3>
                 <div className="info-flex">
@@ -121,21 +144,21 @@ export default class SingleRoom extends Component {
               </article>
             </div>
 
-            <div className="third-section">
+            <div className="third-section common-style">
               <article className="info third-box">
                 <h3>Location</h3>
                 <h5 style={{ textTransform: "uppercase" }}>{location}</h5>
               </article>
             </div>
 
-            <div className="fourth-section">
+            <div className="fourth-section common-style">
               <article className="info fourth-box">
                 <h3>Accomodation Type </h3>
                 <p style={{ textTransform: "uppercase" }}>{accomodation}</p>
               </article>
             </div>
 
-            <div className="fifth-section">
+            <div className="fifth-section common-style">
               <article className="info fifth-box">
                 <h3>Room Type</h3>
                 <p style={{ textTransform: "uppercase" }}>{type}</p>

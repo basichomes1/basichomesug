@@ -44,9 +44,13 @@ export default function RoomsList({ rooms }) {
   return (
     <section className="roomslist">
       <div className="roomslist-center">
-        {rooms.slice(0, visible).map((item) => {
-          return <Room key={item.id} room={item} />;
-        })}
+        {rooms
+          .slice(0, visible)
+
+          .map((item) => {
+            const { id } = item;
+            return <Room key={id} room={item} />;
+          })}
       </div>
 
       <div buttonstyle="btn--primary" className="roomsloading">
