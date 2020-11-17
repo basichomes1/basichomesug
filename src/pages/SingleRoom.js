@@ -54,9 +54,9 @@ export default class SingleRoom extends Component {
     console.log(defaultImages);
     const params = {
       spaceBetween: 30,
-      loop: true,
+
       centeredSlides: true,
-      loopFillGroupWithBlank: true,
+
       scrollbar: {
         el: ".swiper-scrollbar",
         hide: false,
