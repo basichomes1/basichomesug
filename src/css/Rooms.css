@@ -408,23 +408,13 @@ input[type="range"]:hover::-webkit-slider-runnable-track {
     border-top: 5px groove rgba(155, 67, 26, 0.2);
   }
   .filter-form {
+    position: relative;
     padding: 15px;
-    height: 84%;
+    height: 82%;
     width: 97%;
-    margin: 0 0 0 3px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-row-gap: 1.2rem;
-    grid-column-gap: 8px;
-    background: linear-gradient(
-      rgba(106, 30, 121, 1.27),
-      rgba(192, 18, 24, 0.9)
-    );
-    font-size: 15px;
-    border: 1px solid transparent;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 2px 8px 6px rgba(106, 30, 121, 1.27),
+    box-shadow: 2px 4px 6px rgba(106, 30, 121, 1.27),
       0px 0px 1px rgba(106, 30, 121, 1.27);
   }
 

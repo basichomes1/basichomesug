@@ -125,7 +125,7 @@ const RoomsFilter = ({ rooms }) => {
             id="price"
             value={price}
             onChange={handleChange}
-            className="form-control range"
+            className="form-control"
           />
         </div>
       </form>

@@ -40,7 +40,7 @@ export default function Logout() {
           {click ? <FaTimes /> : <FaBars />}
         </div>
         <ul className={click ? "navs-menu active " : "navs-menu"}>
-          <li className="navs-item">
+          <li className="navs-item pad-block">
             <Link
               to="/"
               className="navs-links"
@@ -52,7 +52,7 @@ export default function Logout() {
               Home
             </Link>
           </li>
-          <li className="navs-item">
+          <li className="navs-item pad-block">
             <Link
               to="/rooms"
               className="navs-links"
@@ -77,7 +77,7 @@ export default function Logout() {
             </Link>
           </li>
 
-          <li className="navs-item">
+          <li className="navs-item pad-block">
             <Link
               to="/contact"
               className="navs-links"
@@ -90,7 +90,7 @@ export default function Logout() {
             </Link>
           </li>
 
-          <li className="navs-item">
+          <li className="navs-item pad-block">
             <Link
               to="/aboutus"
               className="navs-links"
