@@ -1,0 +1,27 @@
+/* featured rooms */
+
+.featured-rooms {
+  padding-top: 10rem;
+  box-shadow: 1px 1px 1px var(--blacktext);
+  background: hsl(210, 31%, 87%);
+}
+.featured-rooms-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 1px auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(229px, 1fr));
+  grid-row-gap: 5rem;
+  grid-column-gap: 80px;
+}
+@media screen and (max-width: 766px) {
+  .featured-rooms-center {
+    width: 90vw;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    grid-row-gap: 1rem;
+    grid-column-gap: 10px;
+  }
+}
+
+/* end pf featured rooms */

@@ -59,74 +59,124 @@ const RoomsFilter = ({ rooms }) => {
       <Title title="SEARCH FOR ROOMS" span="feature" />
       <form className="filter-form">
         {/* select type */}
-        <div className="form-group">
-          <label htmlFor="location"></label>
-          <select
-            name="location"
-            id="location"
-            onChange={handleChange}
-            className="form-control"
-            value={location}
-          >
-            {locations}
-          </select>
+
+        <div className="form-first-group">
+          <div className="form-group first-section-form">
+            <label htmlFor="location"></label>
+            <select
+              name="location"
+              id="location"
+              onChange={handleChange}
+              className="form-control first-group"
+              value={location}
+            >
+              {locations}
+            </select>
+          </div>
+
+          {/* select type */}
+          <div className="form-group first-section-form">
+            <label htmlFor="accomodation"> </label>
+            <select
+              name="accomodation"
+              id="accomodation"
+              onChange={handleChange}
+              className="form-control first-group"
+              value={accomodation}
+            >
+              {accomodations}
+            </select>
+          </div>
+
+          {/* ROOM TYPE */}
+          <div className="form-group first-section-form">
+            <label htmlFor="type"> </label>
+            <select
+              name="type"
+              id="type"
+              onChange={handleChange}
+              className="form-control first-group"
+              value={type}
+            >
+              {types}
+            </select>
+          </div>
         </div>
 
-        {/* select type */}
-        <div className="form-group">
-          <label htmlFor="accomodation"> </label>
-          <select
-            name="accomodation"
-            id="accomodation"
-            onChange={handleChange}
-            className="form-control"
-            value={accomodation}
-          >
-            {accomodations}
-          </select>
-        </div>
+        <div className="form-first-group">
+          <div className="form-group first-section-form">
+            <label htmlFor="capacity">Number Of people</label>
+            <select
+              name="capacity"
+              id="capacity"
+              onChange={handleChange}
+              className="form-control first-group"
+              value={capacity}
+            >
+              {people}
+            </select>
+          </div>
 
-        {/* ROOM TYPE */}
-        <div className="form-group">
-          <label htmlFor="type"> </label>
-          <select
-            name="type"
-            id="type"
-            onChange={handleChange}
-            className="form-control"
-            value={type}
-          >
-            {types}
-          </select>
-        </div>
+          {/* select type */}
+          <div className="form-group first-section-form">
+            <label htmlFor="price">Price: {price} </label>
+            <input
+              type="range"
+              name="price"
+              min={minPrice}
+              max={maxPrice}
+              id="price"
+              value={price}
+              onChange={handleChange}
+              className="form-control first-group"
+            />
+          </div>
 
-        {/* select type */}
-        <div className="form-group">
-          <label htmlFor="capacity">Number Of people</label>
-          <select
-            name="capacity"
-            id="capacity"
-            onChange={handleChange}
-            className="form-control"
-            value={capacity}
-          >
-            {people}
-          </select>
-        </div>
+          {/* ROOM TYPE */}
+          {/* <div className="form-group first-section-form">
+            <label htmlFor="type"> </label>
+            <select
+              name="type"
+              id="type"
+              onChange={handleChange}
+              className="form-control first-group"
+              value={type}
+            >
+              {types}
+            </select>
+          </div>
+        </div> */}
 
-        {/* ROOM PRICE */}
-        <div className="form-group">
-          <label htmlFor="price">Price: {price}(UGX)</label>
-          <input
-            type="range"
-            name="price"
-            min={minPrice}
-            max={maxPrice}
-            id="price"
-            value={price}
-            onChange={handleChange}
-            className="form-control"
-          />
+          {/* <div className="form-second-group">
+          {/* select type */}
+          {/* <div className="form-group  second-section-form">
+            <label htmlFor="capacity">Number Of people</label>
+            <select
+              name="capacity"
+              id="capacity"
+              onChange={handleChange}
+              className="form-control second-group"
+              second
+              value={capacity}
+            >
+              {people}
+            </select>
+          </div> */}
+
+          {/* ROOM PRICE */}
+          {/* {/* <div className="form-group second-section-form">
+            <label htmlFor="price">Price: {price}(UGX)</label>
+            <input
+              type="range"
+              name="price"
+              min={minPrice}
+              max={maxPrice}
+              id="price"
+              value={price}
+              onChange={handleChange}
+              className="form-control second-group"
+            />
+          </div> */}
         </div>
       </form>
     </section>

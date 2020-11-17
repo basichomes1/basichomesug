@@ -33,6 +33,10 @@ import "./css/Homehero.css";
 import "./css/Button.css";
 import "./css/login.css";
 import "./css/About.css";
+import "./css/featuredrooms.css";
+import "./css/roomsfilter.css";
+import "./css/roomslist.css";
+import "./css/singleroom.css";
 
 function App() {
   return (

@@ -1,0 +1,140 @@
+/*  rooms fitler*/
+/* All the same stuff for Firefox */
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  border: 2px groove var(--purple);
+  height: 30px;
+  width: 16px;
+  border-radius: 30px;
+  background: var(--purple);
+  cursor: pointer;
+  margin-top: -12px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px var(--orange); /* Add cool effects to your sliders! */
+}
+
+/* All the same stuff for IE */
+input[type="range"]::-ms-thumb {
+  -webkit-appearance: none;
+  border: 2px groove var(--purple);
+  height: 30px;
+  width: 16px;
+  border-radius: 30px;
+  background: var(--purple);
+  cursor: pointer;
+  margin-top: -12px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px var(--orange); /* Add cool effects to your sliders! */
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  /* width: 100%; */
+  height: 10.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: linear-gradient(-45deg, var(--orange), orange);
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+  /* transition: all 1s ease; */
+  background-size: 70% 90%;
+  animation: gradient 5s ease infinite;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px groove var(--purple);
+  height: 30px;
+  width: 16px;
+  border-radius: 30px;
+  background: var(--purple);
+  cursor: pointer;
+  margin-top: -12px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px var(--orange); /* Add cool effects to your sliders! */
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px 4px rgba(51, 153, 204, 0.49);
+}
+
+input[type="range"]:hover::-webkit-slider-runnable-track {
+  box-shadow: 0px 0px 0px 4px rgba(51, 153, 204, 0.49);
+}
+
+.filter-container {
+  height: 50vh;
+  width: 100vw;
+  padding: 2.1rem 0;
+  background: var(--mainbg);
+}
+
+.filter-form {
+  padding: 15px;
+  height: 78%;
+  width: 97%;
+  margin: 0 8px 0 8px;
+  display: flex;
+  justify-content: space-evenly;
+  background: linear-gradient(rgba(106, 30, 121, 1.27), rgba(192, 18, 24, 0.9));
+  font-size: 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 2px 8px 6px rgba(106, 30, 121, 1.27),
+    0px 0px 1px rgba(106, 30, 121, 1.27);
+}
+.form-first-group {
+  flex: 0.5;
+  flex-direction: row;
+
+  margin-right: 10px;
+  border-radius: 1%;
+}
+
+.first-section-form {
+  margin: 15px 0 0 8px;
+}
+
+.first-group {
+  width: 90%;
+  height: 100%;
+  background: var(--whitetext);
+  font-size: 1.3rem;
+  color: black;
+}
+
+.form-group label {
+  letter-spacing: var(--mainSpacing);
+  color: white;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .filter-container {
+    height: 100%;
+    width: 100vw;
+    margin-top: -70px;
+    background: var(--mainbg);
+    border-top: 5px groove rgba(155, 67, 26, 0.2);
+  }
+  .filter-form {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    height: 100%;
+    width: 97%;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 4px 6px rgba(106, 30, 121, 1.27),
+      0px 0px 1px rgba(106, 30, 121, 1.27);
+  }
+}
+
+/* end of rooms fitler*/
