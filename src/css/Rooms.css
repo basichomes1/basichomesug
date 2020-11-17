@@ -2,7 +2,7 @@
 
 .featured-rooms {
   padding-top: 10rem;
-  box-shadow: 1px 1px 1px #000000;
+  box-shadow: 1px 1px 1px var(--blacktext);
   background: hsl(210, 31%, 87%);
 }
 .featured-rooms-center {
@@ -89,22 +89,18 @@
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
   position: relative;
-  color: white;
+  color: var(--whitetext);
 }
 
-.roomslist {
-  background: linear-gradient(rgba(106, 30, 121, 1.27), rgba(192, 18, 24, 0.9));
-  box-shadow: -1px -10px 7px var(--purple);
-}
 /* end of room  */
 /* single room*/
 
 .single-room {
   padding: 7rem 0 0 0;
-  background: linear-gradient(rgba(106, 30, 121, 1.27), rgba(192, 18, 24, 0.9));
-
-  box-shadow: 6px 8px 6px var(--purple), 0px 0px 1px var(--purple);
-  color: #fff;
+  /* background: linear-gradient(rgba(106, 30, 121, 1.27), rgba(192, 18, 24, 0.9)); */
+  background: var(--mainbg);
+  /* box-shadow: 6px 8px 6px var(--purple), 0px 0px 1px var(--purple); */
+  color: var(--blacktext);
   letter-spacing: 1px;
   line-height: 5px;
   font-size: 20px;
@@ -153,11 +149,10 @@
   justify-content: center;
   padding-top: 10px;
   height: 20vh;
-  background: transparent;
+  background: var(--mainbg);
   margin-bottom: 10px;
   text-align: center;
-  border: 5px solid rgba(106, 30, 121, 1.27);
-  background: rgba(106, 30, 121, 1.27);
+  border: 1px solid var(--blacktext);
 }
 
 .first-section p {
@@ -170,13 +165,11 @@
   height: 20vh;
   background: transparent;
   margin-bottom: 20px;
-  border: 5px solid rgba(106, 30, 121, 1.27);
-  background: rgba(16, 30, 12, 1.27);
+  border: 1px solid var(--blacktext);
 }
 .second-section h6 {
   background: transparent;
-  margin-top: 20px;
-  /* margin-bottom: -2px; */
+  margin-top: 15px;
   text-align: center;
   font-size: 14px;
 }
@@ -186,8 +179,7 @@
   height: 20vh;
   background: transparent;
   margin-bottom: 10px;
-  border: 5px solid rgba(106, 30, 121, 1.27);
-  background: rgba(106, 30, 121, 1.27);
+  border: 1px solid var(--blacktext);
 }
 
 .third-section h5 {
@@ -201,8 +193,7 @@
   height: 20vh;
   background: transparent;
   margin-bottom: 20px;
-  border: 5px solid rgba(106, 30, 121, 1.27);
-  background: rgba(16, 30, 12, 1.27);
+  border: 1px solid var(--blacktext);
 }
 .fifth-section {
   flex: 0.2;
@@ -210,21 +201,28 @@
   height: 20vh;
   background: transparent;
   margin-bottom: 10px;
-  border: 5px solid rgba(106, 30, 121, 1.27);
-  background: rgba(106, 30, 121, 1.27);
+  border: 1px solid var(--blacktext);
 }
 
 .room-extras {
   width: 100vw;
-  color: white;
+  color: var(--blacktext);
   margin: -10px auto 0 auto;
-  background: linear-gradient(rgba(106, 30, 121, 1.27), rgba(192, 18, 24, 0.9));
+  background: var(--mainbg);
+  /* background: linear-gradient(rgba(106, 30, 121, 1.27), rgba(192, 18, 24, 0.9)); */
   box-shadow: 6px 8px 6px var(--purple), 0px 0px 1px var(--purple);
 }
 .room-extras h6 {
   text-transform: capitalize;
+  position: relative;
+  margin: 20px 80px 10px 10%;
+  width: 80vw;
+  font-size: 20px;
+
+  border: 2px solid var(--orange);
   letter-spacing: var(--mainSpacing);
-  color: white;
+  color: var(--orange);
+  background: var(--blacktext);
   text-align: center;
 }
 .extras {
@@ -246,10 +244,14 @@
   }
 }
 /* end of single room*/
+
 /* roomlist */
+
 .roomslist {
+  background: linear-gradient(rgba(106, 30, 121, 1.27), rgba(192, 18, 24, 0.9));
+  box-shadow: -1px -2px 5px var(--purple);
   padding: 5rem 0;
-  color: white;
+  color: var(--whitetext);
 }
 .roomslist-center {
   width: 80vw;
@@ -272,24 +274,28 @@
   }
 }
 /* end of roomlist */
+
 /*  rooms fitler*/
 .filter-container {
+  height: 50vh;
+  width: 100vw;
   padding: 2.1rem 0;
   background: var(--mainbg);
-  box-shadow: -1px -5px 70px var(--orange), inset 1px 30px 8px var(--orange);
 }
 
 .filter-form {
   padding: 15px;
-  width: 90vw;
-  margin: 0 auto;
+  height: 78%;
+  width: 97%;
+  margin: 0 0 0 8px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-row-gap: 1.2rem;
   grid-column-gap: 8px;
   background: linear-gradient(rgba(106, 30, 121, 1.27), rgba(192, 18, 24, 0.9));
   font-size: 15px;
-  border-radius: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
   text-align: center;
   box-shadow: 6px 8px 6px var(--purple), 0px 0px 1px var(--purple);
 }
@@ -302,7 +308,7 @@
 }
 .form-control {
   width: 100%;
-  background: white;
+  background: var(--whitetext);
   font-size: 1.3rem;
   color: black;
 }
@@ -376,21 +382,23 @@ input[type="range"]:hover::-webkit-slider-runnable-track {
   }
 }
 
-.single-extra label {
-  display: inline-block;
-  font-size: 0.8rem;
-  margin-left: 0.5rem;
-}
-@media screen and (max-width: 776px) {
-  .filter-form {
-    width: 90vw;
-    box-shadow: 6px 8px 6px var(--purple), 0px 0px 1px var(--purple);
-  }
+@media screen and (max-width: 996px) {
   .filter-container {
+    height: 60vh;
+    width: 100vw;
     margin-top: -70px;
     background: var(--mainbg);
     border-top: 5px groove rgba(155, 67, 26, 0.2);
   }
+  .filter-form {
+    height: 85%;
+    width: 98vw;
+    box-shadow: 4px 2px 6px var(--purple), 0px 0px 1px var(--purple);
+    margin: 0 0 0 1.7px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+  }
+
   .single-room-info {
     display: flex;
     flex-direction: column;
@@ -400,62 +408,60 @@ input[type="range"]:hover::-webkit-slider-runnable-track {
   }
   .first-section {
     flex: 0.2;
-    background: pink;
+    background: var(--mainbg);
     width: 100vw;
     height: 100%;
     padding-bottom: 20px;
-    background: rgba(106, 30, 121, 1.27);
   }
 
   .second-section {
     flex: 0.2;
-    background: pink;
+    background: var(--mainbg);
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     text-align: center;
     margin-left: 50%;
     margin-right: 50%;
-    background: rgba(16, 30, 12, 1.27);
     margin-top: -5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  .second-section h6 {
+    background: transparent;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 10px;
   }
 
   .third-section {
     flex: 0.2;
-    background: pink;
+    background: var(--mainbg);
     width: 100vw;
     height: 100px;
     padding-bottom: 20px;
-    background: rgba(106, 30, 121, 1.27);
   }
 
   .fourth-section {
     flex: 0.2;
-    background: pink;
+    background: var(--mainbg);
     width: 100vw;
     height: 100%;
     padding-bottom: 10px;
-    background: rgba(16, 30, 12, 1.27);
     margin-top: -5px;
     margin-bottom: 5px;
   }
   .fifth-section {
     flex: 0.2;
-    background: pink;
+    background: var(--mainbg);
     width: 100vw;
     height: 100%;
     padding-bottom: 20px;
-    background: rgba(106, 30, 121, 1.27);
+
     /* margin-top: -10px; */
     margin-bottom: 5px;
   }
 }
-@media screen and (min-width: 776px) {
-  .filter-form {
-    width: 95vw;
-    max-width: 1170px;
-  }
-}
+
 /* end of rooms fitler*/
 
 .roomsloading {

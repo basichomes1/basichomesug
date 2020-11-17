@@ -6,19 +6,18 @@
   border-top: 1px groove var(--orange);
   height: 400px;
   background-color: var(--mainbg);
-  color: #fff;
+  color: var(--whitetext);
   position: relative;
   z-index: 20;
 }
 
 .showcase-container {
-  max-width: 1100px;
+  max-width: 99.6%;
   margin: 0 auto;
   overflow: auto;
-  padding: 0 40px;
+  padding: 0 35px;
   background: linear-gradient(rgba(106, 30, 121, 1.27), rgba(192, 18, 24, 0.9));
   border: 1px solid #f15a24;
-  border-radius: 70px;
   filter: drop-shadow(1px 1px 1px #f15a24);
   box-shadow: 1px 5px 2px var(--mainbg), 0px 0px 1px var(--mainbg);
 }
@@ -74,21 +73,19 @@
 
 .showcase-form input[type="text"],
 .showcase-form input[type="email"] {
-  border-left: 0.1rem groove var(--purple);
-  border-right: 0.1rem groove var(--orange);
-  border-top: 0.1rem groove var(--purple);
-  border-bottom: 0.1rem groove var(--orange);
+  border: 0.1rem groove black;
   border-radius: 1%;
   width: 100%;
   padding: 3px;
+  background: var(--whitetext) !important;
 }
-/* ::placeholder {
+::placeholder {
   font-size: 1.2em;
   font-weight: lighter;
-  color: #999;
-  text-shadow: 0px 1px 20px grey;
+  color: var(--blacktext);
+  text-shadow: 0px 1px 20px var(--whitetext);
   opacity: 1;
-} */
+}
 
 .showcase-form input:focus {
   outline: none;

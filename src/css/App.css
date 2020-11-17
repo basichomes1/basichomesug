@@ -10,8 +10,14 @@
   --mainTransition: all 0.3s linear;
   --mainSpacing: 3px;
   --mainbg: hsl(210, 31%, 87%);
-  --clr-grey-8: hsl(210, 31%, 80%);
+  --whitetext: hsl(327, 7.8%, 100%);
+  --blacktext: hsl(208, 62%, 1%);
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px var(--whitetext);
+  --shadowDark: #d9dde6;
+  --shadowLight: #eff5fe;
 }
+
 /* globals */
 
 * {
@@ -59,7 +65,7 @@ body {
   display: inline-block;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
-  color: lightgrey;
+  color: var(--whitetext);
   background: var(--purple);
   padding: 0.4rem 0.9rem;
   border-bottom: 1px solid var(--orange);
@@ -70,7 +76,7 @@ body {
 }
 .btn-primary:hover {
   background: var(--orange);
-  color: black;
+  color: (--blacktext);
 }
 .loading {
   text-transform: capitalize;
@@ -85,7 +91,6 @@ body {
 .empty-search {
   text-align: center;
   text-transform: capitalize;
-
   padding: 1rem;
   letter-spacing: var(--mainSpacing);
   height: 15vh;
@@ -93,7 +98,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--whitetext);
   animation: shake 2s linear infinite;
 }
 
@@ -151,8 +156,8 @@ body {
 /* Banner */
 .banner {
   display: inline-block;
-  background: rgba(100, 0, 0, 0.8);
-  color: var(--mainWhite);
+  background: var(--whitetext);
+  color: var(--blacktext);
   margin: 50px auto;
   width: 80%;
   text-align: center;
@@ -160,11 +165,6 @@ body {
   letter-spacing: var(--mainSpacing);
   height: 100%;
   border: 5px solid white;
-  background: rgba(100, 0, 0, 0.8);
-  border-top-left-radius: 100%;
-  border-bottom-right-radius: 100%;
-  border-bottom-left-radius: 100%;
-  border-top-right-radius: 100%;
   box-shadow: -10px -1px 10px rgba(255, 255, 255, 0.2),
     15px 15px 15px rgba(0, 0, 0, 0.1),
     inset -10px -10px 10px rgba(255, 255, 255, 0.2),
@@ -172,22 +172,22 @@ body {
 }
 .banner h1 {
   font-size: 1.5rem;
-  padding: 0.3rem 2rem;
+  padding: 0 1rem;
 }
 .banner div {
   width: 10rem;
   height: 5px;
   background: #f15a24;
-  margin: 1.7rem auto;
+  margin: 1rem auto;
 }
 .banner p {
   font-size: 1.1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 @media screen and (min-width: 350px) {
   .banner {
     padding: 1rem 1rem;
-    border-radius: 80%;
+    border-radius: 10%;
   }
   .banner h1 {
     font-size: 2rem;
@@ -196,6 +196,8 @@ body {
 @media screen and (min-width: 992px) {
   .banner {
     padding: 2rem 6rem;
+    width: 40%;
+    border-radius: 10%;
   }
   .banner h1 {
     font-size: 2rem;
