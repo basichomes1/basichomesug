@@ -6,6 +6,7 @@
   text-align: center;
   margin-bottom: 2rem;
   margin-top: 1rem;
+  background: var(--mainbg);
 }
 .section-title h4,
 .feature h4,
@@ -39,7 +40,7 @@
   color: black;
 }
 .serviceColor {
-  color: white;
+  color: black;
   margin-top: -90px;
 }
 .serviceColor h4 {

@@ -9,7 +9,8 @@
   --orange: #f15a24;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 3px;
-  --mainbg: hsl(210, 36%, 96%);
+  --mainbg: hsl(210, 31%, 87%);
+  --clr-grey-8: hsl(210, 31%, 80%);
 }
 /* globals */
 
@@ -50,7 +51,7 @@ input[type="range"]::-ms-track {
 }
 body {
   color: var(--mainBlack);
-  background: var(--clr-grey-10);
+  background: var(--mainbg);
   line-height: 1.4;
 }
 

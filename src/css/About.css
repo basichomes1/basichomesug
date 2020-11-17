@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: var(--clr-grey-10);
+  background: var(--mainbg);
 }
 
 .about-container {
@@ -20,7 +20,7 @@
   width: 80vw;
   display: flex;
   flex-direction: row;
-  background: var(--clr-grey-10);
+  background: var(--mainbg);
   filter: drop-shadow(2px 3px 4px black);
   border-radius: 1%;
   margin: 10px 10px;
@@ -73,7 +73,7 @@
     display: flex;
     width: 95vw;
     flex-direction: column;
-    background: #fff;
+    background: var(--mainbg);
     height: 100%;
     filter: drop-shadow(2px 3px 4px black);
     border-radius: 1%;

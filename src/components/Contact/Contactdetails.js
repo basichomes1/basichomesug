@@ -17,12 +17,17 @@ const Contactdetails = () => {
                   Write your message here...
                 </textarea>
               </div>
-              <div className="name">
-                <input placeholder="Name..." type="text" name="name" />
+              <div className="contact-name">
+                <input
+                  type="text"
+                  name="fname"
+                  placeholder="Name.."
+                  style={{ backgroundColor: "red" }}
+                />
               </div>
 
-              <div className="email">
-                <input placeholder="Email.." type="email" name="email" />
+              <div className="contact-email">
+                <input placeholder="Email.." type="email" name="cemail" />
               </div>
 
               <div className="sendmessage">

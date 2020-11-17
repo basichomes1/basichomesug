@@ -5,8 +5,7 @@
   align-items: center;
   justify-content: center;
   margin-top: -20px;
-  /* background: linear-gradient(rgba(39, 33, 33, 0.9), rgba(27, 24, 24, 0.9)); */
-  background: var(--mainbg);
+  background: hsl(210, 31%, 87%);
   border: 1px solid rgba(39, 33, 33, 0.9);
   /* box-shadow: -10px -1px 10px rgba(39, 33, 33, 0.9),
     15px 15px 15px rgba(0, 0, 0, 0.1),
