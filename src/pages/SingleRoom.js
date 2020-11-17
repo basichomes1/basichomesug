@@ -69,13 +69,17 @@ export default class SingleRoom extends Component {
             <div className="second-section">
               <article className="info">
                 <h3>INFO</h3>
-                <h6>Price : {price}UGX</h6>
-                <h6>Size : {size} SQFT</h6>
-                <h6>
-                  Max Capacity :
-                  {capacity > 1 ? ` ${capacity} people` : ` ${capacity} person`}
-                </h6>
-                <h6>{pets ? "Pets Allowed" : "No Pets Allowed"}</h6>
+                <div className="info-flex">
+                  <h6>Price : {price}UGX</h6>
+                  <h6>Size : {size} SQFT</h6>
+                  <h6>
+                    Max Capacity :
+                    {capacity > 1
+                      ? ` ${capacity} people`
+                      : ` ${capacity} person`}
+                  </h6>
+                  <h6>{pets ? "Pets Allowed" : "No Pets Allowed"}</h6>
+                </div>
               </article>
             </div>
 
