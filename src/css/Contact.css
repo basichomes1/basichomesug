@@ -94,7 +94,7 @@ light green: #A3C4BC
   padding: 10px 10px;
   border-radius: 5px;
   outline: none;
-  border: 10px solid #cfcfcf;
+  border: 1px solid #cfcfcf;
 }
 
 input.input-box {
