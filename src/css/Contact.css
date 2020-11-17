@@ -69,7 +69,8 @@ light green: #A3C4BC
   padding: 20px 30px;
   border-radius: 10px;
   box-shadow: 0px 10px 40px #555;
-  background: var(--mainbg);
+  /* background: var(--mainbg); */
+  background-color: white !important;
   margin: 0px 0px 0px -100px;
 }
 
@@ -95,10 +96,7 @@ light green: #A3C4BC
   border-radius: 5px;
   outline: none;
   border: 1px solid #cfcfcf;
-}
-
-input.input-box {
-  background: red;
+  background-color: white !important;
 }
 
 .form-text textarea {
@@ -108,7 +106,8 @@ input.input-box {
   border: 1px solid #cfcfcf;
   resize: none;
   color: #999;
-  background: #d9dde6;
+  /* background: #d9dde6; */
+  background-color: white !important;
   width: 100%;
 }
 
@@ -117,10 +116,6 @@ input.input-box {
   font-size: 1.2em;
   font-weight: lighter;
   color: #999;
-}
-
-.contact-name {
-  margin-right: 1%;
 }
 
 .contact-name,

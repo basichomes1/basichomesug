@@ -18,12 +18,7 @@ const Contactdetails = () => {
                 </textarea>
               </div>
               <div className="contact-name">
-                <input
-                  type="text"
-                  name="fname"
-                  placeholder="Name.."
-                  style={{ backgroundColor: "red" }}
-                />
+                <input type="text" name="fname" placeholder="Name.." />
               </div>
 
               <div className="contact-email">
