@@ -404,12 +404,13 @@ input[type="range"]:hover::-webkit-slider-runnable-track {
     height: 60vh;
     width: 100vw;
     margin-top: -70px;
+    padding-bottom: 25%;
     background: var(--mainbg);
     border-top: 5px groove rgba(155, 67, 26, 0.2);
   }
   .filter-form {
     padding: 15px;
-    height: 84%;
+    height: 100%;
     width: 97%;
     margin: 0 0 0 3px;
     display: grid;
