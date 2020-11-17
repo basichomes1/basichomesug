@@ -391,12 +391,24 @@ input[type="range"]:hover::-webkit-slider-runnable-track {
     border-top: 5px groove rgba(155, 67, 26, 0.2);
   }
   .filter-form {
-    height: 85%;
-    width: 98vw;
-    box-shadow: 4px 2px 6px var(--purple), 0px 0px 1px var(--purple);
-    margin: 0 0 0 1.7px;
-    border: 2px solid transparent;
+    padding: 15px;
+    height: 84%;
+    width: 97%;
+    margin: 0 0 0 3px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    grid-row-gap: 1.2rem;
+    grid-column-gap: 8px;
+    background: linear-gradient(
+      rgba(106, 30, 121, 1.27),
+      rgba(192, 18, 24, 0.9)
+    );
+    font-size: 15px;
+    border: 1px solid transparent;
     border-radius: 5px;
+    text-align: center;
+    box-shadow: 6px 8px 6px rgba(106, 30, 121, 1.27),
+      0px 0px 1px rgba(106, 30, 121, 1.27);
   }
 
   .single-room-info {
