@@ -6,6 +6,11 @@
   background: var(--mainbg);
 }
 
+.about-background h1 {
+  font-size: 50px;
+  color: var(--orange);
+}
+
 .about-container {
   position: relative;
   width: 1000px;

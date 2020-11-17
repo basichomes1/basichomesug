@@ -97,7 +97,7 @@ function AboutUs() {
           </div>
 
           <div className="about-card second-flex">
-            <div className="about-imgbx mission">
+            <div className="about-content mission">
               <Title title="VISION" />
             </div>
             <div className="about-content  vision">
