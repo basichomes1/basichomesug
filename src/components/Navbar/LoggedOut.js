@@ -64,6 +64,18 @@ export default function Logout() {
               Rooms
             </Link>
           </li>
+          <li className="navs-item pad-block">
+            <Link
+              to="/jobs"
+              className="navs-links"
+              onClick={() => {
+                closeMobileMenu();
+                toggleHome();
+              }}
+            >
+              Skills Area
+            </Link>
+          </li>
 
           <li className="navs-item">
             <Link
