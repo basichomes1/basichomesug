@@ -84,21 +84,21 @@ export default class SingleRoom extends Component {
             </div>
 
             <div className="third-section">
-              <article className="info">
+              <article className="info third-box">
                 <h3>Location</h3>
                 <h5 style={{ textTransform: "uppercase" }}>{location}</h5>
               </article>
             </div>
 
             <div className="fourth-section">
-              <article className="info">
-                <h3>Accomodation Type</h3>
+              <article className="info fourth-box">
+                <h3>Accomodation Type </h3>
                 <p style={{ textTransform: "uppercase" }}>{accomodation}</p>
               </article>
             </div>
 
             <div className="fifth-section">
-              <article className="info">
+              <article className="info fifth-box">
                 <h3>Room Type</h3>
                 <p style={{ textTransform: "uppercase" }}>{type}</p>
               </article>
