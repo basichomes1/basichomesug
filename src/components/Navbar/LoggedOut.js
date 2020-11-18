@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { MdHome } from "react-icons/md";
-import { FaBars, FaTimes } from "react-icons/fa";
+
 import { Button } from "../Button/Button";
 import { animateScroll as scroll } from "react-scroll";
 export default function Logout() {
@@ -36,8 +36,20 @@ export default function Logout() {
         </NavLink>
       </div>
       <div className="navbars-container containers">
-        <div className="menu-icon" onClick={handleClick}>
-          {click ? <FaTimes /> : <FaBars />}
+        <div className="menu-btn" onClick={handleClick}>
+          {click ? (
+            <>
+              <span className="burger-one"></span>
+              <span className="burger-two"></span>
+              <span className=" burger-three"></span>
+            </>
+          ) : (
+            <>
+              <span className="menu-btn-burger top"></span>
+              <span className="menu-btn-burger "></span>
+              <span className="menu-btn-burger "></span>
+            </>
+          )}
         </div>
         <ul className={click ? "navs-menu active " : "navs-menu"}>
           <li className="navs-item pad-block">
